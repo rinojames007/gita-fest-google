@@ -1,8 +1,9 @@
 import React from 'react'
 import EventList from './EventList'
+import upcomingEvents from '../../time.js';
 
 const EventUpdates = () => {
-    
+    console.log(upcomingEvents);
     return (
         <div className=' flex items-center mx-auto'>
             <div className=" flex md:flex-row flex-col items-center py-7 px-3 md:py-[60px] md:px-[40px] md:space-x-6 mx-auto">
@@ -15,15 +16,15 @@ const EventUpdates = () => {
                     <h1 className=' text-2xl sm:text-3xl md:text-5xl font-bold text-center text-white mx-auto'>Upcoming Events</h1>
                     <p className='font-semibold text-sm text-slate-300 text-center'>Check out the exciting Lineup of Events at College Fest 2024...</p>
                     <div className="Event-lists w-full flex flex-col md:flex-row justify-around flex-wrap">
-                        <EventList/>
-                        <EventList/>
-                        <EventList/>
-                        
+                        {upcomingEvents.map((item) => 
+                            <EventList key= {item.key} name={item.name} venue={item.venue} />
+                        )}
                     </div>
                 </div>
             </div>
         </div>
     )
 }
+
 
 export default EventUpdates
