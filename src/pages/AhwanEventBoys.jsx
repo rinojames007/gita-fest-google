@@ -1,55 +1,62 @@
-import React from "react";
-import EventBox from "../Components/Events-updates/EventBox";
+import React, { useState, useEffect } from "react";
+
 import Navbar from "../Components/Navbar/Navbar";
 
 const AhwanEventBoys = () => {
-  const AhwanElements = [
-    {
-      url: "https://i.postimg.cc/N04y7f5x/men.webp",
-      EventName: "100 M Boys",
-      desc: "show your Sports skills...",
-      details: [
-        {
-          EventIncharge: "Xyz",
-          EventCoordinators: ["ABC", "XYZ", "RST"],
-          volunteers: ["Rohan", "Mohan", "Simran"],
-          timming: "12:15 pm",
-        },
-      ],
-    },
-    {
-      url: "./Demo-pics/tech.jpg",
-      EventName: "Long Jump",
-      desc: "show your Sports skills...",
-      details: [
-        {
-          EventIncharge: "Xyz",
-          EventCoordinators: ["ABC", "XYZ", "RST"],
-          volunteers: ["Rohan", "Mohan", "Simran"],
-          timming: "12:15 pm",
-        },
-      ],
-    },
-  ];
+  
+
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    // Add an event listener to check scroll position
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 1200); // Change 200 to adjust when the button appears
+    };
+
+    // Attach the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Detach the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <div className="h-full  w-full bg-gradient-to-b from-black via-purple-900 to-black">
+    <div className="h-full min-h-screen w-full bg-gradient-to-b from-black via-purple-900 to-black">
       <Navbar />
-      <div className="py-[60px]">
+      <div className="py-10 md:py-20">
         <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">
           Ahwan Boys Events
         </h1>
-        <div className="box-container flex flex-wrap justify-around">
-          <EventBox url={AhwanElements[0].url} />
-          <EventBox url={AhwanElements[0].url} />
-          <EventBox url={AhwanElements[0].url} />
-          <EventBox url={AhwanElements[0].url} />
-          <EventBox url={AhwanElements[0].url} />
-          <EventBox url={AhwanElements[0].url} />
-          <EventBox url={AhwanElements[0].url} />
-          <EventBox url={AhwanElements[0].url} />
-          <EventBox url={AhwanElements[0].url} />
-        </div>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeHrLthxFaQsH9XtaU-6lE5QqxrTSVkztK1tjEjQztKvBCz7w/viewform?embedded=true"
+          className="mx-auto w-full md:w-2/3 lg:w-1/2"
+          height="2200"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
+        >
+          Loading…
+        </iframe>
       </div>
+
+      {/* Back to Top Button */}
+      {showBackToTop && (
+        <button
+          className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
+          onClick={scrollToTop}
+        >
+          Back to Top
+        </button>
+      )}
     </div>
   );
 };

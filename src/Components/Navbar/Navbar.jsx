@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 const Navbar = () => {
   // State to manage the visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,60 +13,45 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-
-
   return (
-    <nav className="h-[50px] absolute sm:fixed backdrop-blur-xl sm:h-[60px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 ">
+    <nav className="h-[50px] fixed backdrop-blur-xl sm:h-[60px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 gradient-shift z-50">
       {/* Logo */}
-      <div className="logo h-[40px] w-[160px] sm:h-[50px] sm:w-[260px] rounded-full bg-gray-600 flex justify-center items-center hover:cursor-pointer">
-        <Link to='/' className="w-full h-full">
-        <div
-          style={{ backgroundImage: `url(https://i.postimg.cc/QMp8CJyN/logo.webp)` }}
-          className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full opacity-80"
-        >
-          <h1 className="text-xl font-bold sm:text-3xl text-white">Akanksha</h1>
-        </div>
+      <div className="logo h-[40px] w-[160px] sm:h-[50px] sm:w-[260px] rounded-full neon-border p-3 ring-4 ring-blue-500 flex justify-center items-center transition-all duration-300 hover:cursor-pointer ">
+        <Link to="/" className="w-full h-full">
+          <div className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full ">
+            <h1 className="text-xl font-bold sm:text-3xl text-white">
+              Akanksha
+            </h1>
+          </div>
         </Link>
       </div>
+
       {/* navigations */}
       <div className="nav-contents hidden md:flex items-center">
         <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 text-xl font-bold">
-                    
           <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-          <Link
-          to="/coordinators">
-            Coordinators
-            </Link>
-          </li>
-          
-          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-          <Link
-          to="/gallery">
-            Gallery
-            </Link>
+            <Link to="/schedules">Schedules</Link>
           </li>
 
           <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-          <Link
-          to="/navToPages">
-            pages
-            </Link>
+            <Link to="/coordinators">Coordinators</Link>
           </li>
 
           <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-          <Link
-          to="/fest/CreditsPage">
-            Credits
-            </Link>
+            <Link to="/gallery">Gallery</Link>
           </li>
-          
-          <li className="flex justify-center text-white items-center">
-            <Link
-              to="/login"
-              className="mx-auto px-3 flex text-white justify-center font-bold border-slate-400 border-2 rounded-2xl  hover:bg-purple-900 hover:shadow-lg hover:shadow-blue-500 hover:text-white hover:cursor-pointer hover:transition-all hover:ease-in-out hover:duration-600 hover:scale-[0.90] "
+
+          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+            <Link to="/fest/CreditsPage">Credits</Link>
+          </li>
+
+          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+            <a
+              href="https://www.instagram.com/akanksha_gita?igsh=ODA1NTc5OTg5Nw=="
+              target="_blank"
             >
-              <button className="px-1 py-2 text-center ">Login/Signup</button>
-            </Link>
+              <FontAwesomeIcon icon={faInstagram} /> Follow us
+            </a>
           </li>
         </ul>
       </div>
@@ -89,18 +76,16 @@ const Navbar = () => {
           <img src="./cross.png" alt="cross-icon" className="h-[30px]" />
         </div>
         <ul className="nav-menu flex flex-col items-center space-y-3 font-semibold ">
-          
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
-              to='/'
+              to="/"
               onClick={toggleMobileMenu}
             >
               Home
             </Link>
           </li>
-          
-          
+
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
@@ -128,27 +113,14 @@ const Navbar = () => {
               Credits
             </Link>
           </li>
-          <li>
-            <Link
-              className="hover:text-gray-400 active:underline py-1"
-              to="/navToPages"
-              onClick={toggleMobileMenu}
+          <li onClick={toggleMobileMenu}>
+            <a
+              href="https://www.instagram.com/akanksha_gita?igsh=ODA1NTc5OTg5Nw=="
+              target="_blank"
             >
-              Others
-            </Link>
+              <FontAwesomeIcon icon={faInstagram} /> Follow us
+            </a>
           </li>
-          <li>
-            <Link
-              to="/login"
-              className="mx-auto px-5 flex justify-center font-semibold bg-slate-800 border-slate-600 border-2 rounded-2xl text-white hover:bg-purple-400 hover:text-black hover:transition-all hover:ease-in-out hover:duration-700 hover:delay-75 mb-4"
-              onClick={toggleMobileMenu}
-            >
-              <button className="px-1 py-2 text-sm text-center hover:scale-[0.85] ">
-                Login/Signup
-              </button>
-            </Link>
-          </li>
-          
         </ul>
       </div>
     </nav>

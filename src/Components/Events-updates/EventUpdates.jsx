@@ -2,6 +2,7 @@ import React from 'react'
 import EventList from './EventList'
 
 const EventUpdates = () => {
+    
     return (
         <div className=' flex items-center mx-auto'>
             <div className=" flex md:flex-row flex-col items-center py-7 px-3 md:py-[60px] md:px-[40px] md:space-x-6 mx-auto">
@@ -17,6 +18,7 @@ const EventUpdates = () => {
                         <EventList/>
                         <EventList/>
                         <EventList/>
+                        
                     </div>
                 </div>
             </div>

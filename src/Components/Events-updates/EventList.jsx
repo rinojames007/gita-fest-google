@@ -1,12 +1,12 @@
 import React from "react";
 
-const EventList = () => {
+const EventList = (props) => {
   return (
     <div>
       <div className="events flex w-full flex-col bg-white text-black justify-center items-center border-2 my-3 rounded-xl md:p-6 p-3 hover:cursor-pointer mx-auto">
         <div className="event-Info  flex flex-col justify-center items-center">
-          <p className="font-bold text-2xl ">Face Painting</p>
-          <p className=" font-semibold text-md ">Gita Garden-2</p>
+          <p className="font-bold text-2xl ">{props.name}</p>
+          <p className=" font-semibold text-md ">{props.venue}</p>
         </div>
 
         <div className="event-timming mt-4 flex justify-between items-center ">

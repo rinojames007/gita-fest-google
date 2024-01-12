@@ -1,6 +1,5 @@
 import React from "react";
 import CreditsBox from "../Components/Credits/CreditsBox";
-import { Navbar } from "flowbite-react";
 import { Link } from "react-router-dom";
 
 const CreditsPage = () => {
@@ -48,7 +47,7 @@ const CreditsPage = () => {
   ];
   return (
     <div className="w-full bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full py-12">
-      <Navbar/>
+     
       <div className="absolute top-4 left-4">
         <Link to="/" className="w-fit">
           <button className="bg-slate-600 px-5 py-2 text-lg font-semibold rounded-md hover:scale-90 hover:text-red-600 text-white">

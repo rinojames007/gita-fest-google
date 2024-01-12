@@ -63,6 +63,7 @@ const Videos = () => {
           </button>
         </Link>
       </div> 
+      <p className='text-white font-semibold text-lg text-center pt-[30px]'>Wait for Some Seconds to load the Videos</p>
         <div className="videos w-[90%] rounded-md flex items-center justify-center flex-col sm:flex-row flex-wrap sm:space-x-5 mx-auto space-y-8  py-6">
       {links.map((index) => (
         <div key={index} className="sm:w-[30%] rounded-md md:h-[300px] sm:h-[200px] 2xl:h-[400px] 2xl:w-[45%] h-[200px] w-full max-w-screen my-5">

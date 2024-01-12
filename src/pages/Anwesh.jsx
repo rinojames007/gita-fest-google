@@ -16,7 +16,7 @@ const Anwesh = () => {
           is your ticket to an exhilarating world of technology and creativity.
         </p>
         <div className="Event-Container w-full flex justify-around flex-wrap">
-        <Link to="/techFestEvents" className=" w-[95%] sm:w-[30%]">
+        <Link to="/anwesh/techEvents" className=" w-[95%] sm:w-[30%]">
           <EventCard name="Tech Fest" url={"https://i.postimg.cc/1Xy5R4wq/techfest.jpg"} />
         </Link>
         <Link to="/robotics" className=" w-[95%] sm:w-[30%]">
