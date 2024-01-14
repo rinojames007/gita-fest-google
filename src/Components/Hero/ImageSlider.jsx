@@ -4,6 +4,7 @@ import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons
 
 const ImageSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const aspectRatio = 16 / 9; // Change this to match the aspect ratio of your images
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -23,25 +24,25 @@ const ImageSlider = ({ images }) => {
       setCurrentIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 2500); // Change slide every 5 seconds
+    }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
   }, [currentIndex, images.length]);
 
   return (
-    <div className="relative w-full max-w-[95%] mx-auto">
-      <div className="overflow-hidden relative w-full h-[200px] sm:h-[300px] md:h-[400px] xl:h-[450px] 2xl:h-[600px] shadow-md shadow-blue-600">
+    <div className={`relative w-full max-w-[95%] mx-auto aspect-w-${aspectRatio}`}>
+      <div className={`overflow-hidden relative w-full h-full `}>
         <div
-          className="flex transition-transform duration-500 ease-in-out"
+          className="flex transition-transform duration-500 ease-in-out "
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((image, index) => (
             <div
               key={index}
-              className="w-full h-full flex-shrink-0"
+              className="w-full h-full flex-shrink-0 "
             >
               <img
-                className="w-full h-full object-fill object-center rounded-xl"
+                className="w-full h-full object-fill object-center shadow-md rounded-lg shadow-blue-600"
                 src={image.url}
                 alt={`Slide ${index + 1}`}
               />
@@ -60,7 +61,6 @@ const ImageSlider = ({ images }) => {
         onClick={nextSlide}
       >
         <FontAwesomeIcon icon={faChevronRight} className="text-white text-4xl md:font-bold font-semibold"/>
-        
       </button>  
     </div>
   );

@@ -1,11 +1,12 @@
-import ProfileNav from "../Components/Profile-Navbar/ProfileNav";
+import Navbar from "../Components/Navbar/Navbar";
+
 
 export default function Help() {
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full">
       
         <div className="navbar w-full fixed top-0 backdrop-blur-lg">
-          <ProfileNav />
+          <Navbar/>
         </div>
         <div className=" flex py-[60px] justify-center w-full h-full">
          

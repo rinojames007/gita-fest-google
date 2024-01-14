@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="h-[50px] fixed backdrop-blur-xl sm:h-[60px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 gradient-shift z-50">
+    <nav className="h-[50px] fixed backdrop-blur-xl sm:h-[60px] md:h-[70px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 gradient-shift z-50">
       {/* Logo */}
       <div className="logo h-[40px] w-[160px] sm:h-[50px] sm:w-[260px] rounded-full neon-border p-3 ring-4 ring-blue-500 flex justify-center items-center transition-all duration-300 hover:cursor-pointer ">
         <Link to="/" className="w-full h-full">

@@ -10,15 +10,10 @@ import About from "./pages/About";
 import Coordinators from "./pages/Coordinators";
 import EventDetails from "./pages/EventDetails";
 
-import AnweshWinnerPage from "./pages/AnweshWinnerPage";
-import AhwanWinnerPage from "./pages/AhwanWinnerPage";
-import AkankshaWinnersPage from "./pages/AkankshaWinnersPage";
 import AhwanEventBoys from "./pages/AhwanEventBoys";
 import AhwanEventGirls from "./pages/AhwanEventGirls";
 
 import Robotics from "./pages/Robotics";
-
-
 import CreditsPage from "./pages/CreditsPage";
 import Gallery from "./pages/Gallery/Gallery";
 import Photoes from "./pages/Gallery/Photoes";
@@ -47,19 +42,14 @@ export default function App() {
           element={<AkankshaRegistrationPage />}
         />
         <Route path="/help" element={<Help />} />
-        <Route path="/anweshWinners" element={<AnweshWinnerPage />} />
-        <Route path="/ahwanWinners" element={<AhwanWinnerPage />} />
-        <Route path="/akankshaWinners" element={<AkankshaWinnersPage />} />
+        
         <Route path="/ahwanBoys" element={<AhwanEventBoys />} />
         <Route path="/ahwanGirls" element={<AhwanEventGirls />} />
 
         <Route path="/robotics" element={<Robotics />} />
         <Route path="/anwesh/techEvents" element={<TechFestEvents/>}/>
 
-        {/* Fest-Coordinators info page  */}
-
-
-        {/* Website Credits page  */}
+       
         <Route path="/fest/CreditsPage" element={<CreditsPage />} />
 
         {/* Gallery  */}

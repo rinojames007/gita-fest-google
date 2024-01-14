@@ -49,12 +49,12 @@ const Highlights = () => {
             <div className=" flex flex-col justify-center items-center md:flex-row w-full h-fit mx-auto ">
 
                 {/* left content  */}
-                <div className="left md:w-[40%] md:px-[50px] py-[30px] flex justify-center items-center ">
-                    <h1 className="text-2xl md:text-4xl font-bold text-white">Key Fest Highlights</h1>
+                <div className="left md:w-[40%] md:px-[50px] pt-[30px] flex justify-center items-center ">
+                    <h1 className="text-3xl md:text-4xl font-bold text-white">Key Fest Highlights</h1>
                 </div>
 
                 {/* right-contents */}
-                <div className="right Pt-[25%] w-full md:w-[60%] flex justify-center items-center mx-auto">
+                <div className="right Pt-[25px] w-full md:w-[60%] flex justify-center items-center mx-auto">
                     <div className=" py-[50px]">
                         <ImageSlider images={images} />
                     </div>

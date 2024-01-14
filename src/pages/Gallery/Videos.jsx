@@ -1,8 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Videos = () => {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Add an event listener to check scroll position
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 1200); // Change 200 to adjust when the button appears
+    };
 
+    // Attach the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Detach the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleIframeLoad = () => {
+    // Set loading to false when the iframe has finished loading
+    setLoading(false);
+  };
     const links =[
         {
             url:"https://www.youtube.com/embed/SECIxFV8L0Q?si=333hwu6lZTU8MyAf"
@@ -67,16 +94,30 @@ const Videos = () => {
         <div className="videos w-[90%] rounded-md flex items-center justify-center flex-col sm:flex-row flex-wrap sm:space-x-5 mx-auto space-y-8  py-6">
       {links.map((index) => (
         <div key={index} className="sm:w-[30%] rounded-md md:h-[300px] sm:h-[200px] 2xl:h-[400px] 2xl:w-[45%] h-[200px] w-full max-w-screen my-5">
+          {loading && (
+          <div className="flex flex-col justify-center items-center h-[220px]">
+            <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
+            <div className="loader text-center text-white font-semibold text-xl mt-6 ">Loading...</div>
+          </div>
+        )}
           <iframe
             className="w-full h-full"
             src={index.url}
             title={`Dance Performance ${index}`}
-            frameBorder="0"
+            onLoad={handleIframeLoad}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
         </div>
       ))}
+      {showBackToTop && (
+          <button
+            className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
+            onClick={scrollToTop}
+          >
+            Back to Top
+          </button>
+        )}
     </div>
     </div>
   )

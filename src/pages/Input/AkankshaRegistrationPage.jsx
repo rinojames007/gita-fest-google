@@ -4,7 +4,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 
 const AkankshaRegistrationPage = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     // Add an event listener to check scroll position
     const handleScroll = () => {
@@ -27,21 +27,29 @@ const AkankshaRegistrationPage = () => {
     });
   };
 
+  const handleIframeLoad = () => {
+    // Set loading to false when the iframe has finished loading
+    setLoading(false);
+  };
   return (
     <div>
       <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full min-h-screen">
         <Navbar />
-        <div className="py-10 md:py-20">
+        <div className="py-20">
           <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">
-            Ahwan Boys Events
+            Akanksha Registration page
           </h1>
+          {loading && (
+          <div className="flex flex-col justify-center items-center h-[220px]">
+            <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
+            <div className="loader text-center text-white font-semibold text-xl mt-6 ">Loading...</div>
+          </div>
+        )}
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSc-CpCEfvdYwmUS6MDx3o9taM-HB9UpMA7NXvaNAdXkUtjjKQ/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
             height="2230"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
+            onLoad={handleIframeLoad}
           >
             Loading…
           </iframe>
