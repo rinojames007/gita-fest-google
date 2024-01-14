@@ -31,11 +31,11 @@ const TechFestEvents = () => {
         },
       ];
   return (
-    <div className=" min-h-screen w-full bg-gradient-to-b from-black via-purple-900 to-black">
+    <div className=" min-h-screen h-full w-full bg-gradient-to-b from-black via-purple-900 to-black">
       <Navbar />
       {/* Tech Fest */}
       <div className=" pt-[60px] flex flex-col justify-center items-center w-full">
-        <h1 className="text-5xl font-bold my-4 text-white">Tech Fest Events</h1>
+        <h1 className="text-3xl md:text-5xl font-bold my-4 text-center text-white">Tech Fest Events</h1>
         
         <div className="Event-Container w-full flex justify-around flex-wrap">
         
