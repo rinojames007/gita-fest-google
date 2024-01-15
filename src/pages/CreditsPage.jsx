@@ -85,7 +85,7 @@ const CreditsPage = () => {
       <h1 className="text-white text-4xl font-bold text-center pt-[25px]">
         Credits
       </h1>
-      <div className="flex flex-wrap justify-center items-center md:my-[100px] space-y-7 md:space-y-0 md:space-x-5">
+      <div className="flex pt-[40px] pb-[60px] flex-wrap justify-center items-center md:my-[100px] space-y-7 md:space-y-0 md:space-x-5">
         {creditDetails.map((item) => (
           <CreditsBox
             key={item.name}
