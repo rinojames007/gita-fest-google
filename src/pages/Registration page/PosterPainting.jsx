@@ -50,7 +50,7 @@ const PosterPainting = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfqNHvd8__-1smPhEzEJWiBdHegniyu41zymD6GSFofYOYNyg/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1450"
+            height="1550"
             onLoad={handleIframeLoad}
           >
             Loading…

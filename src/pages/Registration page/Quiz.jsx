@@ -50,7 +50,7 @@ const Quiz = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdIu5Lifl6T3UKVOvrulwJhOFk4_aDRnz8Ui07t77E2NDP1Ug/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1450"
+            height="1550"
             onLoad={handleIframeLoad}
           >
             Loading…
