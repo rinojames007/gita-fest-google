@@ -50,7 +50,7 @@ const BridgeDesign = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSflG1fCEtpxqRb2Ei8PjXVYkHEu9K88A4ugnD8u9v8FIuT6jg/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1450"
+            height="1500"
             onLoad={handleIframeLoad}
           >
             Loading…

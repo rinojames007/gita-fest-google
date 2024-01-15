@@ -50,7 +50,7 @@ const FacePainting = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLScWhzbXDDO_Do3OIeJiqu2aCPJq9qLQtgEZ7x2DG4YsojwpKg/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1430"
+            height="1500"
             onLoad={handleIframeLoad}
           >
             Loading…
