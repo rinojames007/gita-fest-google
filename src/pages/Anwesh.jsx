@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 import EventCard from "../Components/Events/EventCard";
 
 const Anwesh = () => {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+ 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 700);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  
+
   
   return (
     <div className=" min-h-screen w-screen bg-gradient-to-b from-black via-purple-900 to-black">
@@ -19,12 +43,20 @@ const Anwesh = () => {
         <Link to="/anwesh/techEvents" className=" w-[95%] sm:w-[30%]">
           <EventCard name="Tech Fest" url={"https://i.postimg.cc/1Xy5R4wq/techfest.jpg"} />
         </Link>
-        <Link to="/robotics" className=" w-[95%] sm:w-[30%]">
+        <Link to="/roboticsDetails" className=" w-[95%] sm:w-[30%]">
           <EventCard name="Robotics" url={"https://i.postimg.cc/y6rQB070/robotics.jpg"} />
         </Link>
           
         </div>
       </div>
+      {showBackToTop && (
+          <button
+            className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
+            onClick={scrollToTop}
+          >
+            Back to Top
+          </button>
+        )}
     </div>
   );
 };

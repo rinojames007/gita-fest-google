@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import Navbar from "../Components/Navbar/Navbar";
 
@@ -6,9 +6,10 @@ const AhwanEventGirls = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
+    window.scrollTo(0, 0);
     // Add an event listener to check scroll position
     const handleScroll = () => {
-      setShowBackToTop(window.scrollY > 1200); // Change 200 to adjust when the button appears
+      setShowBackToTop(window.scrollY > 700); // Change 200 to adjust when the button appears
     };
 
     // Attach the event listener
