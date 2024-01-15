@@ -6,20 +6,20 @@ const upcomingEvents =
     [
         {
             key: 1,
-            name: "face painting",
+            name: "Face painting",
             venue: "gita garden",
             date: new Date('2022-01-01T12:00:00')
         },
         {
             key: 2,
-            name: "running race",
+            name: "Running race",
             venue: "gita garden",
             date: new Date('2022-01-01T11:00:00')
         },
 
         {
             key: 3,
-            name: "javelin throw",
+            name: "Javelin throw",
             venue: "gita garden",
             date: new Date('2022-01-01T12:00:00')
         },
