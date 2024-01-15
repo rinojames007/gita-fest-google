@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
@@ -73,7 +73,7 @@ const Navbar = () => {
           className="cancel font-bold w-fit text-3xl relative -top-8 left-[2%]"
           onClick={toggleMobileMenu}
         >
-          <img src="./cross.png" alt="cross-icon" className="h-[30px]" />
+          <FontAwesomeIcon icon={faXmark} className="text-red-600" />
         </div>
         <ul className="nav-menu flex flex-col items-center space-y-3 font-semibold ">
           <li>
