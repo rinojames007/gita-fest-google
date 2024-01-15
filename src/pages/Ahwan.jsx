@@ -41,7 +41,7 @@ const Ahwan = () => {
       <div className=" pt-[60px]  h-full flex flex-col justify-center items-center">
       
         <h1 className="text-5xl font-bold my-4 text-white">Ahwan</h1>
-        <p className="text-sm mb-8 text-center text-slate-200">
+        <p className="text-sm mb-8 text-center px-2 text-slate-200">
           Welcome to the gateway of Our Sports Registration Page Get ready to
           dive into a world of physical prowess and sportsmanship!
         </p>
