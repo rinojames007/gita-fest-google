@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar/Navbar";
 
 const AhwanEventBoys = () => {
@@ -6,8 +6,9 @@ const AhwanEventBoys = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const handleScroll = () => {
-      setShowBackToTop(window.scrollY > 1200);
+      setShowBackToTop(window.scrollY >700);
     };
 
     window.addEventListener("scroll", handleScroll);

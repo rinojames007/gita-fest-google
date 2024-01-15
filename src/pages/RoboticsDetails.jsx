@@ -1,9 +1,37 @@
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 
-const Robotics = () => {
+const RoboticsDetails = () => {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 500);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleIframeLoad = () => {
+    // Set loading to false when the iframe has finished loading
+    setLoading(false);
+  };
+
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full min-h-screen">
       <Navbar />
@@ -90,7 +118,7 @@ const Robotics = () => {
                 </div>
               </div>
               <Link
-                to="/register"
+                to="/anwesh/registration/Robotics"
                 class="flex items-center w-[200px] justify-center py-3 my-2 md:my-5 text-lg font-medium text-center text-white hover:scale-90 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 Register
@@ -99,8 +127,24 @@ const Robotics = () => {
           </div>
         </div>
       </div>
+      {showBackToTop && (
+          <button
+            className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
+            onClick={scrollToTop}
+          >
+            Back to Top
+          </button>
+        )}
+        {showBackToTop && (
+          <button
+            className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
+            onClick={scrollToTop}
+          >
+            Back to Top
+          </button>
+        )}
     </div>
   );
 };
 
-export default Robotics;
+export default RoboticsDetails;

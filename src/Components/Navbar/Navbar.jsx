@@ -16,9 +16,9 @@ const Navbar = () => {
   return (
     <nav className="h-[50px] fixed backdrop-blur-xl sm:h-[60px] md:h-[70px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 gradient-shift z-50">
       {/* Logo */}
-      <div className="logo h-[40px] w-[160px] sm:h-[50px] sm:w-[260px] rounded-full neon-border p-3 ring-4 ring-blue-500 flex justify-center items-center transition-all duration-300 hover:cursor-pointer ">
-        <Link to="/" className="w-full h-full">
-          <div className="header flex justify-center items-center bg-cover w-full h-full bg-center rounded-full ">
+      <div className="logo flex justify-center items-center ">
+        <Link to="/" className=" rounded-full h-[40px] w-[160px] sm:h-[50px] sm:w-[260px]  neon-border p-3 ring-4 ring-blue-500 transition-all duration-300 hover:cursor-pointer ">
+          <div className="header flex justify-center items-center bg-cover w-full h-full bg-center ">
             <h1 className="text-xl font-bold sm:text-3xl text-white">
               Akanksha
             </h1>
@@ -85,7 +85,15 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-
+          <li>
+            <Link
+              className="hover:text-gray-400 active:underline py-1"
+              to="/schedules"
+              onClick={toggleMobileMenu}
+            >
+              Schedules
+            </Link>
+          </li>
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
