@@ -49,7 +49,7 @@ const AhwanEventGirls = () => {
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSeCcGs3GKxDAm64VDbs6X-aldGip-_l8FaSYvnn4WDJSD973w/viewform?embedded=true"
           className="mx-auto w-full md:w-2/3 lg:w-1/2"
-          height="2334"
+          height="2370"
           onLoad={handleIframeLoad}
         >
           Loading…

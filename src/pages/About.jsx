@@ -35,6 +35,10 @@ const About = () => {
         <Navbar/>
         <div className="pt-[60px]">
         <h1 className='font-bold  text-5xl text-center py-5 text-white'>About Page</h1>
+
+        <p className="text-4xl mt-[100px] font-semibold text-center text-white">
+              Comming Soon...
+            </p>
         </div>
         {showBackToTop && (
           <button

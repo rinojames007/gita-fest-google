@@ -42,6 +42,10 @@ export default function Help() {
             <p className="text-3xl font-bold text-white">
               Help and support page....
             </p>
+
+            <p className="text-4xl mt-[100px] text-center font-semibold text-white">
+              Comming Soon...
+            </p>
           </div>
         </div>
         {showBackToTop && (

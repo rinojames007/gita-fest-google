@@ -10,11 +10,11 @@ const Gallery = () => {
     <div className="flex pt-[150px] justify-around flex-col md:flex-row items-center">
       
       
-      <Link to="/gallery/Photoes" className=" w-[90%] sm:w-[40%] ">
+      <Link to="/gallery/Photoes" className=" w-[90%] sm:w-[40%] transition-transform transform hover:scale-105 focus:scale-105m hover:delay-200">
         <EventCard name="Photos" url={"../Gallery/gallery2.webp"} />
       </Link>
 
-      <Link to="/gallery/Videos" className=" w-[90%] sm:w-[40%] ">
+      <Link to="/gallery/Videos" className=" w-[90%] sm:w-[40%] transition-transform transform hover:scale-105 focus:scale-105m hover:delay-200">
         <EventCard name="Videos" url={"../Gallery/gallery2.webp"} />
       </Link>
     </div>

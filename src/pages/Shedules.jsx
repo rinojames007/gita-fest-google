@@ -35,6 +35,10 @@ const Shedules = () => {
       <h1 className="hero py-[80px] text-center text-3xl sm:text-6xl font-bold text-white">
         Schedules
       </h1>
+
+      <p className="text-4xl mt-[100px] font-semibold text-center text-white">
+              Comming Soon...
+            </p>
       {showBackToTop && (
           <button
             className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"

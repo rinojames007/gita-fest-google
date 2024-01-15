@@ -39,8 +39,8 @@ const Akanksha = () => {
           Akanksha Events...
         </h1>
         <div className="Participants w-full my-9">
-          <Link to="/akanksha/registrationPage" className="w-full flex justify-center">
-            <div className="events w-[90%] h-[100px] md:w-[50%] sm:h-[150px] bg-slate-800 px-3 rounded-xl opacity-80 hover:scale-90 hover:opacity-30  font-bold text-4xl  hover:text-6xl  flex justify-center items-center shadow-lg shadow-blue-400 ">
+          <Link to="/akanksha/registrationPage" className="w-full flex justify-center ">
+            <div className="events w-[90%] h-[100px] md:w-[50%] sm:h-[150px] bg-slate-800 px-3 rounded-xl opacity-80 transition-transform transform hover:scale-105 focus:scale-105 hover:opacity-30  font-bold text-4xl  hover:text-6xl  flex justify-center items-center shadow-lg shadow-blue-400 ">
               <p className="text-center text-xl font-semibold md:text-3xl opacity-100 text-white ">
                 Click to Register
               </p>

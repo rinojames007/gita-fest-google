@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faBars, faXmark , faHouse, faIdBadge, faCalendarDays, faImages, faAward} from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
+
+
 
 const Navbar = () => {
   // State to manage the visibility of the mobile menu
@@ -19,7 +21,7 @@ const Navbar = () => {
       <div className="logo flex justify-center items-center ">
         <Link to="/" className=" rounded-full h-[40px] w-[160px] sm:h-[50px] sm:w-[260px]  neon-border p-3 ring-4 ring-blue-500 transition-all duration-300 hover:cursor-pointer ">
           <div className="header flex justify-center items-center bg-cover w-full h-full bg-center ">
-            <h1 className="text-xl font-bold sm:text-3xl text-white">
+            <h1 className="text-xl font-bold sm:text-3xl text-white" id="Salsa-font">
               Akanksha
             </h1>
           </div>
@@ -45,12 +47,13 @@ const Navbar = () => {
             <Link to="/fest/CreditsPage">Credits</Link>
           </li>
 
-          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <li className="hover:underline text-white hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
             <a
               href="https://www.instagram.com/akanksha_gita?igsh=ODA1NTc5OTg5Nw=="
               target="_blank"
+              className="flex justify-center items-center"
             >
-              <FontAwesomeIcon icon={faInstagram} /> Follow us
+              <FontAwesomeIcon icon={faInstagram} className="px-1" /> Follow us
             </a>
           </li>
         </ul>
@@ -67,7 +70,7 @@ const Navbar = () => {
       <div
         className={`Mobile-Menu  transition-all  ease-out z-10 ${
           isMobileMenuOpen ? "right-0" : "-right-[100%] hidden"
-        }   absolute top-0 bg-slate-100 w-[60%] rounded-10 space-y-4 delay-200 shadow-sm shadow-blue-300 px-8 py-16 text-lg font-semibold h-fit rounded-xl`}
+        }   absolute top-0 bg-slate-100 w-[65%] rounded-10 space-y-4 delay-200 shadow-sm shadow-blue-300 px-8 py-16 text-lg font-semibold h-fit rounded-xl`}
       >
         <div
           className="cancel font-bold w-fit text-3xl relative -top-8 left-[2%]"
@@ -75,13 +78,14 @@ const Navbar = () => {
         >
           <FontAwesomeIcon icon={faXmark} className="text-red-600" />
         </div>
-        <ul className="nav-menu flex flex-col items-center space-y-3 font-semibold ">
+        <ul className="nav-menu flex flex-col  space-y-3 font-semibold sm:pl-3 ">
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
               to="/"
               onClick={toggleMobileMenu}
             >
+              <FontAwesomeIcon icon={faHouse} className="px-1"/>
               Home
             </Link>
           </li>
@@ -91,6 +95,7 @@ const Navbar = () => {
               to="/schedules"
               onClick={toggleMobileMenu}
             >
+              <FontAwesomeIcon icon={faCalendarDays} className="px-1" />
               Schedules
             </Link>
           </li>
@@ -100,6 +105,7 @@ const Navbar = () => {
               to="/coordinators"
               onClick={toggleMobileMenu}
             >
+              <FontAwesomeIcon icon={faIdBadge} className="px-1" />
               Coordinators
             </Link>
           </li>
@@ -109,6 +115,7 @@ const Navbar = () => {
               to="/gallery"
               onClick={toggleMobileMenu}
             >
+              <FontAwesomeIcon icon={faImages} className="px-1" />
               Gallery
             </Link>
           </li>
@@ -118,6 +125,7 @@ const Navbar = () => {
               to="/fest/CreditsPage"
               onClick={toggleMobileMenu}
             >
+              <FontAwesomeIcon icon={faAward} className="px-1" />
               Credits
             </Link>
           </li>
@@ -126,7 +134,7 @@ const Navbar = () => {
               href="https://www.instagram.com/akanksha_gita?igsh=ODA1NTc5OTg5Nw=="
               target="_blank"
             >
-              <FontAwesomeIcon icon={faInstagram} /> Follow us
+              <FontAwesomeIcon icon={faSquareInstagram} className="px-1" /> Follow us
             </a>
           </li>
         </ul>
