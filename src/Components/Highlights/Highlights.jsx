@@ -64,7 +64,7 @@ const Highlights = () => {
 
             <div className="last-year-gallery flex justify-center items-center my-10">
                 <Link to="/gallery" className=" w-[90%] sm:w-[70%] ">
-                    <EventCard name="Fest Gallery" url={"./Gallery/gallery.webp"} />
+                    <EventCard name="Fest Gallery" url={"https://i.postimg.cc/0yWNY7Xg/gallery.webp"} />
                 </Link>
             </div>
 

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const EventBox = (props) => {
   return (
     <div className=" flex justify-center items-center sm:w-[48%] md:w-[30%] w-[90%] my-6 shadow-xl shadow-blue-700 rounded-xl">
-      <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  w-full ">
+      <div className="bg-white h-full border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  w-full ">
         <img
           src={props.url}
           alt="event-img"
