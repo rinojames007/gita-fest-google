@@ -48,7 +48,7 @@ const AkankshaRegistrationPage = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSc-CpCEfvdYwmUS6MDx3o9taM-HB9UpMA7NXvaNAdXkUtjjKQ/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="2230"
+            height="2330"
             onLoad={handleIframeLoad}
           >
             Loading…

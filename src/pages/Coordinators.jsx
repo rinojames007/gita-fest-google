@@ -48,18 +48,19 @@ const Coordinators = () => {
           innovation and enthusiasm to every project, creating moments that
           resonate with attendees and leave a lasting impression."
         </p>
+        <p className="text-4xl mt-[100px] text-center font-semibold text-white">
+          Comming Soon...
+        </p>
       </div>
-      <div>
-        
-      </div>
+      <div></div>
       {showBackToTop && (
-          <button
-            className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
-            onClick={scrollToTop}
-          >
-            Back to Top
-          </button>
-        )}
+        <button
+          className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
+          onClick={scrollToTop}
+        >
+          Back to Top
+        </button>
+      )}
     </div>
   );
 };

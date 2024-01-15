@@ -47,7 +47,7 @@ const AhwanEventBoys = () => {
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSeHrLthxFaQsH9XtaU-6lE5QqxrTSVkztK1tjEjQztKvBCz7w/viewform?embedded=true"
           className={`mx-auto w-full md:w-2/3 lg:w-1/2 ${loading ? "hidden" : ""}`}
-          height="2200"
+          height="2300"
           onLoad={handleIframeLoad}
         >
           Loading...
