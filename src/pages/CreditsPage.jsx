@@ -37,7 +37,7 @@ const CreditsPage = () => {
       insta: "https://www.instagram.com/aryan_mohapatra_35/",
       linkedIn: "https://www.linkedin.com/in/aryan-kumar-mohapatra-2751361a9/",
       twitter:"https://twitter.com/AryanKumarMoha5",
-      photo: "/Credits/Aryan.webp",
+      photo: "https://i.postimg.cc/NMx7DN3G/Aryan.webp",
     },
     {
       name: "Rino James",
@@ -45,7 +45,7 @@ const CreditsPage = () => {
       insta: "https://www.instagram.com/rinojames007?igsh=MWJ5MnZxMGN4MzVtag==/",
       linkedIn: "https://www.linkedin.com/in/rino-james-4ba710238/",
       twitter:"https://twitter.com/rinojames03",
-      photo: "/Credits/Rino.webp",
+      photo: "https://i.postimg.cc/yxQh4D6w/Rino.webp",
     },
     {
       name: "Manish ku Samal",
@@ -53,7 +53,7 @@ const CreditsPage = () => {
       insta: "http://surl.li/oumal",
       linkedIn: "http://surl.li/oulzz",
       twitter:"https://x.com/ManishK08285543?t=notMjDfmJn9h8Mco5GUkDw&s=09",
-      photo: "/Credits/Manish.webp",
+      photo: "https://i.postimg.cc/fLsfx4gg/Manish.webp",
     },
     {
       name: "Ancil Antichan",
@@ -61,7 +61,7 @@ const CreditsPage = () => {
       insta: "https://www.instagram.com/ancil_offical?igsh=ZnJ3Nm5iZWo4azM1",
       linkedIn: "https://www.linkedin.com/in/ancil-antichan-b2762b1aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       twitter:"https://twitter.com/mathew_ancil?t=0ScmUDKEaN8NsBroE4tgpA&s=09",
-      photo: "/Credits/Ancil.webp",
+      photo: "https://i.postimg.cc/wjSVjR5z/Ancil.webp",
     },
     {
       name: "Himanshu Sekhar Nayak",
@@ -69,7 +69,7 @@ const CreditsPage = () => {
       insta: "https://www.instagram.com/_himanshu_nayak_/",
       linkedIn: "https://www.linkedin.com/in/himanshu-shekhar-nayak-9b829a249",
       twitter:"https://twitter.com/NoNeed15032003?t=VVER07HhOO_MrWcvgvZb_w&s=09",
-      photo: "/Credits/Himanshu.webp",
+      photo: "https://i.postimg.cc/43V174w9/Himanshu.webp",
     },
   ];
   return (
