@@ -78,3 +78,29 @@
     display: block;
   }
   
+  /* EventList.css */
+
+/* EventList.css */
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(0.97);
+    font-weight: bold;
+    
+    /* background: linear-gradient(45deg, #4f3aa6, #1e2358); Purple to Black gradient */
+  }
+  50% {
+    opacity: 0.8;
+    border-radius: 20px;
+    transform: scale(1);
+    font-weight: bolder;
+    
+    
+    /* background: linear-gradient(45deg, #000000, #6d50c7); Black to Purple gradient */
+  }
+}
+
+.UpcommingEvents {
+  animation: blink 2s infinite; /* Blinking animation every 2 seconds */
+}

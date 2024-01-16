@@ -36,6 +36,7 @@ import FunWithWelding from "./pages/Registration page/FunWithWelding";
 import Rangoli from "./pages/Registration page/Rangoli";
 import MathOlympiad from "./pages/Registration page/MathOlympiad";
 import Robotics from "./pages/Registration page/Robotics";
+import Feedback from "./pages/Input/Feedback";
 
 export default function App() {
   return (
@@ -67,6 +68,7 @@ export default function App() {
 
        
         <Route path="/fest/CreditsPage" element={<CreditsPage />} />
+        <Route path="/feedback" element={<Feedback/>}/>
 
         {/* Gallery  */}
         <Route path="/gallery" element={<Gallery />} />

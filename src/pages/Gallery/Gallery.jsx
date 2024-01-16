@@ -11,11 +11,11 @@ const Gallery = () => {
       
       
       <Link to="/gallery/Photoes" className=" w-[90%] sm:w-[40%] transition-transform transform hover:scale-105 focus:scale-105m hover:delay-200">
-        <EventCard name="Photos" url={"https://i.postimg.cc/8C7ztsx7/gallery2.webp"} />
+        <EventCard name="Photos" desc = "Click me" url={"https://i.postimg.cc/8C7ztsx7/gallery2.webp"} />
       </Link>
 
       <Link to="/gallery/Videos" className=" w-[90%] sm:w-[40%] transition-transform transform hover:scale-105 focus:scale-105m hover:delay-200">
-        <EventCard name="Videos" url={"https://i.postimg.cc/8C7ztsx7/gallery2.webp"} />
+        <EventCard name="Videos" desc = "Click me" url={"https://i.postimg.cc/8C7ztsx7/gallery2.webp"} />
       </Link>
     </div>
     </div>
