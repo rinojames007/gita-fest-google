@@ -16,44 +16,14 @@ const Photoes = () => {
     //   name: "100 mts",
     //   link: "https://drive.google.com/drive/folders/1Vxuo9wEf10BayA9eWi4HdgPy6hIMKPpM",
     // },
-    // {
-    //   name: "Long Jump",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
-    // {
-    //   name: "High Jump",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
-    // {
-    //   name: "Relay",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
-    // {
-    //   name: "800 mts",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
+   
   ];
   const anwesh = [
     // {
     //   name: "Link-1",
     //   link: "https://drive.google.com/drive/folders/1Vxuo9wEf10BayA9eWi4HdgPy6hIMKPpM",
     // },
-    // {
-    //   name: "Robotics",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
-    // {
-    //   name: "Fun Stage",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
-    // {
-    //   name: "Rangoli",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
-    // {
-    //   name: "Codathon",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
+    
   ];
 
   const akanksha = [
@@ -61,26 +31,7 @@ const Photoes = () => {
     //   name: "Previous",
     //   link: "https://drive.google.com/drive/folders/1Vxuo9wEf10BayA9eWi4HdgPy6hIMKPpM",
     // },
-    // {
-    //   name: "Modern Dance",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
-    // {
-    //   name: "Drama",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
-    // {
-    //   name: "All",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
-    // {
-    //   name: "Fashion Show",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
-    // {
-    //   name: "Link-2",
-    //   link: "https://drive.google.com/drive/folders/1hKp5aeeHOA_ZTH54Md3YXbdzSByb6G4t",
-    // },
+    
   ];
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 flex mx-auto flex-col to-black min-h-screen h-full py-9">

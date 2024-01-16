@@ -7,21 +7,22 @@ const upcomingEvents =
         {
             key: 1,
             name: "Face painting",
-            venue: "gita garden",
-            date: new Date('2022-01-01T12:00:00')
+            venue: "garden - 2",
+            time: "10 : 45 AM"
         },
         {
             key: 2,
             name: "Running race",
-            venue: "gita garden",
-            date: new Date('2022-01-01T11:00:00')
+            venue: "Ground",
+            time: "10 : 55 AM"
         },
 
         {
             key: 3,
             name: "Javelin throw",
-            venue: "gita garden",
-            date: new Date('2022-01-01T12:00:00')
+            venue: "Ground",
+            
+            time:"11 : 10 AM"
         },
     ]
 

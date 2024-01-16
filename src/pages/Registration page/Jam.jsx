@@ -58,13 +58,13 @@ const Jam = () => {
         </div>
 
         {showBackToTop && (
-          <button
-            className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
-            onClick={scrollToTop}
-          >
-            Back to Top
-          </button>
-        )}
+        <button
+          className="fixed bottom-9 md:bottom-[80px] md:text-xl font-semibold right-10 md:right-[160px] bg-blue-500 text-white px-4 md:w-[250px] md:py-4 py-2 rounded"
+          onClick={scrollToTop}
+        >
+          Back to Top
+        </button>
+      )}
       </div>
     </div>
   );
