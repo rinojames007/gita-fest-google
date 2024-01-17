@@ -39,10 +39,10 @@ const TechFestEvents = () => {
         <h1 className="text-3xl md:text-5xl font-bold my-4 text-center text-white">Tech Fest Events</h1>
         
         <div className="Event-Container w-full flex justify-around flex-wrap">
-        {EventDetails.map((item)=>(
+        {/* {EventDetails.map((item)=>(
           <EventBox key= {item.key} url= {item.url} name={item.name} desc= {item.desc} date= {item.date} time={item.time} redirect={item.redirect} venue={item.venue}/>
-        ))}
-          
+        ))} */}
+          <p className="text-4xl font-bold text-white text-center pt-[80px]">Comming Soon...</p>
         </div>
       </div>
       {showBackToTop && (

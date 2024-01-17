@@ -32,31 +32,37 @@ const Akanksha = () => {
   };
 
   return (
-    <div>
-      <Navbar />
-      <div className="bg-gradient-to-b from-black via-purple-900 to-black pt-[60px] min-h-screen h-full">
-        <h1 className="font-bold text-3xl md:text-5xl text-center py-5 text-white">
-          Akanksha Events...
-        </h1>
-        <div className="Participants w-full my-9">
-          <Link to="/akanksha/registrationPage" className="w-full flex justify-center ">
-            <div className="events w-[90%] h-[100px] md:w-[50%] sm:h-[150px] bg-slate-800 px-3 rounded-xl opacity-80 transition-transform transform hover:scale-105 focus:scale-105 hover:opacity-30  font-bold text-4xl  hover:text-6xl  flex justify-center items-center shadow-lg shadow-blue-400 ">
-              <p className="text-center text-xl font-semibold md:text-3xl opacity-100 text-white ">
-                Click to Register
-              </p>
-            </div>
-          </Link>
-        </div>
-      </div>
-      {showBackToTop && (
-          <button
-            className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
-            onClick={scrollToTop}
-          >
-            Back to Top
-          </button>
+    <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full min-h-screen">
+        <Navbar />
+        <div className="py-20">
+          <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">
+            Akanksha Registration page
+          </h1>
+          {loading && (
+          <div className="flex flex-col justify-center items-center h-[220px]">
+            <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
+            <div className="loader text-center text-white font-semibold text-xl mt-6 ">Loading...</div>
+          </div>
         )}
-    </div>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc-CpCEfvdYwmUS6MDx3o9taM-HB9UpMA7NXvaNAdXkUtjjKQ/viewform?embedded=true"
+            className="mx-auto w-full md:w-2/3 lg:w-1/2"
+            height="2330"
+            onLoad={handleIframeLoad}
+          >
+            Loading…
+          </iframe>
+        </div>
+
+        {showBackToTop && (
+        <button
+          className="fixed bottom-9 md:bottom-[80px] md:text-xl font-semibold right-10 md:right-[160px] bg-blue-500 text-white px-4 md:w-[250px] md:py-4 py-2 rounded"
+          onClick={scrollToTop}
+        >
+          Back to Top
+        </button>
+      )}
+      </div>
   );
 };
 

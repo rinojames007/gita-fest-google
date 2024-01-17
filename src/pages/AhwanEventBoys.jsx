@@ -38,20 +38,22 @@ const AhwanEventBoys = () => {
           Ahwan Boys Events
         </h1>
 
-        {loading && (
+        {/* {loading && (
           <div className="flex flex-col justify-center items-center h-[220px]">
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
             <div className="loader text-center text-white font-semibold text-xl mt-6 ">Loading...</div>
           </div>
-        )}
-        <iframe
+        )} */}
+        {/* <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSeHrLthxFaQsH9XtaU-6lE5QqxrTSVkztK1tjEjQztKvBCz7w/viewform?embedded=true"
           className={`mx-auto w-full md:w-2/3 lg:w-1/2 ${loading ? "hidden" : ""}`}
           height="2300"
           onLoad={handleIframeLoad}
         >
           Loading...
-        </iframe>
+        </iframe> */}
+          <p className="text-4xl font-bold text-white text-center pt-[80px]">Comming Soon...</p>
+
       </div>
 
       {showBackToTop && (

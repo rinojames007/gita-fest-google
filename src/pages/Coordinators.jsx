@@ -38,16 +38,7 @@ const Coordinators = () => {
         </h1>
       </div>
       <div className="desc md:mx-11">
-        <p className="text-center text-white">
-          "As Event Coordinators, our mission is to orchestrate seamless and
-          memorable experiences for every participant. From meticulous event
-          planning to on-the-day execution, we thrive on precision and
-          creativity. Our team collaborates to ensure each detail, from
-          scheduling to logistics, contributes to the overall success of the
-          event. With a passion for delivering exceptional experiences, we bring
-          innovation and enthusiasm to every project, creating moments that
-          resonate with attendees and leave a lasting impression."
-        </p>
+        
         <p className="text-4xl mt-[100px] text-center font-semibold text-white">
           Comming Soon...
         </p>

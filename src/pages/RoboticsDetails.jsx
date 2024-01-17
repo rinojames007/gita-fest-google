@@ -44,7 +44,7 @@ const RoboticsDetails = () => {
               className=" rounded-xl shadow-md shadow-blue-700"
             />
           </div>
-          <div className="right md:w-[50%] md:p-6 p-2">
+          {/* <div className="right md:w-[50%] md:p-6 p-2">
             <div className="right-container flex flex-col justify-center items-center space-y-4">
               <h1 className="text-white text-2xl md:text-4xl font-semibold">
                 Robotics
@@ -124,7 +124,9 @@ const RoboticsDetails = () => {
                 Register
               </Link>
             </div>
-          </div>
+          </div> */}
+          <p className="text-4xl font-bold text-white text-center mx-auto pt-[80px]">Comming Soon...</p>
+
         </div>
       </div>
       {showBackToTop && (

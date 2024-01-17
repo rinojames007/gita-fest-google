@@ -8,7 +8,7 @@ const Feedback = () => {
     // Add an event listener to check scroll position
     window.scrollTo(0, 0);
     const handleScroll = () => {
-      setShowBackToTop(window.scrollY > 500); // Change 200 to adjust when the button appears
+      setShowBackToTop(window.scrollY > 300); // Change 200 to adjust when the button appears
     };
 
     // Attach the event listener

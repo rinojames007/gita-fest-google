@@ -40,7 +40,7 @@ const AhwanEventGirls = () => {
         <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">
           Ahwan Girls Events
         </h1>
-        {loading && (
+        {/* {loading && (
           <div className="flex flex-col justify-center items-center h-[220px]">
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
             <div className="loader text-center text-white font-semibold text-xl mt-6 ">Loading...</div>
@@ -53,7 +53,9 @@ const AhwanEventGirls = () => {
           onLoad={handleIframeLoad}
         >
           Loading…
-        </iframe>
+        </iframe> */}
+          <p className="text-4xl font-bold text-white text-center pt-[80px]">Comming Soon...</p>
+
       </div>
 
       {/* Back to Top Button */}
