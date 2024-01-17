@@ -64,7 +64,7 @@ const CreditsPage = () => {
       photo: "https://i.postimg.cc/wjSVjR5z/Ancil.webp",
     },
     {
-      name: "Himanshu Sekhar Nayak",
+      name: "Himanshu Shekhar Nayak",
       role: "Design and Media",
       insta: "https://www.instagram.com/_himanshu_nayak_/",
       linkedIn: "https://www.linkedin.com/in/himanshu-shekhar-nayak-9b829a249",

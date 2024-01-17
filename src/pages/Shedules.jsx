@@ -36,8 +36,8 @@ const Shedules = () => {
         Schedules
       </h1>
 
-      <p className="text-4xl mt-[100px] font-semibold text-center text-white">
-              Comming Soon...
+      <p className="UpcommingEvents text-4xl mt-[100px] font-semibold text-center text-white">
+      To be Announced...
             </p>
       {showBackToTop && (
         <button

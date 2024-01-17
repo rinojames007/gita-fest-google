@@ -54,7 +54,7 @@ const AhwanEventGirls = () => {
         >
           Loading…
         </iframe> */}
-          <p className="text-4xl font-bold text-white text-center pt-[80px]">Comming Soon...</p>
+          <p className="UpcommingEvents text-4xl font-bold text-white text-center pt-[80px]">To be Announced...</p>
 
       </div>
 
