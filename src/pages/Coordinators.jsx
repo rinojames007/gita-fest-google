@@ -39,7 +39,7 @@ const Coordinators = () => {
       </div>
       <div className="desc md:mx-11">
         
-        <p className="UpcommingEvents text-4xl mt-[100px] text-center font-semibold text-white">
+        <p className="UpcommingEvents text-2xl md:text-4xl mt-[100px] text-center font-semibold text-white">
         To be Announced...
         </p>
       </div>

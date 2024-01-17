@@ -42,7 +42,7 @@ const TechFestEvents = () => {
         {/* {EventDetails.map((item)=>(
           <EventBox key= {item.key} url= {item.url} name={item.name} desc= {item.desc} date= {item.date} time={item.time} redirect={item.redirect} venue={item.venue}/>
         ))} */}
-          <p className="text-4xl font-bold text-white text-center pt-[80px]">Comming Soon...</p>
+          <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[80px]">To be Announced...</p>
         </div>
       </div>
       {showBackToTop && (
