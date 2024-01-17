@@ -125,7 +125,7 @@ const RoboticsDetails = () => {
               </Link>
             </div>
           </div> */}
-          <p className="text-4xl font-bold text-white text-center mx-auto pt-[80px]">Comming Soon...</p>
+          <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center mx-auto pt-[80px]">To be Announced...</p>
 
         </div>
       </div>
