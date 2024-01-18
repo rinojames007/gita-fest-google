@@ -57,6 +57,8 @@ export default function Landing() {
       onLoad={handleIframeLoad}
       className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full"
     >
+      
+      <Navbar />
       {loading && (
         <div className="flex flex-col justify-center items-center h-[220px]">
           <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
@@ -65,7 +67,6 @@ export default function Landing() {
           </div>
         </div>
       )}
-      <Navbar />
       <Hero />
       <Events />
       <EventUpdates />

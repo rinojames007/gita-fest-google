@@ -35,7 +35,7 @@ const Footer = () => {
           </Link>
           <Link to="/help">
             <li className="font-semibold underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
-              Help and Support Team
+              Help and Support
             </li>
           </Link>
         </ul>
