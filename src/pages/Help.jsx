@@ -30,6 +30,18 @@ export default function Help() {
     setLoading(false);
   };
 
+  const openWhatsAppChat = () => {
+    // Replace the phone number and message with your own
+    const phoneNumber = "9040567377";
+    const message = "Hello, I need help!";
+
+    // Create a WhatsApp link
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    // Open the link in a new tab
+    window.open(whatsappLink, "_blank");
+  };
+
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full">
       <div className="navbar w-full fixed top-0 backdrop-blur-lg">
@@ -40,6 +52,15 @@ export default function Help() {
           <p className="text-3xl font-bold text-white">
             Help and support
           </p>
+          <button
+            className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 my-8 rounded"
+            onClick={openWhatsAppChat}
+          >
+            Need Help? Chat on WhatsApp
+          </button>
+          <div className="loader text-center text-white font-semibold my-6 text-xl mt-6 ">
+                Or
+              </div>
           {loading && (
             <div className="flex flex-col justify-center items-center h-[220px]">
               <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
@@ -56,6 +77,7 @@ export default function Help() {
           >
             Loading…
           </iframe>
+          
         </div>
       </div>
       {showBackToTop && (
