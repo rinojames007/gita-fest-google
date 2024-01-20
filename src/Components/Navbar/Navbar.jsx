@@ -35,7 +35,7 @@ const Navbar = () => {
         >
           <div className="header  flex justify-center items-center bg-cover w-full h-full bg-center ">
             <h1
-              className="text-xl font-bold sm:text-3xl text-white"
+              className="text-2xl font-bold md:text-3xl text-white"
               id="Salsa-font"
             >
               Akanksha
@@ -58,11 +58,11 @@ const Navbar = () => {
             <Link to="/coordinators">Coordinators</Link>
           </li>
 
-          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <li className="hover:underline text-white sm:hidden md:block  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
             <Link to="/gallery">Gallery</Link>
           </li>
 
-          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <li className="hover:underline text-white sm:hidden md:block  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
             <Link to="/fest/CreditsPage">Credits</Link>
           </li>
 
