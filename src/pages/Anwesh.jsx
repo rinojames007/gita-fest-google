@@ -33,8 +33,17 @@ const Anwesh = () => {
     <div className=" min-h-screen w-screen bg-gradient-to-b from-black via-purple-900 to-black">
       <Navbar />
       {/* Tech Fest */}
-      <div className=" pt-[60px] flex flex-col justify-center items-center w-full">
-        <h1 className="text-5xl font-bold my-4 text-white">Anwesh</h1>
+      <div className=" pt-[60px] flex flex-col justify-center items-center text-center w-full">
+        
+        <div className="headingSection flex flex-col md:flex-row md:space-x-2 mt-5 justify-center items-center">
+          <h1 className="md:text-5xl text-3xl font-bold text-white text-center">
+          Anwesh 
+          </h1>
+          <h1 className="md:text-5xl text-3xl font-bold my-2 text-white text-center">
+          (Tech-Fest)
+          </h1>
+        </div>
+        <span className="md:text-2xl text-xl font-bold text-[#fcfcfc] my-4">( 20.02.2024 & 21.02.2024 )</span>
         <p className="text-sm mb-8 text-slate-200 px-2 text-center">
           Welcome to the gateway of innovation! Our Techfest Registration Page
           is your ticket to an exhilarating world of technology and creativity.

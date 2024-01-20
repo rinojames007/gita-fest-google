@@ -85,7 +85,7 @@
 @keyframes blink {
   0%, 100% {
     opacity: 1;
-    transform: scale(0.97);
+    transform: scale(0.95);
     font-weight: bold;
     
     /* background: linear-gradient(45deg, #4f3aa6, #1e2358); Purple to Black gradient */
@@ -102,8 +102,33 @@
 }
 
 .UpcommingEvents {
-  animation: blink 2s infinite; /* Blinking animation every 2 seconds */
+  animation: blink 3s infinite; /* Blinking animation every 2 seconds */
 }
+
+
+@keyframes blink {
+  0%, 100% {
+    
+    transform: scale(0.9);
+    font-weight: bold;
+    
+    /* background: linear-gradient(45deg, #4f3aa6, #1e2358); Purple to Black gradient */
+  }
+  50% {
+    
+    
+    transform: scale(1);
+    font-weight: bolder;
+    
+    
+    /* background: linear-gradient(45deg, #000000, #6d50c7); Black to Purple gradient */
+  }
+}
+
+.BlinkText {
+  animation: blink 3s infinite; /* Blinking animation every 2 seconds */
+}
+
 
 .ToGo{
   background-color: rgba(0, 0, 0, 0.25);
@@ -112,4 +137,51 @@
   text-align: center;
   backdrop-filter: blur(5px);
   text-shadow: 3px 2px 4px black;
+}
+
+
+
+@keyframes moveRed {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.text-move-red {
+  background-image: linear-gradient(to left, rgb(160, 5, 54) 50%, white 50%);
+  background-size: 200% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: moveRed 6s infinite linear;
+}
+
+
+.navbg{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+
+}
+
+
+
+/* styles.css */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  animation: marqueeAnimation 20s linear infinite alternate-reverse;
+}
+
+
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 20px)); /* Adjust the total width of items and spacing */
+  }
 }

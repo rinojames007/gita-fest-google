@@ -37,6 +37,7 @@ import Rangoli from "./pages/Registration page/Rangoli";
 import MathOlympiad from "./pages/Registration page/MathOlympiad";
 import Robotics from "./pages/Registration page/Robotics";
 import Feedback from "./pages/Input/Feedback";
+import Notice from "./pages/Notice";
 
 export default function App() {
   return (
@@ -45,6 +46,7 @@ export default function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/coordinators" element={<Coordinators />} />
+        <Route path="/notice" element={<Notice/>}/>
 
         <Route path="/eventDetails" element={<EventDetails />} />
 

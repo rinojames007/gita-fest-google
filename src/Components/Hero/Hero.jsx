@@ -53,16 +53,19 @@ const Hero = () => {
             </h1> */}
             <img src="Gita-logo.png" alt="" className="w-[120px] md:w-[160px] pb-[20px] pt-[40px] mx-auto" />
             <span id="shadowText" className="text-5xl sm:text-8xl font-bold text-white ">
-              Akanksha 2024!
+              Akanksha
             </span>
           </div>
 
           <div className="desc flex flex-col justify-center items-center">
-            <p id="shadowText" className="py-5 text-md md:text-xl px-2 text-white font-semibold text-center ">
+          <p id="shadowText" className="py-5 text-xl md:text-3xl px-2 text-white font-bold text-center ">
+              ( GITA Annual Fest 2k24 )
+            </p>
+            <p id="shadowText" className="py-5 text-md md:text-xl px-2 text-white  text-center ">
               Join us for a week full of excitement, learning and entertainment
             </p>
 
-            <div className="timer ToGo mt-9  text-[#9FFFF5] font-semibold text-xl md:text-2xl text-center " >
+            <div className="timer ToGo mt-2  text-[#9FFFF5] font-semibold text-xl md:text-2xl text-center " >
               {timeRemaining.days}d {timeRemaining.hours}h {timeRemaining.minutes}m {timeRemaining.seconds}s <br/> to go
             </div>
           </div>

@@ -50,7 +50,7 @@ const Highlights = () => {
 
                 {/* left content  */}
                 <div className="left md:w-[40%] md:px-[50px] pt-[30px] flex justify-center items-center ">
-                    <h1 className="text-3xl md:text-4xl font-bold text-white">Key Fest Highlights</h1>
+                    <h1 className="text-3xl px-2 md:text-4xl font-bold text-white">Key Fest Highlights</h1>
                 </div>
 
                 {/* right-contents */}

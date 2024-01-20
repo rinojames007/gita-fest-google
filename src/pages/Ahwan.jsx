@@ -33,39 +33,56 @@ const Ahwan = () => {
     setLoading(false);
   };
 
-   
   return (
     <div className=" min-h-screen w-screen bg-gradient-to-b from-black via-purple-900 to-black">
-        <Navbar/>
+      <Navbar />
       {/* Tech Fest */}
-      <div className=" pt-[60px]  h-full flex flex-col justify-center items-center">
-      
-        <h1 className="text-5xl font-bold my-4 text-white">Ahwan</h1>
+      <div className=" pt-[60px]  h-full flex flex-col justify-center  items-center">
+        <div className="headingSection flex flex-col md:flex-row md:space-x-2 mt-5 justify-center items-center">
+          <h1 className="md:text-5xl text-3xl font-bold text-white text-center">
+            Aahwan{" "}
+          </h1>
+          <h1 className="md:text-5xl text-3xl font-bold my-2 text-white text-center">
+            (Annual Sports){" "}
+          </h1>
+        </div>
+
+        <span className="md:text-2xl text-xl font-bold text-[#fcfcfc] my-4">
+          ( 19.02.2024 & 20.02.2024 )
+        </span>
+
         <p className="text-sm mb-8 text-center px-2 text-slate-200">
-          Welcome to the gateway of Our Sports Registration Page Get ready to
-          dive into a world of physical prowess and sportsmanship!
+          Fuel your college fest excitement! Join Aahwan sports for fun,
+          teamwork, and a chance to win. Register now for the thrill!
         </p>
+
         <div className="Event-Container w-full flex justify-around flex-wrap">
-        <Link to="/ahwanBoys" className=" w-[95%] sm:w-[30%]">
-          <EventCard name="Boys" url={"https://i.postimg.cc/N04y7f5x/men.webp"} />
-        </Link>
-        
-        <Link to="/ahwanGirls" className=" w-[95%] sm:w-[30%]">
-          <EventCard name="Girls" url={"https://i.postimg.cc/cHLvDy3G/women.jpg"} />
-        </Link>
-         
-          
+          <Link to="/ahwanBoys" className=" w-[95%] sm:w-[30%]">
+            <EventCard
+              name="Boys"
+              url={
+                "https://i.postimg.cc/76YH1FL0/neeraj-chopra-with-a-medal-lrxy9vbi1qmotcvq.webp"
+              }
+            />
+          </Link>
+
+          <Link to="/ahwanGirls" className=" w-[95%] sm:w-[30%]">
+            <EventCard
+              name="Girls"
+              url={"https://i.postimg.cc/cHLvDy3G/women.jpg"}
+            />
+          </Link>
         </div>
       </div>
       {showBackToTop && (
-          <button
-            className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
-            onClick={scrollToTop}
-          >
-            Back to Top
-          </button>
-        )}
-   </div>
+        <button
+          className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
+          onClick={scrollToTop}
+        >
+          Back to Top
+        </button>
+      )}
+    </div>
   );
 };
 

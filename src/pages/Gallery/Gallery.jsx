@@ -6,18 +6,28 @@ import Navbar from "../../Components/Navbar/Navbar";
 const Gallery = () => {
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full">
-      <Navbar/>
-    <div className="flex pt-[150px] justify-around flex-col md:flex-row items-center">
-      
-      
-      <Link to="/gallery/Photoes" className=" w-[90%] sm:w-[40%] transition-transform transform hover:scale-105 focus:scale-105m hover:delay-200">
-        <EventCard name="Photos" desc = "Click me" url={"https://i.postimg.cc/8C7ztsx7/gallery2.webp"} />
-      </Link>
+      <Navbar />
+      <div className="flex pt-[150px] justify-around flex-col md:flex-row items-center">
+        <Link
+          to="/gallery/Photoes"
+          className="w-[90%] sm:w-[40%] transition-transform transform hover:scale-105 focus:scale-105m hover:delay-200"
+        >
+          <EventCard name="Photos" desc="Click me" url={"https://i.postimg.cc/8C7ztsx7/gallery2.webp"} />
+        </Link>
 
-      <Link to="/gallery/Videos" className=" w-[90%] sm:w-[40%] transition-transform transform hover:scale-105 focus:scale-105m hover:delay-200">
-        <EventCard name="Videos" desc = "Click me" url={"https://i.postimg.cc/8C7ztsx7/gallery2.webp"} />
-      </Link>
-    </div>
+        <Link
+          to="/gallery/Videos"
+          className="w-[90%] sm:w-[40%] transition-transform transform hover:scale-105 focus:scale-105m hover:delay-200"
+        >
+          <EventCard
+            name="Videos"
+            desc="Click me"
+            url={"https://i.postimg.cc/8C7ztsx7/gallery2.webp"}
+            // Add the GIF URL for the video here
+            videoGifUrl={"https://example.com/your-video.gif"}// when it will use then should be 
+          />
+        </Link>
+      </div>
     </div>
   );
 };
