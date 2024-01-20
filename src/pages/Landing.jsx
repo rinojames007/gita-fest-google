@@ -5,6 +5,7 @@ import Footer from "../Components/Footer/Footer";
 import Hero from "../Components/Hero/Hero";
 import Highlights from "../Components/Highlights/Highlights";
 import Navbar from "../Components/Navbar/Navbar";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
   const [loading, setLoading] = useState(true);
@@ -52,12 +53,19 @@ export default function Landing() {
     };
   }, []); // Ensure this effect runs only once
 
+  const messages = [
+    // <Link to="/notice" key="annual-fest-link" className="text-red-500">
+    //   Annual Fest Date Announced
+    // </Link>,
+
+    "The registration process will be held from February 1, 2024.",
+  ];
+
   return (
     <div
       onLoad={handleIframeLoad}
       className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full"
     >
-      
       <Navbar />
       {loading && (
         <div className="flex flex-col justify-center items-center h-[220px]">
@@ -68,6 +76,25 @@ export default function Landing() {
         </div>
       )}
       <Hero />
+      <marquee
+        className="marquee hidden md:flex text-blue-700 bg-[#dddaeb] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
+        behavior="alternate"
+        loop=""
+      >
+        {messages.map((message, index) => (
+          <p key={index}>{message}</p>
+        ))}
+      </marquee>
+
+      <marquee
+        className="marquee md:hidden text-blue-700 bg-[#dddaeb] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
+        behavior="Scroll"
+        loop=""
+      >
+        {messages.map((message, index) => (
+          <p key={index}>{message}</p>
+        ))}
+      </marquee>
       <Events />
       <EventUpdates />
       <Highlights />
@@ -77,10 +104,7 @@ export default function Landing() {
       <div className={showPopup ? "whatsapp-popup active" : "whatsapp-popup"}>
         Join our WhatsApp Channel!
       </div>
-      <div
-        className="whatsapp-button"
-        onClick={openWhatsApp}
-      >
+      <div className="whatsapp-button" onClick={openWhatsApp}>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/598px-WhatsApp.svg.png"
           alt="WhatsApp Icon"

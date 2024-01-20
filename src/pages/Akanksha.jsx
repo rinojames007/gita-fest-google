@@ -34,11 +34,13 @@ const Akanksha = () => {
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full min-h-screen">
         <Navbar />
-        <div className="py-20">
+        <div className="py-20 flex flex-col justify-center items-center">
           <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">
-            Akanksha Registration page
+            Akanksha (Annual Cultural Fest)
           </h1>
-          {loading && (
+        <span className="md:text-2xl text-xl font-bold text-[#fcfcfc] my-4">( 22.02.2024 & 23.02.2024 )</span>
+
+          {/* {loading && (
           <div className="flex flex-col justify-center items-center h-[220px]">
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
             <div className="loader text-center text-white font-semibold text-xl mt-6 ">Loading...</div>
@@ -51,7 +53,9 @@ const Akanksha = () => {
             onLoad={handleIframeLoad}
           >
             Loading…
-          </iframe>
+          </iframe> */}
+          <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[80px]">To be Announced...</p>
+
         </div>
 
         {showBackToTop && (

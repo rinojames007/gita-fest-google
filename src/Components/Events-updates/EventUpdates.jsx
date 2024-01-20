@@ -25,10 +25,15 @@ const EventUpdates = () => {
             join the fun.
           </p>
           <div className="Event-lists w-full flex flex-col md:flex-row justify-around flex-wrap">
-            {/* {upcomingEvents.map((item) => 
-                            <EventList key= {item.key} name={item.name} venue={item.venue} time={item.time} />
-                        )} */}
-            <p className="UpcommingEvents text-4xl font-bold text-white text-center pt-[60px] UpcommingEvents">
+            {/* {upcomingEvents.map((item) => (
+              <EventList
+                key={item.key}
+                name={item.name}
+                venue={item.venue}
+                time={item.time}
+              />
+            ))} */}
+            <p className="BlinkText text-2xl md:text-4xl  font-bold text-white text-center pt-[30px] md:pt-[60px] UpcommingEvents">
               To be Announced...
             </p>
           </div>
