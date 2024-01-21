@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";import CreditsBox from "../Components/Credits/CreditsBox";
-import { Link } from "react-router-dom";
+
+import Navbar from "../Components/Navbar/Navbar";
 
 const CreditsPage = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -45,7 +46,7 @@ const CreditsPage = () => {
       insta: "https://www.instagram.com/rinojames007?igsh=MWJ5MnZxMGN4MzVtag==/",
       linkedIn: "https://www.linkedin.com/in/rino-james-4ba710238/",
       twitter:"https://twitter.com/rinojames03",
-      photo: "https://i.postimg.cc/yxQh4D6w/Rino.webp",
+      photo: "https://i.postimg.cc/NG7RXsz5/rino.webp",
     },
     {
       name: "Manish ku Samal",
@@ -53,7 +54,7 @@ const CreditsPage = () => {
       insta: "http://surl.li/oumal",
       linkedIn: "http://surl.li/oulzz",
       twitter:"https://x.com/ManishK08285543?t=notMjDfmJn9h8Mco5GUkDw&s=09",
-      photo: "https://i.postimg.cc/fLsfx4gg/Manish.webp",
+      photo: "https://i.postimg.cc/gjJcrH7y/manish.webp",
     },
     {
       name: "Ancil Antichan",
@@ -69,23 +70,17 @@ const CreditsPage = () => {
       insta: "https://www.instagram.com/_himanshu_nayak_/",
       linkedIn: "https://www.linkedin.com/in/himanshu-shekhar-nayak-9b829a249",
       twitter:"https://twitter.com/NoNeed15032003?t=VVER07HhOO_MrWcvgvZb_w&s=09",
-      photo: "https://i.postimg.cc/43V174w9/Himanshu.webp",
+      photo: "https://i.postimg.cc/TYs1LBfK/himanshu.webp",
     },
   ];
   return (
-    <div className="w-full bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full py-12">
+    <div className="w-full bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full ">
      
-      <div className="absolute top-4 left-4">
-        <Link to="/" className="w-fit">
-          <button className="bg-slate-600 px-5 py-2 text-lg font-semibold rounded-md hover:scale-90 hover:text-red-600 text-white">
-            Back
-          </button>
-        </Link>
-      </div>
-      <h1 className="text-white text-4xl font-bold text-center pt-[25px]">
+      <Navbar/>
+      <h1 className="text-white underline underline-offset-8 md:text-5xl text-3xl pt-[80px] md:pt-[120px] font-bold text-center ">
         Credits
       </h1>
-      <div className="flex pt-[40px] pb-[60px] flex-wrap justify-center items-center md:my-[100px] space-y-7 md:space-y-0 md:space-x-5">
+      <div className="flex pt-[40px] pb-[60px] flex-wrap justify-center items-center md:py-[40px] space-y-7 md:space-y-0 md:space-x-12">
         {creditDetails.map((item) => (
           <CreditsBox
             key={item.name}

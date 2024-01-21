@@ -7,7 +7,7 @@ const Gallery = () => {
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full">
       <Navbar />
-      <div className="flex md:pt-[150px] pt-[100px] justify-around flex-col md:flex-row items-center">
+      <div className="flex pt-[150px]  justify-around flex-col md:flex-row items-center">
         <Link
           to="/gallery/Photoes"
           className="w-[90%] sm:w-[40%] transition-transform transform hover:scale-105 focus:scale-105m hover:delay-200"
