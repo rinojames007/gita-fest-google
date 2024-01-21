@@ -38,7 +38,7 @@ const CreditsPage = () => {
       insta: "https://www.instagram.com/aryan_mohapatra_35/",
       linkedIn: "https://www.linkedin.com/in/aryan-kumar-mohapatra-2751361a9/",
       twitter:"https://twitter.com/AryanKumarMoha5",
-      photo: "https://i.postimg.cc/NMx7DN3G/Aryan.webp",
+      photo: "https://i.postimg.cc/TYBN5TwL/Aryan.webp",
     },
     {
       name: "Rino James",
