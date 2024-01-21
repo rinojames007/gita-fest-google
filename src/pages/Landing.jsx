@@ -5,7 +5,6 @@ import Footer from "../Components/Footer/Footer";
 import Hero from "../Components/Hero/Hero";
 import Highlights from "../Components/Highlights/Highlights";
 import Navbar from "../Components/Navbar/Navbar";
-import { Link } from "react-router-dom";
 
 export default function Landing() {
   const [loading, setLoading] = useState(true);
@@ -16,23 +15,20 @@ export default function Landing() {
     window.scrollTo(0, 0);
   }, []);
 
-  const handleIframeLoad = () => {
-    setLoading(false);
+  useEffect(() => {
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+
+    return () => {
+      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+    };
+  }, []);
+
+  const handleBeforeInstallPrompt = (event) => {
+    event.preventDefault();
+    setDeferredPrompt(event);
   };
 
-  const openWhatsApp = () => {
-    window.open(
-      "https://whatsapp.com/channel/0029VaJmZcQ6BIEezcBq8U23",
-      "_blank"
-    );
-  };
-
-  const showPopUp = () => {
-    setShowPopup(true);
-    setTimeout(() => setShowPopup(false), 4200);
-  };
-
-  const handleAddToHomeScreen = () => {
+  const handleInstallClick = () => {
     if (deferredPrompt) {
       deferredPrompt.prompt();
       deferredPrompt.userChoice.then((choiceResult) => {
@@ -44,6 +40,19 @@ export default function Landing() {
         setDeferredPrompt(null);
       });
     }
+  };
+
+  const handleIframeLoad = () => {
+    setLoading(false);
+  };
+
+  const openWhatsApp = () => {
+    window.open("https://whatsapp.com/channel/0029VaJmZcQ6BIEezcBq8U23", "_blank");
+  };
+
+  const showPopUp = () => {
+    setShowPopup(true);
+    setTimeout(() => setShowPopup(false), 4200);
   };
 
   useEffect(() => {
@@ -62,24 +71,8 @@ export default function Landing() {
   }, []);
 
   const messages = [
-    "The registration process will be held from February 1, 2024.",
+    "The registration process for Audition will be held from February 1, 2024.",
   ];
-
-  useEffect(() => {
-    const handleBeforeInstallPrompt = (event) => {
-      event.preventDefault();
-      setDeferredPrompt(event);
-    };
-
-    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
-
-    return () => {
-      window.removeEventListener(
-        "beforeinstallprompt",
-        handleBeforeInstallPrompt
-      );
-    };
-  }, []);
 
   return (
     <div
@@ -97,7 +90,7 @@ export default function Landing() {
       )}
       <Hero />
       <marquee
-        className="marquee hidden md:flex text-blue-700 bg-[#dddaeb] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
+        className="marquee hidden md:flex text-blue-800 bg-[#dddaeb] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
         behavior="alternate"
         loop=""
       >
@@ -107,7 +100,7 @@ export default function Landing() {
       </marquee>
 
       <marquee
-        className="marquee md:hidden text-blue-700 bg-[#dddaeb] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
+        className="marquee md:hidden text-blue-800 bg-[#dddaeb] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
         behavior="Scroll"
         loop=""
       >
@@ -120,6 +113,14 @@ export default function Landing() {
       <Highlights />
       <Footer />
 
+      {/* Install to Home Screen Button */}
+      {deferredPrompt && (
+        <div className="install-button fixed top-0 left-0 right-0 bg-blue-500 text-white px-4 py-2 rounded shadow-md z-10 text-center"
+             onClick={handleInstallClick}>
+          Add to Home Screen
+        </div>
+      )}
+
       {/* WhatsApp Button */}
       <div className={showPopup ? "whatsapp-popup active" : "whatsapp-popup"}>
         Join our WhatsApp Channel!
@@ -131,13 +132,6 @@ export default function Landing() {
           width="30"
         />
       </div>
-
-      {/* Add to Home Screen Button */}
-      {deferredPrompt && (
-        <div className="add-to-home-screen-button text-white" onClick={handleAddToHomeScreen}>
-          Add to Home Screen
-        </div>
-      )}
     </div>
   );
 }

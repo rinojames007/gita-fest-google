@@ -9,6 +9,7 @@ const TrendingNotices = [
     pdfLink:
       "https://drive.google.com/file/d/1x0H59EF2JsIfd6JGz3ezM5oppucezlf8/view?usp=sharing",
   },
+  
  
   // Add more notice objects as needed
 ];
@@ -27,8 +28,8 @@ const Notice = () => {
     <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full ">
       {/* Notice Section */}
       <Navbar />
-      <h2 className="md:text-5xl text-3xl pt-[80px] font-bold mb-7 text-center text-white">
-        Notices
+      <h2 className="md:text-5xl text-3xl pt-[80px] underline underline-offset-8 font-bold mb-7 text-center text-white">
+        Notice Board
       </h2>
       <section className="mb-8 flex flex-col justify-center items-center text-white">
         <h2 className="md:text-5xl text-3xl BlinkText font-bold mb-7">
@@ -38,15 +39,15 @@ const Notice = () => {
           {TrendingNotices.map((notice, index) => (
             <li
               key={index}
-              className="mb-6 flex flex-col justify-center items-center px-4"
+              className="mb-6 flex flex-col w-[95%] md:w-[40%]  justify-center items-center px-4"
             >
-              <h3 className="text-2xl font-bold mb-2">{notice.title}</h3>
-              <p className="mb-2">{notice.content}</p>
+              <h3 className="text-2xl font-bold mb-2 text-center">{notice.title}</h3>
+              <p className="mb-2 text-center">{notice.content}</p>
               {notice.imageSrc && (
                 <img
                   src={notice.imageSrc}
                   alt={`Image for ${notice.title}`}
-                  className=" w-[90%] md:w-[300px] h-auto mb-2"
+                  className=" rounded-lg  h-auto mb-2"
                 />
               )}
               {notice.pdfLink && (
@@ -70,15 +71,15 @@ const Notice = () => {
           {notices.map((notice, index) => (
             <li
               key={index}
-              className="mb-6 flex flex-col justify-center items-center px-4"
+              className="mb-6 flex flex-col w-[95%] md:w-[40%] justify-center items-center px-4"
             >
-              <h3 className="text-2xl font-bold mb-2">{notice.title}</h3>
-              <p className="mb-2">{notice.content}</p>
+              <h3 className="text-2xl font-bold mb-2 text-center">{notice.title}</h3>
+              <p className="mb-2 text-center">{notice.content}</p>
               {notice.imageSrc && (
                 <img
                   src={notice.imageSrc}
                   alt={`Image for ${notice.title}`}
-                  className=" w-[90%] md:w-[300px] h-auto mb-2"
+                  className="rounded-lg h-auto mb-2"
                 />
               )}
               {notice.pdfLink && (
