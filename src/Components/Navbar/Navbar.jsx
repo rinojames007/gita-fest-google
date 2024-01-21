@@ -66,16 +66,6 @@ const Navbar = () => {
           <li className="hover:underline hover:scale-110 text-white sm:hidden md:block  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
             <Link to="/fest/CreditsPage">Credits</Link>
           </li>
-
-          <li className="hover:underline hover:scale-110 text-white hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-            <a
-              href="https://www.instagram.com/akanksha_gita?igsh=ODA1NTc5OTg5Nw=="
-              target="_blank"
-              className="flex justify-center items-center"
-            >
-              <FontAwesomeIcon icon={faInstagram} className="px-1" /> Follow us
-            </a>
-          </li>
         </ul>
       </div>
 

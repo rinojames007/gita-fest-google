@@ -62,7 +62,7 @@ const CreditsPage = () => {
       insta: "https://www.instagram.com/ancil_offical?igsh=ZnJ3Nm5iZWo4azM1",
       linkedIn: "https://www.linkedin.com/in/ancil-antichan-b2762b1aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       twitter:"https://twitter.com/mathew_ancil?t=0ScmUDKEaN8NsBroE4tgpA&s=09",
-      photo: "https://i.postimg.cc/wjSVjR5z/Ancil.webp",
+      photo: "https://i.postimg.cc/zBBXbCtk/Ancil.webp",
     },
     {
       name: "Himanshu Shekhar Nayak",
