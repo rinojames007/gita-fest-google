@@ -10,18 +10,17 @@ import { Link } from "react-router-dom";
 export default function Landing() {
   const [loading, setLoading] = useState(true);
   const [showPopup, setShowPopup] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const handleIframeLoad = () => {
-    // Set loading to false when the iframe has finished loading
     setLoading(false);
   };
 
   const openWhatsApp = () => {
-    // Replace the following URL with your WhatsApp chat link
     window.open(
       "https://whatsapp.com/channel/0029VaJmZcQ6BIEezcBq8U23",
       "_blank"
@@ -29,37 +28,58 @@ export default function Landing() {
   };
 
   const showPopUp = () => {
-    // Show the pop-up message
     setShowPopup(true);
-    // Hide the pop-up message after 3 seconds
     setTimeout(() => setShowPopup(false), 4200);
   };
 
+  const handleAddToHomeScreen = () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === "accepted") {
+          console.log("User accepted the A2HS prompt");
+        } else {
+          console.log("User dismissed the A2HS prompt");
+        }
+        setDeferredPrompt(null);
+      });
+    }
+  };
+
   useEffect(() => {
-    // Delay the initial display of the pop-up by 20 seconds
     const initialTimeout = setTimeout(() => {
       showPopUp();
     }, 2000);
 
-    // Set up an interval to repeatedly show the pop-up every 20 seconds
     const interval = setInterval(() => {
       showPopUp();
     }, 20000);
 
-    // Clear the interval when the component is unmounted
     return () => {
       clearTimeout(initialTimeout);
       clearInterval(interval);
     };
-  }, []); // Ensure this effect runs only once
+  }, []);
 
   const messages = [
-    // <Link to="/notice" key="annual-fest-link" className="text-red-500">
-    //   Annual Fest Date Announced
-    // </Link>,
-
     "The registration process will be held from February 1, 2024.",
   ];
+
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (event) => {
+      event.preventDefault();
+      setDeferredPrompt(event);
+    };
+
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+
+    return () => {
+      window.removeEventListener(
+        "beforeinstallprompt",
+        handleBeforeInstallPrompt
+      );
+    };
+  }, []);
 
   return (
     <div
@@ -111,6 +131,13 @@ export default function Landing() {
           width="30"
         />
       </div>
+
+      {/* Add to Home Screen Button */}
+      {deferredPrompt && (
+        <div className="add-to-home-screen-button text-white" onClick={handleAddToHomeScreen}>
+          Add to Home Screen
+        </div>
+      )}
     </div>
   );
 }
