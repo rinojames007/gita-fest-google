@@ -31,6 +31,13 @@ const Akanksha = () => {
     setLoading(false);
   };
 
+  const events = [
+    "Song",
+    "Dance",
+    "Fashion",
+    "Drama",
+    "Anchoring"
+  ];
   return (
     <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full min-h-screen">
         <Navbar />
@@ -54,8 +61,24 @@ const Akanksha = () => {
           >
             Loading…
           </iframe> */}
-          <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[80px]">To be Announced...</p>
-
+          <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
+          Registration process
+        </p>
+        <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
+          To be announced soon...
+        </p>
+          <div className="mb-8 flex flex-col justify-center items-center w-[95%] md:w-[30%]">
+            <h2 className="text-white text-center underline underline-offset-4 font-bold md:text-4xl text-2xl my-3">
+              Event list
+            </h2>
+            <ul className="text-white">
+              {events.map((event, index) => (
+                <li key={index} className="text-lg text-center font-semibold">
+                  {event}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {showBackToTop && (

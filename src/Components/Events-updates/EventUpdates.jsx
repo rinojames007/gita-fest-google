@@ -33,7 +33,7 @@ const EventUpdates = () => {
                 time={item.time}
               />
             ))} */}
-            <p className="BlinkText text-2xl md:text-4xl  font-bold text-white text-center pt-[30px] md:pt-[60px] UpcommingEvents">
+            <p className="BlinkText text-2xl md:text-4xl mb-[70px]  font-bold text-white text-center pt-[30px] md:pt-[60px] UpcommingEvents">
               To be Announced...
             </p>
           </div>

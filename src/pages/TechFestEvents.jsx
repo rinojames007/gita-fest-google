@@ -44,9 +44,14 @@ const TechFestEvents = () => {
         tech enthusiasts, and witness cutting-edge advancements. Join us for an
         unforgettable journey into technology's wonders.
         </p>
-        ""
+        <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
+            Registration process
+          </p>
+        <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
+            To be announced soon...
+          </p>
         <div className="Event-Container w-full flex justify-around flex-wrap">
-          {/* {EventDetails.map((item) => (
+          {EventDetails.map((item) => (
             <EventBox
               key={item.key}
               url={item.url}
@@ -57,10 +62,8 @@ const TechFestEvents = () => {
               redirect={item.redirect}
               venue={item.venue}
             />
-          ))} */}
-          <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[80px]">
-            To be Announced...
-          </p>
+          ))}
+          
         </div>
       </div>
       {showBackToTop && (
