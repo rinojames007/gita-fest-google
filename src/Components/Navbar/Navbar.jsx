@@ -10,6 +10,7 @@ import {
   faImages,
   faAward,
   faInbox,
+  faHeadset,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
@@ -47,26 +48,26 @@ const Navbar = () => {
       {/* navigations */}
       <div className="nav-contents hidden md:flex items-center">
         <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 text-xl font-bold">
-          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <li className="hover:underline hover:scale-110 text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
             <Link to="/notice">Notices</Link>
           </li>
-          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <li className="hover:underline hover:scale-110 text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
             <Link to="/schedules">Schedules</Link>
           </li>
 
-          <li className="hover:underline text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <li className="hover:underline hover:scale-110 text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
             <Link to="/coordinators">Coordinators</Link>
           </li>
 
-          <li className="hover:underline text-white sm:hidden md:block  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <li className="hover:underline hover:scale-110 text-white sm:hidden md:block  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
             <Link to="/gallery">Gallery</Link>
           </li>
 
-          <li className="hover:underline text-white sm:hidden md:block  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <li className="hover:underline hover:scale-110 text-white sm:hidden md:block  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
             <Link to="/fest/CreditsPage">Credits</Link>
           </li>
 
-          <li className="hover:underline text-white hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
+          <li className="hover:underline hover:scale-110 text-white hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
             <a
               href="https://www.instagram.com/akanksha_gita?igsh=ODA1NTc5OTg5Nw=="
               target="_blank"
@@ -84,20 +85,22 @@ const Navbar = () => {
         id="MenuBar"
         onClick={toggleMobileMenu}
       >
-        <FontAwesomeIcon icon={faBars} className="text-white text-2xl" />
+        <FontAwesomeIcon icon={faBars} className="text-white text-3xl" />
       </div>
       <div
-        className={`Mobile-Menu  transition-all  ease-out z-10 ${
-          isMobileMenuOpen ? "right-0" : "-right-[100%] hidden"
-        }   absolute top-0 bg-slate-100 w-[65%] rounded-10 space-y-4 delay-200 shadow-sm shadow-blue-300 px-8 py-16 text-lg font-semibold h-fit rounded-xl`}
+        className={`Mobile-Menu transition-all ease-out duration-300 transform ${
+          isMobileMenuOpen
+            ? "translate-x-0 opacity-100"
+            : "translate-x-full opacity-0"
+        } right-0 absolute top-0 bg-slate-100 w-[65%] rounded-10 space-y-3 delay-200 shadow-sm shadow-blue-300 px-8 py-12 text-lg font-semibold h-fit rounded-l-xl`}
       >
         <div
-          className="cancel font-bold w-fit text-3xl relative -top-8 left-[2%]"
+          className="cancel font-bold w-fit  relative -top-5"
           onClick={toggleMobileMenu}
         >
-          <FontAwesomeIcon icon={faXmark} className="text-red-600" />
+          <FontAwesomeIcon icon={faXmark} className="text-red-600 text-4xl" />
         </div>
-        <ul className="nav-menu flex flex-col  space-y-3 font-semibold sm:pl-3 ">
+        <ul className="nav-menu flex flex-col  space-y-5 font-semibold sm:pl-3 ">
           <li>
             <Link
               className="hover:text-gray-400 active:underline py-1"
@@ -157,6 +160,16 @@ const Navbar = () => {
             >
               <FontAwesomeIcon icon={faAward} className="px-1" />
               Credits
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-gray-400 active:underline py-1"
+              to="/help"
+              onClick={toggleMobileMenu}
+            >
+              <FontAwesomeIcon icon={faHeadset} className="px-1" />
+              help
             </Link>
           </li>
           <li onClick={toggleMobileMenu}>

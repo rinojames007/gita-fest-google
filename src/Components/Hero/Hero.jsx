@@ -48,9 +48,7 @@ const Hero = () => {
       <div className="left w-full mx-auto flex justify-center items-center ">
         <div className="flex flex-col items-center justify-center ">
           <div className="header text-center font-alkatra ">
-            {/* <h1 id="shadowText" className="hero text-4xl sm:text-6xl font-bold text-white ">
-              Welcome Back
-            </h1> */}
+            
             <img src="Gita-logo.png" alt="" className="w-[120px] md:w-[160px] pb-[20px] pt-[40px] mx-auto" />
             <span id="shadowText" className="text-5xl sm:text-8xl font-bold text-white ">
               Akanksha
@@ -61,7 +59,7 @@ const Hero = () => {
           <p id="shadowText" className="py-5 text-xl md:text-3xl px-2 text-white font-bold text-center ">
               ( GITA Annual Fest 2k24 )
             </p>
-            <p id="shadowText" className="py-5 text-md md:text-xl px-2 text-white  text-center ">
+            <p id="shadowText" className="py-5 text-md font-semibold md:text-xl px-2 text-white  text-center ">
               Join us for a week full of excitement, learning and entertainment
             </p>
 
