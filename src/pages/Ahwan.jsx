@@ -61,7 +61,7 @@ const Ahwan = () => {
             <EventCard
               name="Boys"
               url={
-                "https://i.postimg.cc/76YH1FL0/neeraj-chopra-with-a-medal-lrxy9vbi1qmotcvq.webp"
+                "https://i.postimg.cc/xdy0N6SW/niraj.jpg"
               }
             />
           </Link>
