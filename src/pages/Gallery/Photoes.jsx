@@ -34,7 +34,7 @@ const Photoes = () => {
     
   ];
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 flex mx-auto flex-col to-black min-h-screen h-full py-9">
+    <div className="bg-gradient-to-b from-[#161b29] via-purple-900 flex mx-auto flex-col to-[#161b29] min-h-screen h-full py-9">
       <div className="absolute top-4 left-4">
         <Link to="/gallery" className="w-fit">
           <button className="bg-slate-600 px-5 py-2 text-lg font-semibold rounded-md hover:scale-90 hover:text-red-600 text-white">
@@ -42,18 +42,20 @@ const Photoes = () => {
           </button>
         </Link>
       </div>
-      <div className="mx-auto flex items-center justify-center w-[80%]">
+      <div className="mx-auto flex items-center justify-center w-full">
         <div className="flex flex-col py-5 w-[90%] px-2 border-2 my-[60px] rounded-xl border-blue-400">
           <h1 className="text-3xl font-bold text-white text-center">
            Akanksha 2023
           </h1>
-          <div className="flex space-x-4 justify-center my-8 flex-wrap ">
+          <div className="flex md:space-x-10  justify-around md:justify-center my-[60px] flex-wrap ">
             {prevYr.map((item) => (
               <div className="Events" key={item.name}>
+
+
                 <a
                   href={item.link}
                   target="_blank"
-                  className="px-5 flex my-5 py-3 bg-slate-800 text-white font-semibold text-center rounded-lg transition-all shadow-sm shadow-blue-500"
+                  className="text-white text-xl bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-2xl px-6 md:px-[80px] py-3 md:py-[20px] text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   {item.name}
                 </a>
@@ -71,7 +73,7 @@ const Photoes = () => {
               <a
                 href={item.link}
                 target="_blank"
-                className="px-5 flex my-5 py-3 bg-slate-800 text-white font-semibold text-center rounded-lg transition-all shadow-sm shadow-blue-500"
+                className="text-white text-xl bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-2xl px-6 md:px-[80px] py-3 md:py-[20px] text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {item.name}
               </a>
@@ -90,7 +92,7 @@ const Photoes = () => {
               <a
                 href={item.link}
                 target="_blank"
-                className="px-5 py-3 flex my-5 bg-slate-800 text-white font-semibold text-center rounded-lg transition-all shadow-sm shadow-blue-500"
+                className="text-white text-xl bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-2xl px-6 md:px-[80px] py-3 md:py-[20px] text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {item.name}
               </a>
@@ -109,7 +111,7 @@ const Photoes = () => {
               <a
                 href={item.link}
                 target="_blank"
-                className="px-5 py-3 flex my-5 bg-slate-800 text-white font-semibold text-center rounded-lg transition-all shadow-sm shadow-blue-500"
+                className="text-white text-xl bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-2xl px-6 md:px-[80px] py-3 md:py-[20px] text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 {item.name}
               </a>

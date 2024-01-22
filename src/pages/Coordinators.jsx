@@ -30,7 +30,7 @@ const Coordinators = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full min-h-screen">
+    <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] h-full min-h-screen">
       <Navbar />
       <div className="pt-[60px]">
         <h1 className="font-bold text-5xl text-center py-5 text-white">

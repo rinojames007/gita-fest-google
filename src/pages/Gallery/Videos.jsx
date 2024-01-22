@@ -82,7 +82,7 @@ const Videos = () => {
         
     ]
   return (
-    <div className="bg-gradient-to-b py-[50px] from-black via-purple-900 to-black min-h-screen h-full">
+    <div className="bg-gradient-to-b py-[50px] from-[#161b29] via-purple-900 to-[#161b29] min-h-screen h-full">
         <div className="absolute top-4 left-4">
         <Link to="/gallery" className="w-fit">
           <button className="bg-slate-600 px-5 py-2 text-lg font-semibold rounded-md hover:scale-90 hover:text-red-600 text-white">
@@ -93,7 +93,7 @@ const Videos = () => {
       <p className='text-white font-semibold text-lg text-center pt-[30px]'>Wait for Some Seconds to load the Videos</p>
         <div className="videos w-[90%] rounded-md flex items-center justify-center flex-col sm:flex-row flex-wrap sm:space-x-5 mx-auto space-y-8  py-6">
       {links.map((index) => (
-        <div key={index} className="sm:w-[30%] rounded-md md:h-[300px] sm:h-[200px] 2xl:h-[400px] 2xl:w-[45%] h-[200px] w-full max-w-screen my-5">
+        <div key={index} className="md:w-[30%] rounded-md md:h-[300px]  2xl:h-[400px]  h-[250px] w-full max-w-screen my-5">
           {loading && (
           <div className="flex flex-col justify-center items-center h-[220px]">
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>

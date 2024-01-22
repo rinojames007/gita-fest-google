@@ -30,8 +30,8 @@ const ImageSlider = ({ images }) => {
   }, [currentIndex, images.length]);
 
   return (
-    <div className={`relative w-full max-w-[95%] mx-auto aspect-w-${aspectRatio}`}>
-      <div className={`overflow-hidden relative w-full h-full `}>
+    <div className={`relative w-full h-fit  border-[#FFD700] rounded-lg border-2 shadow-blue-400 max-w-[95%] mx-auto aspect-w-${aspectRatio}`}>
+      <div className={`overflow-hidden relative w-full h-full rounded-lg shadow-blue-600 `}>
         <div
           className="flex transition-transform duration-500 ease-in-out "
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}

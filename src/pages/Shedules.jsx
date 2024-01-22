@@ -30,7 +30,7 @@ const Shedules = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full">
+    <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] min-h-screen h-full">
       <Navbar />
       <h1 className="hero py-[80px] text-center text-3xl sm:text-6xl font-bold text-white">
         Schedules

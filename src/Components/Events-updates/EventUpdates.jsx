@@ -31,6 +31,7 @@ const EventUpdates = () => {
                 name={item.name}
                 venue={item.venue}
                 time={item.time}
+                date={item.date}
               />
             ))} */}
             <p className="BlinkText text-2xl md:text-4xl mb-[70px]  font-bold text-white text-center pt-[30px] md:pt-[60px] UpcommingEvents">

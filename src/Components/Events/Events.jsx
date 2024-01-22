@@ -19,7 +19,7 @@ const Events = () => {
       <div className="flex flex-col sm:flex-row justify-around items-center w-full py-[50px]">
         <Link
           to="/ahwan"
-          className="w-[90%] sm:w-[30%] focus:border-blue-300"
+          className="w-[90%] sm:w-[30%] h-fit active:scale-90"
         >
           <EventCard
             name="Aahwan"
@@ -31,7 +31,7 @@ const Events = () => {
 
         <Link
           to="/anwesh"
-          className="w-[90%] sm:w-[30%] focus:border-blue-300"
+          className="w-[90%] sm:w-[30%] h-fit active:scale-90"
         >
           <EventCard
             name="Anwesh"
@@ -43,7 +43,7 @@ const Events = () => {
 
         <Link
           to="/akanksha"
-          className="w-[90%] sm:w-[30%] focus:border-blue-300"
+          className="w-[90%] sm:w-[30%] h-fit active:scale-90"
         >
           <EventCard
             name="Akanksha"

@@ -43,7 +43,7 @@ const AhwanEventBoys = () => {
   const throwEvent = ["Javelin Throw", "Shot put", "Discuss Throw"];
 
   return (
-    <div className="h-full min-h-screen w-full bg-gradient-to-b from-black via-purple-900 to-black">
+    <div className="h-full min-h-screen w-full bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29]">
       <Navbar />
       <div className="py-20">
         <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">

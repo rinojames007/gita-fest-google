@@ -69,6 +69,7 @@ export default function Landing() {
       clearInterval(interval);
     };
   }, []);
+  
 
   const messages = [
     "The registration process for Audition will be held from February 1, 2024.",
@@ -77,8 +78,9 @@ export default function Landing() {
   return (
     <div
       onLoad={handleIframeLoad}
-      className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full"
+      className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] min-h-screen h-full"
     >
+      
       <Navbar />
       {loading && (
         <div className="flex flex-col justify-center items-center h-[220px]">
@@ -89,6 +91,7 @@ export default function Landing() {
         </div>
       )}
       <Hero />
+      
       <marquee
         className="marquee hidden md:flex text-blue-800 bg-[#dddaeb] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
         behavior="alternate"

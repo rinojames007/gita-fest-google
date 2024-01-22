@@ -34,16 +34,16 @@ const Ahwan = () => {
   };
 
   return (
-    <div className=" min-h-screen w-screen bg-gradient-to-b from-black via-purple-900 to-black">
+    <div className=" min-h-screen w-screen bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29]">
       <Navbar />
       {/* Tech Fest */}
       <div className=" pt-[60px]  h-full flex flex-col justify-center  items-center">
         <div className="headingSection flex flex-col md:flex-row md:space-x-2 mt-5 justify-center items-center">
           <h1 className="md:text-5xl text-3xl font-bold text-white text-center">
-            Aahwan{" "}
+            Aahwan
           </h1>
           <h1 className="md:text-5xl text-3xl font-bold my-2 text-white text-center">
-            (Annual Sports){" "}
+            (Annual Sports)
           </h1>
         </div>
 
@@ -57,7 +57,7 @@ const Ahwan = () => {
         </p>
 
         <div className="Event-Container w-full flex justify-around flex-wrap">
-          <Link to="/ahwanBoys" className=" w-[95%] sm:w-[30%]">
+          <Link to="/ahwanBoys" className=" w-[90%] sm:w-[30%] h-fit active:scale-90">
             <EventCard
               name="Boys"
               url={
@@ -66,7 +66,7 @@ const Ahwan = () => {
             />
           </Link>
 
-          <Link to="/ahwanGirls" className=" w-[95%] sm:w-[30%]">
+          <Link to="/ahwanGirls" className=" w-[90%] sm:w-[30%] h-fit active:scale-90">
             <EventCard
               name="Girls"
               url={"https://i.postimg.cc/cHLvDy3G/women.jpg"}

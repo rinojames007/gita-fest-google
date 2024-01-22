@@ -43,7 +43,7 @@ export default function Help() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full">
+    <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] min-h-screen h-full">
       <div className="navbar w-full fixed top-0 backdrop-blur-lg">
         <Navbar />
       </div>

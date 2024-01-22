@@ -10,7 +10,7 @@ const EventList = (props) => {
 
         <div className="event-timming mt-4 flex justify-between items-center ">
           <p className="font-semibold w-[50%] text-sm text-start">
-            Fri, 4 Feb 2024
+            {props.date}
           </p>
           <p className="text-md text-red-600 w-[50%] text-end font-semibold">{props.time}</p>
         </div>
