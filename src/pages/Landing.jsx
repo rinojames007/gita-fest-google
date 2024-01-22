@@ -93,7 +93,7 @@ export default function Landing() {
       <Hero />
       
       <marquee
-        className="marquee hidden md:flex text-blue-800 bg-[#dddaeb] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
+        className="marquee border-[#FFD700] border-y-2 hidden md:flex text-[#F5EFFF] bg-[#100d1e] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
         behavior="alternate"
         loop=""
       >
@@ -103,7 +103,7 @@ export default function Landing() {
       </marquee>
 
       <marquee
-        className="marquee md:hidden text-blue-800 bg-[#dddaeb] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
+        className="marquee md:hidden text-[#F5EFFF] border-[#FFD700] border-y-2 py-[8px] bg-[#100d1e] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
         behavior="Scroll"
         loop=""
       >
