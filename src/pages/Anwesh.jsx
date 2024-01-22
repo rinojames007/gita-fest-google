@@ -30,7 +30,7 @@ const Anwesh = () => {
 
   
   return (
-    <div className=" min-h-screen w-screen bg-gradient-to-b from-black via-purple-900 to-black">
+    <div className=" min-h-screen w-screen bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29]">
       <Navbar />
       {/* Tech Fest */}
       <div className=" pt-[60px] flex flex-col justify-center items-center text-center w-full">
@@ -39,7 +39,7 @@ const Anwesh = () => {
           <h1 className="md:text-5xl text-3xl font-bold text-white text-center">
           Anwesh 
           </h1>
-          <h1 className="md:text-5xl text-3xl font-bold my-2 text-white text-center">
+          <h1 className="md:text-4xl text-2xl font-bold my-2 text-white text-center">
           (Tech-Fest)
           </h1>
         </div>
@@ -49,10 +49,10 @@ const Anwesh = () => {
           is your ticket to an exhilarating world of technology and creativity.
         </p>
         <div className="Event-Container w-full flex justify-around flex-wrap">
-        <Link to="/anwesh/techEvents" className=" w-[95%] sm:w-[30%]">
+        <Link to="/anwesh/techEvents" className=" w-[90%] sm:w-[30%] h-fit active:scale-90">
           <EventCard name="Tech Fest" url={"https://i.postimg.cc/1Xy5R4wq/techfest.jpg"} />
         </Link>
-        <Link to="/roboticsDetails" className=" w-[95%] sm:w-[30%]">
+        <Link to="/roboticsDetails" className=" w-[90%] sm:w-[30%] h-fit active:scale-90">
           <EventCard name="Robotics" url={"https://i.postimg.cc/y6rQB070/robotics.jpg"} />
         </Link>
           

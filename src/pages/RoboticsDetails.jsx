@@ -33,7 +33,7 @@ const RoboticsDetails = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full min-h-screen">
+    <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] h-full min-h-screen">
       <Navbar />
       <div className=" pt-[60px] h-full">
         <div className=" flex flex-col md:flex-row">

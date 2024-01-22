@@ -32,7 +32,7 @@ const TechFestEvents = () => {
   };
 
   return (
-    <div className=" min-h-screen h-full w-full bg-gradient-to-b from-black via-purple-900 to-black">
+    <div className=" min-h-screen h-full w-full bg-gradient-to-b from-[#141e39] via-purple-900 to-[#1c2439]">
       <Navbar />
       {/* Tech Fest */}
       <div className=" py-[60px] flex flex-col justify-center items-center w-full">

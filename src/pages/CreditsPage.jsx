@@ -74,7 +74,7 @@ const CreditsPage = () => {
     },
   ];
   return (
-    <div className="w-full bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full ">
+    <div className="w-full bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] min-h-screen h-full ">
      
       <Navbar/>
       <h1 className="text-white underline underline-offset-8 md:text-5xl text-3xl pt-[80px] md:pt-[120px] font-bold text-center ">

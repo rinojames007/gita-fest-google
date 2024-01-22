@@ -5,7 +5,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 
 const Gallery = () => {
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full">
+    <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] min-h-screen h-full">
       <Navbar />
       <div className="flex pt-[150px]  justify-around flex-col md:flex-row items-center">
         <Link

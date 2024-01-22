@@ -33,7 +33,7 @@ const Quiz = () => {
   };
   return (
     <div>
-      <div className="bg-gradient-to-b from-black via-purple-900 to-black h-full min-h-screen">
+      <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] h-full min-h-screen">
         <Navbar />
         <div className="py-20">
           <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">

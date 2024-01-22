@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
     <div>
@@ -18,17 +19,17 @@ const Footer = () => {
           </a>
         </div>
         <ul className="flex flex-col md:flex-row justify-center items-center py-[30px] md:h-[100px] h-fit w-full space-y-4 md:space-y-0  md:space-x-5">
-          <Link to="/feedback">
-            <li className="font-semibold underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
-              Your Feedback
-            </li>
-          </Link>
           <Link to="/fest/CreditsPage">
             <li className="font-semibold underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
               Credits
             </li>
           </Link>
-          <Link to="/coordinators">
+          <Link to="/feedback">
+            <li className="font-semibold underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
+              Your Feedback
+            </li>
+          </Link>
+          <Link to="/coordinators" className="hidden md:block">
             <li className="font-semibold underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
               Event Coordinators
             </li>
@@ -38,6 +39,15 @@ const Footer = () => {
               Help and Support
             </li>
           </Link>
+          <li className="font-semibold hidden md:block underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
+            <a
+              href="https://www.instagram.com/akanksha_gita?igsh=ODA1NTc5OTg5Nw=="
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faSquareInstagram} className="px-1" />
+              Follow us
+            </a>
+          </li>
         </ul>
       </div>
     </div>

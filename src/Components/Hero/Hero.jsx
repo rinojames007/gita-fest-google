@@ -80,8 +80,7 @@ const Hero = () => {
             </p>
 
             <div className="timer ToGo mt-2 text-[#9FFFF5] font-semibold text-2xl md:text-3xl text-center ">
-              {timeRemaining.days}d {timeRemaining.hours}h{" "}
-              {timeRemaining.minutes}m {timeRemaining.seconds}s <br /> to go
+              {timeRemaining.days}d {timeRemaining.hours}h {timeRemaining.minutes}m {timeRemaining.seconds}s <br /> to go
             </div>
           </div>
         </div>

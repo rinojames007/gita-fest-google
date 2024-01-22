@@ -26,13 +26,35 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const navElem = [
+    {
+      url: "/notice",
+      name: "Notices",
+    },
+    {
+      url: "/schedules",
+      name: "Schedules",
+    },
+    {
+      url: "/coordinators",
+      name: "Coordinators",
+    },
+    {
+      url: "/gallery",
+      name: "Gallery",
+    },
+    {
+      url: "/fest/CreditsPage",
+      name: "Credits",
+    },
+  ];
   return (
-    <nav className="h-[50px] fixed backdrop-blur-xl sm:h-[60px] md:h-[70px] w-full  flex justify-between items-center px-1 py-3 sm:px-5 gradient-shift z-50">
+    <nav className="h-[50px] absolute sm:h-[60px] md:h-[70px] w-full flex justify-between items-center px-1 py-3 sm:px-5  z-50">
       {/* Logo */}
       <div className="logo flex justify-center items-center ">
         <Link
           to="/"
-          className=" rounded-full  h-[40px] w-[160px] sm:h-[50px] sm:w-[260px]  neon-border p-3 ring-4 ring-blue-500 transition-all duration-300 hover:cursor-pointer "
+          className=" rounded-full backdrop-blur-lg md:backdrop-blur-xl gradient-shift  h-[40px] w-[160px] sm:h-[50px] sm:w-[260px]  neon-border p-3 ring-4 ring-blue-500 transition-all duration-300 hover:cursor-pointer "
         >
           <div className="header  flex justify-center items-center bg-cover w-full h-full bg-center ">
             <h1
@@ -47,25 +69,21 @@ const Navbar = () => {
 
       {/* navigations */}
       <div className="nav-contents hidden md:flex items-center">
-        <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 text-xl font-bold">
-          <li className="hover:underline hover:scale-110 text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-            <Link to="/notice">Notices</Link>
-          </li>
-          <li className="hover:underline hover:scale-110 text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-            <Link to="/schedules">Schedules</Link>
-          </li>
-
-          <li className="hover:underline hover:scale-110 text-white  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-            <Link to="/coordinators">Coordinators</Link>
-          </li>
-
-          <li className="hover:underline hover:scale-110 text-white sm:hidden md:block  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-            <Link to="/gallery">Gallery</Link>
-          </li>
-
-          <li className="hover:underline hover:scale-110 text-white sm:hidden md:block  hover:shadow-purple-800 hover:shadow-lg  hover:cursor-pointer">
-            <Link to="/fest/CreditsPage">Credits</Link>
-          </li>
+        <ul className="flex items-center justify-center sm:space-x-4 xl:space-x-6 ">
+          {navElem.map((item) => (
+            <li
+              key={item.name}
+              className="hover:underline hover:scale-110 text-2xl font-bold hover:cursor-pointer "
+              id="shadowText"
+            >
+              <Link
+                to={item.url}
+                className="transition-all duration-300 ease-in-out text-white hover:text-[#F5EFFF] hover:font-bold hover:shadow-md hover:shadow-[#9e92b0]"
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -82,7 +100,7 @@ const Navbar = () => {
           isMobileMenuOpen
             ? "translate-x-0 opacity-100"
             : "translate-x-full opacity-0"
-        } right-0 absolute top-0 bg-slate-100 w-[65%] rounded-10 space-y-3 delay-200 shadow-sm shadow-blue-300 px-8 py-12 text-lg font-semibold h-fit rounded-l-xl`}
+        } right-0 fixed top-0 bg-slate-100 w-[65%] rounded-10 space-y-3 delay-200 shadow-sm shadow-blue-300 px-8 py-12 text-lg font-semibold h-fit rounded-l-xl`}
       >
         <div
           className="cancel font-bold w-fit  relative -top-5"

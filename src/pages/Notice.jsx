@@ -25,7 +25,7 @@ const Notice = () => {
     window.scrollTo(0, 0);
   }, []); 
   return (
-    <div className="bg-gradient-to-b from-black via-purple-900 to-black min-h-screen h-full ">
+    <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] min-h-screen h-full ">
       {/* Notice Section */}
       <Navbar />
       <h2 className="md:text-5xl text-3xl pt-[80px] underline underline-offset-8 font-bold mb-7 text-center text-white">

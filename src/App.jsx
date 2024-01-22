@@ -6,7 +6,7 @@ import Landing from "./pages/Landing";
 import Anwesh from "./pages/Anwesh";
 import Ahwan from "./pages/Ahwan";
 import Akanksha from "./pages/Akanksha";
-import About from "./pages/About";
+
 import Coordinators from "./pages/Coordinators";
 import EventDetails from "./pages/EventDetails";
 
@@ -44,7 +44,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/about" element={<About />} />
+
         <Route path="/coordinators" element={<Coordinators />} />
         <Route path="/notice" element={<Notice/>}/>
 
