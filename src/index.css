@@ -29,6 +29,9 @@ body::-webkit-scrollbar{
     text-shadow: 4px 2px 5px black;
 }
 
+.shadowText{
+  text-shadow: 4px 2px 5px black;
+}
 
 
 .whatsapp-button {
@@ -130,11 +133,11 @@ body::-webkit-scrollbar{
 
 
 .ToGo{
-  background-color: rgba(0, 0, 0, 0.25);
+  /* background-color: rgba(0, 0, 0, 0.25); */
   padding: 15px 70px;
   border-radius: 20px;
   text-align: center;
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
   text-shadow: 3px 2px 4px black;
 }
 

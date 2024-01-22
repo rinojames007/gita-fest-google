@@ -78,7 +78,7 @@ export default function Landing() {
   return (
     <div
       onLoad={handleIframeLoad}
-      className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] min-h-screen h-full"
+      className="min-h-screen h-full"
     >
       
       <Navbar />
@@ -91,7 +91,9 @@ export default function Landing() {
         </div>
       )}
       <Hero />
-      
+      <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] h-full">
+
+     
       <marquee
         className="marquee border-[#FFD700] border-y-2 hidden md:flex text-[#F5EFFF] bg-[#100d1e] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
         behavior="alternate"
@@ -115,7 +117,7 @@ export default function Landing() {
       <EventUpdates />
       <Highlights />
       <Footer />
-
+      </div>
       {/* Install to Home Screen Button */}
       {deferredPrompt && (
         <div className="install-button fixed top-0 left-0 right-0 bg-blue-500 text-white px-4 py-2 rounded shadow-md z-10 text-center"

@@ -54,15 +54,17 @@ const Navbar = () => {
       <div className="logo flex justify-center items-center ">
         <Link
           to="/"
-          className=" rounded-full backdrop-blur-lg md:backdrop-blur-xl gradient-shift  h-[40px] w-[160px] sm:h-[50px] sm:w-[260px]  neon-border p-3 ring-4 ring-blue-500 transition-all duration-300 hover:cursor-pointer "
+          className=" rounded-full backdrop-blur-sm md:backdrop-blur-none gradient-shift  h-[40px] w-[160px] sm:h-[50px] sm:w-[260px]  neon-border p-3 ring-4 ring-blue-500 transition-all duration-300 hover:cursor-pointer "
         >
           <div className="header  flex justify-center items-center bg-cover w-full h-full bg-center ">
             <h1
-              className="text-2xl font-bold md:text-3xl text-white"
+              className="text-2xl shadowText font-bold md:text-3xl text-white"
               id="Salsa-font"
+              
             >
               Akanksha
             </h1>
+            
           </div>
         </Link>
       </div>
