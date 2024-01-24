@@ -43,11 +43,11 @@ const AhwanEventBoys = () => {
   const throwEvent = ["Javelin Throw", "Shot put", "Discuss Throw"];
 
   return (
-    <div className="h-full min-h-screen w-full bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29]">
+    <div className="h-fit min-h-screen w-full bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29]">
       <Navbar />
       <div className="py-20">
         <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">
-          Ahwan Boys Events
+          Ahwaan Boys Events
         </h1>
 
         {/* {loading && (
@@ -58,8 +58,8 @@ const AhwanEventBoys = () => {
         )}
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSeHrLthxFaQsH9XtaU-6lE5QqxrTSVkztK1tjEjQztKvBCz7w/viewform?embedded=true"
-          className={`mx-auto w-full md:w-2/3 lg:w-1/2 ${loading ? "hidden" : ""}`}
-          height="2300"
+          className={`mx-auto w-full md:w-2/3 lg:w-1/2 ${loading ? "hidden" : ""} `}
+          height="700"
           onLoad={handleIframeLoad}
         >
           Loading...

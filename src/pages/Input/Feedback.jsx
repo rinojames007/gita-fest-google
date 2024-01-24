@@ -56,7 +56,7 @@ const Feedback = () => {
           src="https://docs.google.com/forms/d/e/1FAIpQLSeV-tjAXUXJfSBhLgaUgdUjqOvg-U-7jHrdk-M6Vny1CvaDgQ/viewform?embedded=true"
           className="mx-auto w-full md:w-2/3 lg:w-1/2"
           onLoad={handleIframeLoad}
-          height="1800"
+          height="700"
         >
           Loading…
         </iframe>

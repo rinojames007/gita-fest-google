@@ -72,7 +72,7 @@ export default function Help() {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSe4XxJr5TVxCg9OAi1Vbhx3WMq0veWmVrpENnkUbysTYKxouA/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1200"
+            height="700"
             onLoad={handleIframeLoad}
           >
             Loading…

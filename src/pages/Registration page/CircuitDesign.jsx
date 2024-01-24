@@ -52,7 +52,7 @@ const CircuitDesign = () => {
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
             onLoad={handleIframeLoad}
 
-            height="1500"
+            height="700"
           >
             Loading…
           </iframe>

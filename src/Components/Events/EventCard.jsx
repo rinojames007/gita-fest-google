@@ -10,7 +10,7 @@ const EventCard = (props) => {
         <p className="text-center text-5xl hover:text-6xl text-white" id="shadowText">
           {props.name}
         </p>
-        <span className="UpcommingEvents text-xs font-semibold text-white underline mt-4" id="shadowText">{props.desc}</span>
+        <span className="UpcommingEvents text-sm font-semibold text-white underline mt-4" id="shadowText">{props.desc}</span>
       </div>
     </div>
   );

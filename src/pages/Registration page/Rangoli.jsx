@@ -50,7 +50,7 @@ const Rangoli = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfRZqMge_J_6WEbmmDaSHisT3VqVgYQw0Smz3ooA7qYHw2Lxg/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1550"
+            height="700"
             onLoad={handleIframeLoad}
           >
             Loading…

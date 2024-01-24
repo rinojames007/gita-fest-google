@@ -50,7 +50,7 @@ const MathOlympiad = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdIBa0RWVcYEru536_k1qxbTd4gXrIF9X_xnyM1y0S66zlNLg/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1550"
+            height="750"
             onLoad={handleIframeLoad}
           >
             Loading…

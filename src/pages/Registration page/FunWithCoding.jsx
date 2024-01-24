@@ -50,7 +50,7 @@ const FunWithCoding = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfeoJnpciF8o-iV6llXW4e5Kknqc6LapuyAhIZx1NeKMYozng/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1500"
+            height="700"
             onLoad={handleIframeLoad}
           >
             Loading…

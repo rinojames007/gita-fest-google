@@ -22,7 +22,7 @@ const Events = () => {
           className="w-[90%] sm:w-[30%] h-fit active:scale-90"
         >
           <EventCard
-            name="Aahwan"
+            name="Ahwaan"
             desc = "Click to Register"
             url={"https://i.postimg.cc/VNyszV4H/sports.webp"}
             date = "19.02.2024 & 20.02.2024"

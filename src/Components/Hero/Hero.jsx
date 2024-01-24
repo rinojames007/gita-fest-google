@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Hero = () => {
-  const festStartDate = new Date("2024-02-19T08:00:00"); 
+  const festStartDate = new Date("2024-02-19T08:00:00");
 
   const calculateTimeRemaining = () => {
     const now = new Date();
@@ -61,7 +61,7 @@ const Hero = () => {
               id="shadowText"
               className="text-5xl sm:text-8xl font-bold text-white "
             >
-              Akanksha
+              Utsãh
             </span>
           </div>
 
@@ -70,7 +70,7 @@ const Hero = () => {
               id="shadowText"
               className="py-5 text-xl md:text-3xl px-2 text-white font-bold text-center "
             >
-              ( GITA Annual Fest 2k24 )
+              ( GITA Annual Fest 2024 )
             </p>
             <p
               id="shadowText"
@@ -80,7 +80,8 @@ const Hero = () => {
             </p>
 
             <div className="timer ToGo shadowText mt-2 text-[#9FFFF5] font-semibold text-2xl md:text-3xl text-center ">
-              {timeRemaining.days}d {timeRemaining.hours}h {timeRemaining.minutes}m {timeRemaining.seconds}s <br /> to go
+              {timeRemaining.days}d {timeRemaining.hours}h
+              {timeRemaining.minutes}m {timeRemaining.seconds}s <br /> to go
             </div>
           </div>
         </div>

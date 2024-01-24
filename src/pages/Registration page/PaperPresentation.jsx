@@ -50,7 +50,7 @@ const PaperPresentation = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSeZB-lFzpmENarOxxu7iKM2Q0rkCQ5h2tQng2hxkfhghY3aTQ/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1550"
+            height="750"
             onLoad={handleIframeLoad}
           >
             Loading…

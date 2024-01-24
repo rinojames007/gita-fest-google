@@ -47,18 +47,20 @@ const AhwanEventGirls = () => {
       <Navbar />
       <div className="py-20">
         <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">
-          Ahwan Girls Events
+          Ahwaan Girls Events
         </h1>
         {/* {loading && (
           <div className="flex flex-col justify-center items-center h-[220px]">
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
-            <div className="loader text-center text-white font-semibold text-xl mt-6 ">Loading...</div>
+            <div className="loader text-center text-white font-semibold text-xl mt-6 ">
+              Loading...
+            </div>
           </div>
         )}
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSeCcGs3GKxDAm64VDbs6X-aldGip-_l8FaSYvnn4WDJSD973w/viewform?embedded=true"
           className="mx-auto w-full md:w-2/3 lg:w-1/2"
-          height="2370"
+          height="700"
           onLoad={handleIframeLoad}
         >
           Loading…
@@ -110,6 +112,15 @@ const AhwanEventGirls = () => {
                   {event}
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div className="mb-8 flex flex-col justify-center items-center w-[95%] md:w-[30%]">
+            <h2 className="text-white text-center underline underline-offset-4 font-bold md:text-4xl text-2xl my-3">
+              Others
+            </h2>
+            <ul className="text-white">
+              <li className="text-lg font-semibold">Music Chair</li>
             </ul>
           </div>
         </div>

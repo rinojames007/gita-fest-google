@@ -50,7 +50,7 @@ const Jam = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSe-ZMJgRMIKyVS1BiLIzPUvsuW05VMDmL--w9cD0uogngD1-Q/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1550"
+            height="750"
             onLoad={handleIframeLoad}
           >
             Loading…
