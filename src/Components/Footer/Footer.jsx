@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div>
       <div className=" flex flex-col justify-center items-center h-fit w-full">
-        <div className="about  justify-center items-center">
+        <div className="about flex  justify-center items-center">
           <a
             href="https://gita.edu.in/"
             target="_blank"
@@ -17,6 +17,13 @@ const Footer = () => {
               GITA Autonomous College, Bhubaneswar
             </p>
           </a>
+          {/* <a href="https://www.instagram.com/gitabbsr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="flex space-x-1">
+            <FontAwesomeIcon
+              icon={faSquareInstagram}
+              className="px-1 text-pink-600"
+            />
+            <p className=" text-xs underline underline-offset-2 text-white">gitabbsr</p>
+          </a> */}
         </div>
         <ul className="flex flex-col md:flex-row justify-center items-center py-[30px] md:h-[100px] h-fit w-full space-y-4 md:space-y-0  md:space-x-5">
           <Link to="/fest/CreditsPage">
@@ -44,7 +51,7 @@ const Footer = () => {
               href="https://www.instagram.com/akanksha_gita?igsh=ODA1NTc5OTg5Nw=="
               target="_blank"
             >
-              <FontAwesomeIcon icon={faSquareInstagram} className="px-1" />
+              <FontAwesomeIcon icon={faSquareInstagram} className="px-1  text-pink-600 w-fit rounded-md" />
               Follow us
             </a>
           </li>

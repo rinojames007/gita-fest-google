@@ -40,7 +40,7 @@ const Ahwan = () => {
       <div className=" pt-[60px]  h-full flex flex-col justify-center  items-center">
         <div className="headingSection flex flex-col md:flex-row md:space-x-2 mt-5 justify-center items-center">
           <h1 className="md:text-5xl text-3xl font-bold text-white text-center">
-            Aahwan
+            Ahwaan
           </h1>
           <h1 className="md:text-5xl text-3xl font-bold my-2 text-white text-center">
             (Annual Sports)

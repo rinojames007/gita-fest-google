@@ -50,7 +50,7 @@ const OnlineGaming = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdiGg6SPzPrgJVhauLHc9rTeKKTf4XmhvHnqhRy6O2vA53UYw/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1550"
+            height="750"
             onLoad={handleIframeLoad}
           >
             Loading…

@@ -62,7 +62,7 @@ const Navbar = () => {
               id="Salsa-font"
               
             >
-              Akanksha
+              Utsãh
             </h1>
             
           </div>

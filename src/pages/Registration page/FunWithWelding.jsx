@@ -50,7 +50,7 @@ const FunWithWelding = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLScw-8vfXK9mfp_Y6ROy5MynHs_Gm9lZzP-OAnX1bpVQubzafw/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="1550"
+            height="750"
             onLoad={handleIframeLoad}
           >
             Loading…
