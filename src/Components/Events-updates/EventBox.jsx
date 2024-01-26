@@ -12,11 +12,11 @@ const EventBox = (props) => {
         />
 
         <div className="p-5">
-          <a href="#">
-            <h5 className="mb-2 text-2xl text-center font-bold tracking-tight text-white">
+          
+            <h1 className="mb-2 text-2xl text-center font-bold tracking-tight text-white">
               {props.name}
-            </h5>
-          </a>
+            </h1>
+          
           <p className="mb-3 font-normal text-gray-400 text-center text-sm">
             {props.desc}
           </p>
