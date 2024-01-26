@@ -16,7 +16,7 @@ const EventDetails = [
   {
     key: 2,
     url: "https://i.postimg.cc/d1jbnj0j/Circuit-Design.webp",
-    name: "CIRCUIT DESIGN",
+    name: "FUN WITH ELECTRONIC CIRCUITS",
     venue: "To be decided",
     date: "__ / __ / __",
     desc: "",
@@ -30,7 +30,7 @@ const EventDetails = [
   {
     key: 3,
     url: "https://i.postimg.cc/tJzMtq2S/Online-Gaming.webp",
-    name: "ONLINE GAMING",
+    name: "SMART GAMES",
     venue: "To be decided",
     date: "__ / __ / __",
     desc: "",
@@ -45,7 +45,7 @@ const EventDetails = [
   {
     key: 4,
     url: "https://i.postimg.cc/PJH7wpzv/Quiz.webp",
-    name: "QUIZ",
+    name: "TECH QUIZ",
     venue: "To be decided",
     date: "__ / __ / __",
     desc: "",
@@ -59,7 +59,7 @@ const EventDetails = [
   {
     key: 5,
     url: "https://i.postimg.cc/9f2kNSb4/Coding.webp",
-    name: "FUN WITH CODING",
+    name: "CODATHON",
     venue: "To be decided",
     date: "__ / __ / __",
     desc: "",
@@ -87,7 +87,7 @@ const EventDetails = [
   {
     key: 7,
     url: "https://i.postimg.cc/pr2Ht1SS/Face-Painting.webp",
-    name: "FACE PAINTING",
+    name: "FACETHEAM",
     venue: "To be decided",
     date: "__ / __ / __",
     desc: "",
@@ -102,7 +102,7 @@ const EventDetails = [
   {
     key: 8,
     url: "https://i.postimg.cc/TY7kRHSD/Poster-Painting.webp",
-    name: "POSTER PAINTING",
+    name: "DIMAG KI BATI",
     venue: "To be decided",
     date: "__ / __ / __",
     desc: "",
@@ -116,7 +116,7 @@ const EventDetails = [
   {
     key: 9,
     url: "https://i.postimg.cc/dQWRdZBM/Treasure-Hunt.webp",
-    name: "TREASURE HUNT",
+    name: "TREASURE PLEASURE",
     venue: "To be decided",
     date: "__ / __ / __",
     desc: "",
@@ -158,7 +158,7 @@ const EventDetails = [
   {
     key: 12,
     url: "https://i.postimg.cc/7hXKJBZj/Rangoli.webp",
-    name: "RANGOLI",
+    name: "FLOOR ART",
     venue: "To be decided",
     date: "__ / __ / __",
     desc: "",
@@ -172,7 +172,7 @@ const EventDetails = [
   {
     key: 13,
     url: "https://i.postimg.cc/5tHDdM2y/Math-Olympiad.webp",
-    name: "MATH OLYMPIAD",
+    name: "MATH OLYMPIA",
     venue: "To be decided",
     date: "__ / __ / __",
     desc: "",
@@ -187,7 +187,7 @@ const EventDetails = [
   {
     key: 14,
     url: "https://i.postimg.cc/VkRMqv2y/Bridge-Design.webp",
-    name: "BRIDGE DESIGN",
+    name: "BRIDGE ARCHITECTS",
     venue: "To be decided",
     date: "__ / __ / __",
     desc: "",
