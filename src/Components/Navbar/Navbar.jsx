@@ -184,7 +184,7 @@ const Navbar = () => {
           </li>
           <li onClick={toggleMobileMenu}>
             <a
-              href="https://www.instagram.com/akanksha_gita?igsh=ODA1NTc5OTg5Nw=="
+              href="https://www.instagram.com/utsah_gita?igsh=N2pnZGhzN25oc2Mz"
               target="_blank"
             >
               <FontAwesomeIcon icon={faSquareInstagram} className="px-1" />{" "}

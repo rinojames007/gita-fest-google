@@ -48,7 +48,7 @@ const Footer = () => {
           </Link>
           <li className="font-semibold hidden md:block underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
             <a
-              href="https://www.instagram.com/akanksha_gita?igsh=ODA1NTc5OTg5Nw=="
+              href="https://www.instagram.com/utsah_gita?igsh=N2pnZGhzN25oc2Mz"
               target="_blank"
             >
               <FontAwesomeIcon icon={faSquareInstagram} className="px-1  text-pink-600 w-fit rounded-md" />

@@ -46,7 +46,7 @@ const Hero = () => {
       style={{
         backgroundImage: `url(https://i.postimg.cc/ZKMKMRNm/cultural.webp)`,
       }}
-      className="flex justify-center items-center bg-no-repeat bg-cover bg-center h-screen w-full"
+      className="flex justify-center items-center bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] bg-no-repeat bg-cover bg-center h-screen w-full"
     >
       {/* left-contents */}
       <div className="left w-full mx-auto flex justify-center items-center ">

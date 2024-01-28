@@ -34,7 +34,7 @@ const Akanksha = () => {
   const events = [
     "Song",
     "Dance",
-    "Fashion",
+    "Fashion Show",
     "Drama",
     "Anchoring"
   ];
@@ -44,10 +44,10 @@ const Akanksha = () => {
         <div className="py-20 flex flex-col justify-center items-center">
           
           <div className="headingSection flex flex-col md:flex-row md:space-x-2 mt-5 justify-center items-center">
-          <h1 className="md:text-5xl text-3xl font-bold text-white text-center">
+          <h1 className="md:text-5xl shadowText text-3xl font-bold text-white text-center">
           Akanksha
           </h1>
-          <h1 className="md:text-4xl text-2xl font-bold my-2 text-white text-center">
+          <h1 className="md:text-4xl shadowText text-2xl font-bold my-2 text-white text-center">
           (Annual Cultural Fest)
           </h1>
         </div>
@@ -73,9 +73,9 @@ const Akanksha = () => {
         <p className="UpcommingEvents text-2xl md:text-3xl font-bold text-white text-center pt-[10px]">
           To be announced soon...
         </p>
-          <div className="mb-8 flex flex-col justify-center items-center w-[95%] mt-8 md:w-[30%]">
-            <h2 className="text-white text-center underline underline-offset-4 font-bold md:text-5xl text-3xl my-3">
-              Event list
+          <div className="mb-8 flex flex-col justify-center items-center w-[95%] mt-8">
+            <h2 className="text-white shadowText text-center underline underline-offset-4 font-bold md:text-5xl text-3xl my-3">
+              Audition Categories
             </h2>
             <ul className="text-white flex flex-col justify-center items-center md:flex-row md:mt-5 md:space-x-8 space-x-0">
               {events.map((event, index) => (

@@ -21,14 +21,12 @@ const Photoes = () => {
     //   name: "100 mts",
     //   link: "https://drive.google.com/drive/folders/1Vxuo9wEf10BayA9eWi4HdgPy6hIMKPpM",
     // },
-    
   ];
   const anwesh = [
     // {
     //   name: "Link-1",
     //   link: "https://drive.google.com/drive/folders/1Vxuo9wEf10BayA9eWi4HdgPy6hIMKPpM",
     // },
-    
   ];
 
   const akanksha = [
@@ -36,7 +34,6 @@ const Photoes = () => {
     //   name: "Previous",
     //   link: "https://drive.google.com/drive/folders/1Vxuo9wEf10BayA9eWi4HdgPy6hIMKPpM",
     // },
-    
   ];
   return (
     <div className="bg-gradient-to-b from-[#161b29] via-purple-900 flex mx-auto flex-col to-[#161b29] min-h-screen h-full py-9">
@@ -49,8 +46,8 @@ const Photoes = () => {
       </div>
       <div className="mx-auto flex items-center justify-center w-full">
         <div className="flex flex-col py-5 w-[90%] px-2 border-2 my-[60px] gradiantbg rounded-xl border-[#FFD700] shadow-xl shadow-blue-500">
-          <h1 className="text-4xl font-bold text-white text-center">
-            Akanksha 2023
+          <h1 className="text-4xl shadowText font-bold text-white text-center">
+            Utsãh 2023
           </h1>
           <div className="flex  justify-around my-[60px] flex-wrap ">
             {prevYr.map((item) => (
@@ -69,7 +66,9 @@ const Photoes = () => {
       </div>
       <div className="flex flex-col md:flex-row space-y-14 md:space-y-0 justify-center items-center md:justify-around">
         <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl border-[#FFD700] shadow-xl shadow-blue-500 h-full ">
-          <h1 className="text-4xl font-bold text-white text-center">Ahwaan</h1>
+          <h1 className="text-4xl font-bold text-white text-center shadowText">
+            Ahwaan
+          </h1>
           <div className="flex pt-8 justify-around items-center my-8 flex-wrap ">
             {ahwan.map((item) => (
               <div className="Events" key={item.name}>
@@ -83,12 +82,14 @@ const Photoes = () => {
               </div>
             ))}
             <p className="text-3xl text-slate-300 my-[100px] font-semibold">
-            Coming Soon
-          </p>
+              Coming Soon
+            </p>
           </div>
         </div>
         <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl  border-[#FFD700] shadow-xl shadow-blue-500  ">
-          <h1 className="text-4xl font-bold text-white text-center">Anwesh</h1>
+          <h1 className="text-4xl font-bold text-white text-center shadowText">
+            Anwesh
+          </h1>
           <div className="flex pt-8 justify-around items-center my-8 flex-wrap ">
             {anwesh.map((item) => (
               <div className="Events" key={item.name}>
@@ -102,16 +103,15 @@ const Photoes = () => {
               </div>
             ))}
             <p className="text-3xl text-slate-300 my-[100px] font-semibold">
-            Coming Soon
-          </p>
+              Coming Soon
+            </p>
           </div>
         </div>
         <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl  border-[#FFD700] shadow-xl shadow-blue-500  ">
-          <h1 className="text-3xl font-bold text-white text-center">
+          <h1 className="text-3xl font-bold text-white text-center shadowText">
             Akanksha
           </h1>
           <div className="flex pt-8 justify-around items-center my-8 flex-wrap ">
-            
             {akanksha.map((item) => (
               <div className="Events" key={item.name}>
                 <a
@@ -124,8 +124,8 @@ const Photoes = () => {
               </div>
             ))}
             <p className="text-3xl text-slate-300 my-[100px] font-semibold">
-            Coming Soon
-          </p>
+              Coming Soon
+            </p>
           </div>
         </div>
       </div>
