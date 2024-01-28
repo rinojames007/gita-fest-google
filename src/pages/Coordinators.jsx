@@ -33,7 +33,7 @@ const Coordinators = () => {
     <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] h-full min-h-screen">
       <Navbar />
       <div className="pt-[60px]">
-        <h1 className="font-bold text-5xl text-center py-5 text-white">
+        <h1 className="font-bold md:text-5xl text-3xl text-center py-5 text-white">
           Coordinators Page
         </h1>
       </div>

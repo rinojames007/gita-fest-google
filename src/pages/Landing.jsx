@@ -46,9 +46,9 @@ export default function Landing() {
     setLoading(false);
   };
 
-  const openWhatsApp = () => {
-    window.open("https://whatsapp.com/channel/0029VaJmZcQ6BIEezcBq8U23", "_blank");
-  };
+  // const openWhatsApp = () => {
+  //   window.open("https://whatsapp.com/channel/0029VaJmZcQ6BIEezcBq8U23", "_blank");
+  // };
 
   const showPopUp = () => {
     setShowPopup(true);
@@ -130,12 +130,14 @@ export default function Landing() {
       <div className={showPopup ? "whatsapp-popup active" : "whatsapp-popup"}>
         Join our WhatsApp Channel!
       </div>
-      <div className="whatsapp-button" onClick={openWhatsApp}>
+      <div className="whatsapp-button">
+        <a href="https://whatsapp.com/channel/0029VaJmZcQ6BIEezcBq8U23" target="_blank">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/598px-WhatsApp.svg.png"
           alt="WhatsApp Icon"
           width="30"
         />
+        </a>
       </div>
     </div>
   );
