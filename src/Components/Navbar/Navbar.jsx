@@ -182,14 +182,17 @@ const Navbar = () => {
               help
             </Link>
           </li>
-          <li onClick={toggleMobileMenu}>
-            <a
-              href="https://www.instagram.com/utsah_gita?igsh=N2pnZGhzN25oc2Mz"
+
+          <li >
+            {/* <a
+              href="https://www.instagram.com/utsah_gita?utm_source=qr&igsh=N2pnZGhzN25oc2Mz"
               target="_blank"
-            >
+            > */}
+            <Link to='/insta' onClick={toggleMobileMenu}>
               <FontAwesomeIcon icon={faSquareInstagram} className="px-1" />{" "}
               Follow us
-            </a>
+              </Link>
+            {/* </a> */}
           </li>
         </ul>
       </div>
