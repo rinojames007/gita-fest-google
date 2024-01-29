@@ -38,6 +38,7 @@ import MathOlympiad from "./pages/Registration page/MathOlympiad";
 import Robotics from "./pages/Registration page/Robotics";
 import Feedback from "./pages/Input/Feedback";
 import Notice from "./pages/Notice";
+import InstagramPage from "./pages/InstagramPage";
 
 export default function App() {
   return (
@@ -55,6 +56,7 @@ export default function App() {
         <Route path="/anwesh" element={<Anwesh />} />
         <Route path="/ahwan" element={<Ahwan />} />
         <Route path="/akanksha" element={<Akanksha />} />
+        <Route path="/insta" element={<InstagramPage/>} />
         <Route
           path="/akanksha/registrationPage"
           element={<AkankshaRegistrationPage />}
