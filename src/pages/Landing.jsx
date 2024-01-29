@@ -131,7 +131,7 @@ export default function Landing() {
         Join our WhatsApp Channel!
       </div>
       <div className="whatsapp-button">
-        <a href="https://whatsapp.com/channel/0029VaJmZcQ6BIEezcBq8U23" >
+        <a href="https://whatsapp.com/channel/0029VaJmZcQ6BIEezcBq8U23" target="_blank">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/598px-WhatsApp.svg.png"
           alt="WhatsApp Icon"
