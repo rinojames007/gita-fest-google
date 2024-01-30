@@ -10,7 +10,7 @@ const Footer = () => {
           <a
             href="https://gita.edu.in/"
             target="_blank"
-            className="flex space-x-2 text-white hover:text-red-500 "
+            className="md:flex space-x-2 hidden text-white hover:text-red-500 "
           >
             <img src="Gita-logo.png" alt="Logo Gita" className="w-[20px]" />
             <p className=" text-xs underline underline-offset-2 ">
@@ -25,7 +25,7 @@ const Footer = () => {
             <p className=" text-xs underline underline-offset-2 text-white">gitabbsr</p>
           </a> */}
         </div>
-        <ul className="flex flex-col md:flex-row justify-center items-center py-[30px] md:h-[100px] h-fit w-full space-y-4 md:space-y-0  md:space-x-5">
+        <ul className="flex flex-col md:flex-row justify-center items-center pt-[30px] md:h-[100px] h-fit w-full space-y-4 md:space-y-0  md:space-x-5">
           <Link to="/fest/CreditsPage">
             <li className="font-semibold underline text-sm sm:text-lg text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
               Credits
@@ -64,6 +64,16 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
+        <a
+            href="https://gita.edu.in/"
+            target="_blank"
+            className="flex space-x-2 md:hidden py-4 text-white hover:text-red-500 "
+          >
+            <img src="Gita-logo.png" alt="Logo Gita" className="w-[20px]" />
+            <p className=" text-xs underline underline-offset-2 ">
+              GITA Autonomous College, Bhubaneswar
+            </p>
+          </a>
       </div>
     </div>
   );

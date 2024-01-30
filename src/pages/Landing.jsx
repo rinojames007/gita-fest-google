@@ -5,6 +5,7 @@ import Footer from "../Components/Footer/Footer";
 import Hero from "../Components/Hero/Hero";
 import Highlights from "../Components/Highlights/Highlights";
 import Navbar from "../Components/Navbar/Navbar";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
   const [loading, setLoading] = useState(true);
@@ -72,7 +73,7 @@ export default function Landing() {
   
 
   const messages = [
-    "The registration process for Audition will be held from February 1, 2024.",
+    <Link to="/akanksha">The registration process for Audition will be held from February 1, 2024.</Link>,
   ];
 
   return (
@@ -100,7 +101,9 @@ export default function Landing() {
         loop=""
       >
         {messages.map((message, index) => (
+          
           <p key={index}>{message}</p>
+          
         ))}
       </marquee>
 

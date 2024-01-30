@@ -64,6 +64,7 @@ const Ahwan = () => {
             <EventCard
               name="Boys"
               url={"https://i.postimg.cc/xdy0N6SW/niraj.jpg"}
+              desc="Click here"
             />
           </Link>
 
@@ -74,6 +75,7 @@ const Ahwan = () => {
             <EventCard
               name="Girls"
               url={"https://i.postimg.cc/cHLvDy3G/women.jpg"}
+              desc="Click here"
             />
           </Link>
         </div>

@@ -39,11 +39,11 @@ const Anwesh = () => {
           <h1 className="md:text-5xl text-3xl font-bold text-white text-center">
           Anwesh 
           </h1>
-          <h1 className="md:text-4xl text-2xl font-bold my-2 text-white text-center">
+          <h1 className="md:text-3xl text-xl font-semibold my-2 text-white text-center">
           (Tech-Fest)
           </h1>
         </div>
-        <span className="md:text-2xl text-xl font-bold text-[#fcfcfc] my-4">( 20.02.2024 & 21.02.2024 )</span>
+        <span className="md:text-lg text-sm font-semibold text-[#fcfcfc] my-4">( 20.02.2024 & 21.02.2024 )</span>
         <p className="text-sm mb-8 text-slate-200 px-2 text-center">
           Welcome to the gateway of innovation! Our Techfest Registration Page
           is your ticket to an exhilarating world of technology and creativity.
@@ -60,7 +60,7 @@ const Anwesh = () => {
           <img
             src="https://i.postimg.cc/RV2msmVY/Innovation-amico.webp"
             alt="ilustrator"
-            className="w-[70%] md:w-[400px]"
+            className="w-[70%] md:w-[350px]"
           />
         </div>
           
