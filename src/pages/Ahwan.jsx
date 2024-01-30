@@ -57,22 +57,33 @@ const Ahwan = () => {
         </p>
 
         <div className="Event-Container w-full flex justify-around flex-wrap">
-          <Link to="/ahwanBoys" className=" w-[90%] sm:w-[30%] h-fit active:scale-90">
+          <Link
+            to="/ahwanBoys"
+            className=" w-[90%] sm:w-[30%] h-fit active:scale-90"
+          >
             <EventCard
               name="Boys"
-              url={
-                "https://i.postimg.cc/xdy0N6SW/niraj.jpg"
-              }
+              url={"https://i.postimg.cc/xdy0N6SW/niraj.jpg"}
             />
           </Link>
 
-          <Link to="/ahwanGirls" className=" w-[90%] sm:w-[30%] h-fit active:scale-90">
+          <Link
+            to="/ahwanGirls"
+            className=" w-[90%] sm:w-[30%] h-fit active:scale-90"
+          >
             <EventCard
               name="Girls"
               url={"https://i.postimg.cc/cHLvDy3G/women.jpg"}
             />
           </Link>
         </div>
+      </div>
+      <div className="ilustrator flex justify-center w-full items-center py-[8px] ">
+        <img
+          src="https://i.postimg.cc/Cxb3cf2Z/Finish-line-pana.webp"
+          alt="ilustrator"
+          className="w-[70%] md:w-[400px]"
+        />
       </div>
       {showBackToTop && (
         <button
