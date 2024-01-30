@@ -127,15 +127,16 @@ export default function Landing() {
       )}
 
       {/* WhatsApp Button */}
-      <div className={showPopup ? "whatsapp-popup active" : "whatsapp-popup"}>
+      <div className={showPopup ? "whatsapp-popup hidden active text-sm font-bold md:fixed md:flex bottom-[47px] right-[54px] bg-[#9181ed] text-white py-[10px] px-[15px] rounded-md shadow-md" : "whatsapp-popup hidden text-sm font-bold md:fixed md:flex bottom-[47px] right-[54px] bg-[#9181ed] text-white py-[10px] px-[15px] rounded-md shadow-md"}>
         Join our WhatsApp Channel!
       </div>
-      <div className="whatsapp-button">
+      <div className="hidden md:fixed bottom-[16px] right-[16px] bg-[#25d366] text-white p-[8px] rounded-full md:flex md:justify-center md:items-center cursor-pointer shadow-md z-1000">
         <a href="https://whatsapp.com/channel/0029VaJmZcQ6BIEezcBq8U23" target="_blank">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/598px-WhatsApp.svg.png"
           alt="WhatsApp Icon"
           width="30"
+          
         />
         </a>
       </div>
