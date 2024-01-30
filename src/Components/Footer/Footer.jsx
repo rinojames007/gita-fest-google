@@ -55,7 +55,7 @@ const Footer = () => {
               Follow us
             </a>
           </li>
-          <li className="font-semibold md:hidden  underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
+          <li className="font-semibold hidden underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
             <Link
               to='/insta'
             >

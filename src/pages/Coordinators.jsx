@@ -39,11 +39,17 @@ const Coordinators = () => {
       </div>
       <div className="desc md:mx-11">
         
-        <p className="UpcommingEvents text-2xl md:text-4xl mt-[100px] text-center font-semibold text-white">
+        <p className="UpcommingEvents text-2xl md:text-4xl mt-[60px] text-center font-semibold text-white">
         To be Announced...
         </p>
       </div>
-      <div></div>
+      <div className="ilustrator flex justify-center w-full items-center pt-[30px] ">
+        <img
+          src="https://i.postimg.cc/FszNfjy4/team.png"
+          alt="ilustrator"
+          className="w-[95%] md:w-[550px]"
+        />
+      </div>
       {showBackToTop && (
         <button
           className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"

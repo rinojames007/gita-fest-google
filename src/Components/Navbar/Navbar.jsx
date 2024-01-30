@@ -56,7 +56,7 @@ const Navbar = () => {
           to="/"
           className=" rounded-full backdrop-blur-sm md:backdrop-blur-none gradient-shift  h-[40px] w-[160px] sm:h-[50px] sm:w-[260px]  neon-border p-3 ring-4 ring-blue-500 transition-all duration-300 hover:cursor-pointer "
         >
-          <div className="header  flex justify-center items-center bg-cover w-full h-full bg-center ">
+          <div className="header flex justify-center items-center bg-cover w-full h-full bg-center ">
             <h1
               className="text-2xl shadowText font-bold md:text-3xl text-white"
               id="Salsa-font"
@@ -75,7 +75,7 @@ const Navbar = () => {
           {navElem.map((item) => (
             <li
               key={item.name}
-              className="hover:underline hover:scale-110 text-2xl font-bold hover:cursor-pointer "
+              className="hover:underline hover:scale-110 md:text-lg xl:text-2xl font-bold hover:cursor-pointer "
               id="shadowText"
             >
               <Link
@@ -188,10 +188,10 @@ const Navbar = () => {
               href="https://www.instagram.com/utsah_gita?utm_source=qr&igsh=N2pnZGhzN25oc2Mz"
               target="_blank"
             > */}
-            <Link to='/insta' onClick={toggleMobileMenu}>
+            {/* <Link to='/insta' onClick={toggleMobileMenu}>
               <FontAwesomeIcon icon={faSquareInstagram} className="px-1" />{" "}
               Follow us
-              </Link>
+              </Link> */}
             {/* </a> */}
           </li>
         </ul>
