@@ -7,8 +7,8 @@ const EventUpdates = () => {
   return (
     <div className=" flex items-center mx-auto">
       <div className=" flex md:flex-row flex-col items-center py-7 px-3 md:py-[60px] md:px-[40px] md:space-x-6 mx-auto">
-        <div className="left hidden md:w-[40%] md:flex items-center mx-auto">
-          <div className="img-container w-full flex items-center rounded-xl shadow-md shadow-black">
+        <div className="left hidden md:w-[50%] md:flex items-center mx-auto">
+          <div className="img-container w-full flex items-center rounded-xl shadow-xl shadow-black">
             <img
               src="https://i.postimg.cc/br6N8YFQ/Robo-wars.webp"
               alt="Event-Picture"
@@ -34,9 +34,16 @@ const EventUpdates = () => {
                 date={item.date}
               />
             ))} */}
-            <p className="BlinkText text-2xl md:text-4xl mb-[70px]  font-bold text-white text-center pt-[30px] md:pt-[60px] UpcommingEvents">
+            <p className="BlinkText text-2xl md:text-4xl mb-[20px]  font-bold text-white text-center pt-[15px] md:pt-[20px] UpcommingEvents">
               To be Announced...
             </p>
+            <div className="ilustrator flex justify-center w-full items-center py-[8px] ">
+          <img
+            src="https://i.postimg.cc/8c8sR322/coordinator.webp"
+            alt="ilustrator"
+            className="w-[80%] md:w-[320px]"
+          />
+        </div>
           </div>
         </div>
       </div>
