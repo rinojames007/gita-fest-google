@@ -50,11 +50,19 @@ const Anwesh = () => {
         </p>
         <div className="Event-Container w-full flex justify-around flex-wrap">
         <Link to="/anwesh/techEvents" className=" w-[90%] sm:w-[30%] h-fit active:scale-90">
-          <EventCard name="Tech Fest" url={"https://i.postimg.cc/1Xy5R4wq/techfest.jpg"} />
+          <EventCard name="Tech Fest" url={"https://i.postimg.cc/1Xy5R4wq/techfest.jpg"} desc={"Click here"} />
         </Link>
         <Link to="/roboticsDetails" className=" w-[90%] sm:w-[30%] h-fit active:scale-90">
-          <EventCard name="Robotics" url={"https://i.postimg.cc/y6rQB070/robotics.jpg"} />
-        </Link>
+          <EventCard name="Robotics" url={"https://i.postimg.cc/y6rQB070/robotics.jpg"} desc={"Click here"} />
+        </Link> 
+
+        <div className="ilustrator flex justify-center w-full items-center py-[8px] ">
+          <img
+            src="https://i.postimg.cc/RV2msmVY/Innovation-amico.webp"
+            alt="ilustrator"
+            className="w-[70%] md:w-[400px]"
+          />
+        </div>
           
         </div>
       </div>

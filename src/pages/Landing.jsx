@@ -127,7 +127,7 @@ export default function Landing() {
       )}
 
       {/* WhatsApp Button */}
-      <div className={showPopup ? "whatsapp-popup hidden active text-sm font-bold md:fixed md:flex bottom-[47px] right-[54px] bg-[#9181ed] text-white py-[10px] px-[15px] rounded-md shadow-md" : "whatsapp-popup hidden text-sm font-bold md:fixed md:flex bottom-[47px] right-[54px] bg-[#9181ed] text-white py-[10px] px-[15px] rounded-md shadow-md"}>
+      <div className={showPopup ? "whatsapp-popup hidden bg-[#161b29] text-[#161b29] active md:text-sm md:font-bold md:fixed md:flex bottom-[47px] right-[54px] md:bg-[#9181ed] md:text-white md:py-[10px] md:px-[15px] md:rounded-md md:shadow-md" : "whatsapp-popup bg-[#161b29] text-[#161b29] hidden md:text-sm md:font-bold md:fixed md:flex md:bottom-[47px] md:right-[54px] md:bg-[#9181ed] md:text-white md:py-[10px] md:px-[15px] md:rounded-md md:shadow-md"}>
         Join our WhatsApp Channel!
       </div>
       <div className="hidden md:fixed bottom-[16px] right-[16px] bg-[#25d366] text-white p-[8px] rounded-full md:flex md:justify-center md:items-center cursor-pointer shadow-md z-1000">

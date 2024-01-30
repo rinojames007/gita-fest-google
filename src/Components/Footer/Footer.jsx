@@ -27,35 +27,35 @@ const Footer = () => {
         </div>
         <ul className="flex flex-col md:flex-row justify-center items-center py-[30px] md:h-[100px] h-fit w-full space-y-4 md:space-y-0  md:space-x-5">
           <Link to="/fest/CreditsPage">
-            <li className="font-semibold underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
+            <li className="font-semibold underline text-sm sm:text-lg text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
               Credits
             </li>
           </Link>
           <Link to="/feedback">
-            <li className="font-semibold underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
+            <li className="font-semibold underline text-sm sm:text-lg text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
               Your Feedback
             </li>
           </Link>
           <Link to="/coordinators" className="hidden md:block">
-            <li className="font-semibold underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
+            <li className="font-semibold underline text-sm sm:text-lg text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
               Event Coordinators
             </li>
           </Link>
           <Link to="/help">
-            <li className="font-semibold underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
+            <li className="font-semibold underline text-sm sm:text-lg text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
               Help and Support
             </li>
           </Link>
-          <li className="font-semibold hidden md:block underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
+          <li className="font-semibold underline text-sm sm:text-lg text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
             <a
-              href="https://www.instagram.com/utsah_gita?utm_source=qr&igsh=N2pnZGhzN25oc2Mz"
+              href="https://linktr.ee/utsah_gita"
               target="_blank"
             >
               <FontAwesomeIcon icon={faSquareInstagram} className="px-1  text-pink-600 w-fit rounded-md" />
               Follow us
             </a>
           </li>
-          <li className="font-semibold hidden underline text-sm sm:text-2xl text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
+          <li className="font-semibold hidden underline text-sm sm:text-lg text-slate-300 hover:underline hover:text-slate-500 hover:cursor-pointer">
             <Link
               to='/insta'
             >

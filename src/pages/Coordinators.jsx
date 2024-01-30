@@ -34,7 +34,7 @@ const Coordinators = () => {
       <Navbar />
       <div className="pt-[60px]">
         <h1 className="font-bold md:text-5xl text-3xl text-center py-5 text-white">
-          Coordinators Page
+          Coordinators
         </h1>
       </div>
       <div className="desc md:mx-11">
@@ -45,7 +45,7 @@ const Coordinators = () => {
       </div>
       <div className="ilustrator flex justify-center w-full items-center pt-[30px] ">
         <img
-          src="https://i.postimg.cc/FszNfjy4/team.png"
+          src="https://i.postimg.cc/MHsz21sD/team.webp"
           alt="ilustrator"
           className="w-[95%] md:w-[550px]"
         />

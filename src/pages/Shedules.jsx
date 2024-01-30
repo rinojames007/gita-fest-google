@@ -41,7 +41,7 @@ const Shedules = () => {
       </p>
       <div className="ilustrator flex justify-center w-full items-center pt-[30px] ">
         <img
-          src="https://i.postimg.cc/5yPLNww0/shedule.png"
+          src="https://i.postimg.cc/fygQgDLq/shedule.webp"
           alt="ilustrator"
           className="w-[90%] md:w-[550px]"
         />
