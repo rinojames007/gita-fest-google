@@ -73,7 +73,7 @@ export default function Landing() {
   
 
   const messages = [
-    <Link to="/akanksha">The registration process for Audition will be held from February 1, 2024.</Link>,
+    <Link to="/akanksha">Click here to register for the Auditions for the Akanksha 2024 (Cultural Fest).</Link>,
   ];
 
   return (
