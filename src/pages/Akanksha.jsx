@@ -26,7 +26,7 @@ const Akanksha = () => {
   }, []);
 
   useEffect(() => {
-    const targetDate = new Date("February 1, 2024 07:30:00").getTime();
+    const targetDate = new Date("February 1, 2024 10:00:00").getTime();
 
     const updateCountdown = () => {
       const currentDate = new Date().getTime();
