@@ -16,16 +16,23 @@ const TrendingNotices = [
     
   },
   {
+    title: "Robotronics",
+    content: "Registration open",
+    imageSrc: "https://i.postimg.cc/Gpy5S9xS/Whats-App-Image-2024-02-01-at-23-23-02-a9a4837c.jpg",
+    link:"/roboticsDetails"
+  },
+  
+  // Add more notice objects as needed
+];
+
+const notices = [
+  {
     title: "Date Announced",
     content: "GITA Annual Fest date Announced",
     imageSrc: "https://i.postimg.cc/JznsPtVn/date-announced.jpg",
     pdfLink:
       "https://drive.google.com/file/d/1x0H59EF2JsIfd6JGz3ezM5oppucezlf8/view?usp=sharing",
   },
-  // Add more notice objects as needed
-];
-
-const notices = [
   // Add more notice objects as needed
 ];
 
@@ -94,11 +101,13 @@ const Notice = () => {
               </h3>
               <p className="mb-2 text-center">{notice.content}</p>
               {notice.imageSrc && (
+                <Link to={notice.link}>
                 <img
                   src={notice.imageSrc}
                   alt={`Image for ${notice.title}`}
-                  className="rounded-lg h-auto mb-2"
+                  className=" rounded-lg  h-auto mb-2 shadow-md shadow-black"
                 />
+                </Link>
               )}
               {notice.pdfLink && (
                 <a
