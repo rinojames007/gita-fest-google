@@ -1,7 +1,20 @@
 import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar/Navbar";
+import { Link } from "react-router-dom";
 
 const TrendingNotices = [
+  {
+    title: "Registration Started",
+    content: "Akanksha 2024 (Cultural Fest)",
+    imageSrc: "https://i.postimg.cc/pTzBRcVY/Audition-Akanksha.png",
+    link:"/akanksha"
+  },
+  {
+    title: "Audition for  Odissi and semi-classical",
+    content: "Akanksha 2024 (Cultural Fest)",
+    imageSrc: "https://i.postimg.cc/RhcjH0gy/odissi-Audition.jpg",
+    
+  },
   {
     title: "Date Announced",
     content: "GITA Annual Fest date Announced",
@@ -9,13 +22,10 @@ const TrendingNotices = [
     pdfLink:
       "https://drive.google.com/file/d/1x0H59EF2JsIfd6JGz3ezM5oppucezlf8/view?usp=sharing",
   },
-  
- 
   // Add more notice objects as needed
 ];
 
 const notices = [
-  
   // Add more notice objects as needed
 ];
 
@@ -23,7 +33,7 @@ const Notice = () => {
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
     window.scrollTo(0, 0);
-  }, []); 
+  }, []);
   return (
     <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] min-h-screen h-full ">
       {/* Notice Section */}
@@ -41,21 +51,20 @@ const Notice = () => {
               key={index}
               className="mb-6 flex flex-col w-[95%] md:w-[40%]  justify-center items-center px-4"
             >
-              <h3 className="text-2xl font-bold mb-2 text-center">{notice.title}</h3>
+              <h3 className="text-2xl font-bold mb-2 text-center">
+                {notice.title}
+              </h3>
               <p className="mb-2 text-center">{notice.content}</p>
               {notice.imageSrc && (
-                <a
-                href={notice.pdfLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:text-red-600 underline"
-              >
-                <img
-                  src={notice.imageSrc}
-                  alt={`Image for ${notice.title}`}
-                  className=" rounded-lg  h-auto mb-2"
-                />
-                </a>
+                
+                  <Link to={notice.link}>
+                  <img
+                    src={notice.imageSrc}
+                    alt={`Image for ${notice.title}`}
+                    className=" rounded-lg  h-auto mb-2 shadow-md shadow-black"
+                  />
+                  </Link>
+               
               )}
               {notice.pdfLink && (
                 <a
@@ -80,7 +89,9 @@ const Notice = () => {
               key={index}
               className="mb-6 flex flex-col w-[95%] md:w-[40%] justify-center items-center px-4"
             >
-              <h3 className="text-2xl font-bold mb-2 text-center">{notice.title}</h3>
+              <h3 className="text-2xl font-bold mb-2 text-center">
+                {notice.title}
+              </h3>
               <p className="mb-2 text-center">{notice.content}</p>
               {notice.imageSrc && (
                 <img

@@ -1,4 +1,5 @@
 import React from "react";
+import NoticeBox from "../Notice/NoticeBox";
 
 const EventUpdates = () => {
   // console.log(upcomingEvents);
@@ -42,34 +43,8 @@ const EventUpdates = () => {
 
               
             </div>
-            <div className=" w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
-              <h2 className="text-2xl font-bold text-center w-full">
-                Audition for Odissi and Semi-Classical
-              </h2>
-              <p className="text-lg font-semibold">
-                <strong className="text-xl font-bold">Audition Date:</strong>{" "}
-                06/02/2024
-              </p>
-              <p>If anyone is interested, contact to:</p>
-              <ul>
-                <li>
-                  <strong>Coordinator:</strong> Kaibalya Ray (4th Year)
-                </li>
-
-                <li>
-                  <strong>Contact Number:</strong>{" "}
-                  <span className="font-semibold pl-3">7681011068</span>
-                </li>
-                <li className="mt-4">
-                  <strong>Faculty Coordinator:</strong> Dr. Sushmita Dash
-                </li>
-
-                <li>
-                  <strong>Contact Number:</strong>
-                  <span className="font-semibold pl-3">8895435809</span>
-                </li>
-              </ul>
-            </div>
+            <NoticeBox/>
+            
           </div>
         </div>
       </div>
