@@ -79,46 +79,8 @@ const Akanksha = () => {
           ( 22.02.2024 & 23.02.2024 )
         </span>
 
-        {/* {loading && (
-          <div className="flex flex-col justify-center items-center h-[220px]">
-            <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
-            <div className="loader text-center text-white font-semibold text-xl mt-6 ">Loading...</div>
-          </div>
-        )}
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSc-CpCEfvdYwmUS6MDx3o9taM-HB9UpMA7NXvaNAdXkUtjjKQ/viewform?embedded=true"
-            className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="700"
-            onLoad={handleIframeLoad}
-          >
-            Loading…
-          </iframe> */}
-          
-       
-        {countdown.days >= 0 ? (
-          <div className="UpcomingEvents text-2xl md:text-3xl font-bold text-white text-center pt-[10px] flex flex-col justify-center items-center py-4 w-full">
-            <p>Registration opens in:</p>
-            <p className="ToGo shadowText mt-2 text-[#9FFFF5] font-semibold text-center">
-              {countdown.days}d {countdown.hours}h {countdown.minutes}m {countdown.seconds}s
-            </p>
-            <div className="mb-2 flex flex-col justify-center items-center w-[95%] mt-2">
-          <h2 className="text-white shadowText text-center underline underline-offset-4 font-bold md:text-5xl text-3xl my-3">
-            Audition Categories
-          </h2>
-          <ul className="text-white flex flex-col justify-center items-center md:flex-row md:mt-5 md:space-x-8 space-x-0">
-            {events.map((event, index) => (
-              <li
-                key={index}
-                className="text-2xl py-2 md:text-3xl text-center font-semibold"
-              >
-                {event}
-              </li>
-            ))}
-          </ul>
-        </div>
-          </div>
-        ) : (
-          <div className="UpcomingEvents text-2xl md:text-3xl font-bold text-white text-center pt-[10px] flex flex-col justify-center items-center py-4 w-full">
+        <div className="UpcomingEvents text-2xl md:text-3xl font-bold text-white text-center pt-[10px] flex flex-col justify-center items-center py-4 w-full">
+            <p className="py-5 text-2xl text-center px-3 BlinkText text-slate-300 font-semibold">Audition Dates: <span className="font-normal">8th & 9th Feb</span></p>
             <p>Registration is now open!</p>
             {loading && (
           <div className="flex flex-col justify-center items-center h-[220px]">
@@ -135,7 +97,8 @@ const Akanksha = () => {
             Loading…
           </iframe>
           </div>
-        )}
+       
+        
         
         <div className="ilustrator flex justify-center w-full items-center py-[8px] ">
           <img
