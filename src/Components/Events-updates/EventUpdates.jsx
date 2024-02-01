@@ -1,5 +1,6 @@
 import React from "react";
 import NoticeBox from "../Notice/NoticeBox";
+import { Link } from "react-router-dom";
 
 const EventUpdates = () => {
   // console.log(upcomingEvents);
@@ -16,18 +17,18 @@ const EventUpdates = () => {
       </div>
       <div className=" flex md:flex-row flex-col items-center justify-center md:justify-between py-7 px-3 md:py-[40px] md:px-[40px] md:space-x-6 mx-auto">
         <div className="left hidden md:w-[40%] md:flex items-center justify-center">
-        <div className="ilustrator flex justify-center w-full items-center py-[8px] ">
-                <img
-                  src="https://i.postimg.cc/8c8sR322/coordinator.webp"
-                  alt="ilustrator"
-                  className="w-[90%] md:w-[520px] rounded-3xl"
-                />
-              </div>
+          <div className="ilustrator flex justify-center w-full items-center py-[8px] ">
+            <img
+              src="https://i.postimg.cc/8c8sR322/coordinator.webp"
+              alt="ilustrator"
+              className="w-[90%] md:w-[520px] rounded-3xl"
+            />
+          </div>
+          
         </div>
         <div>
           <div className="right w-full px-2 flex flex-col items-center space-y-5 py-3 md:py-0 mx-auto">
             <div className="Event-lists w-full flex flex-col md:flex-row justify-center flex-wrap">
-            
               {/* {upcomingEvents.map((item) => (
               <EventList
                 key={item.key}
@@ -40,11 +41,8 @@ const EventUpdates = () => {
               {/* <p className="BlinkText text-xl md:text-4xl mb-[20px]  font-bold text-white text-center pt-[15px] md:pt-[20px] UpcommingEvents">
                 To be Announced...
               </p> */}
-
-              
             </div>
-            <NoticeBox/>
-            
+            <NoticeBox />
           </div>
         </div>
       </div>
