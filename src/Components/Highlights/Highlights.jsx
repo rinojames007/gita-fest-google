@@ -3,6 +3,7 @@ import ImageSlider from "../Hero/ImageSlider";
 import { Link } from "react-router-dom";
 import EventCard from "../Events/EventCard";
 import Illustrator from "../illustrator/Illustrator";
+import AddComponent from "../Adds/AddComponent";
 
 const Highlights = () => {
   const images = [
@@ -75,6 +76,8 @@ const Highlights = () => {
           <Illustrator url="https://i.postimg.cc/8P66g14g/Disc-jockey-rafiki.webp" />
         </div>
       </div> */}
+      {/* <h1 className="text-white font-semibold text-center">Place To show Google AdSense</h1> */}
+           {/* <AddComponent dataAdSlot='7064697648' />  */}
 
       <div className="last-year-gallery flex justify-center items-center my-10">
         <Link to="/gallery" className=" w-[90%] sm:w-[70%] ">

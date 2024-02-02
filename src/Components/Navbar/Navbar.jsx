@@ -20,6 +20,14 @@ import {
 const Navbar = () => {
   // State to manage the visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+    const websiteLink = "https://www.instagram.com/utsah_gita?utm_source=qr&igsh=N2pnZGhzN25oc2Mz"; // Replace with your link
+  
+    const openWebsite = () => {
+      window.open(websiteLink, '_blank');
+    };
+  
+  
 
   // Function to toggle the mobile menu
   const toggleMobileMenu = () => {
@@ -184,15 +192,15 @@ const Navbar = () => {
           </li>
 
           <li >
-            {/* <a
-              href="https://www.instagram.com/utsah_gita?utm_source=qr&igsh=N2pnZGhzN25oc2Mz"
+            <a
+            onClick={openWebsite}
               target="_blank"
-            > */}
-            {/* <Link to='/insta' onClick={toggleMobileMenu}>
+            >
+            {/* <Link to='/insta' onClick={toggleMobileMenu}> */}
               <FontAwesomeIcon icon={faSquareInstagram} className="px-1" />{" "}
               Follow us
-              </Link> */}
-            {/* </a> */}
+              {/* </Link> */}
+            </a>
           </li>
         </ul>
       </div>
