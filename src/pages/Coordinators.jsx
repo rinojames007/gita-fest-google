@@ -39,16 +39,16 @@ const Coordinators = () => {
     <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] h-full min-h-screen">
       <Navbar />
       <div className="pt-[60px]">
-        <h1 className="font-bold md:text-5xl text-3xl text-center py-5 text-white">
+        <h1 className="font-bold md:text-5xl text-3xl text-center py-3 text-white">
           Coordinators
         </h1>
       </div>
-      <div className="desc md:mx-11">
+      {/* <div className="desc md:mx-11">
         <p className="UpcommingEvents text-2xl md:text-4xl mt-[60px] text-center font-semibold text-white">
           To be Announced...
         </p>
-      </div>
-      {/* <CoordinatorList/> */}
+      </div> */}
+      <CoordinatorList/>
 
       <div className="ilustrator flex justify-center w-full items-center pt-[30px] ">
         <img
