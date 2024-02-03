@@ -41,12 +41,19 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, []);
 
+  const handleScrollDown = () => {
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div
       style={{
         backgroundImage: `url(https://i.postimg.cc/ZKMKMRNm/cultural.webp)`,
       }}
-      className="flex justify-center items-center bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] bg-no-repeat bg-cover bg-center h-screen w-full"
+      className="flex justify-center items-center bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] bg-no-repeat bg-cover bg-center h-screen w-full relative"
     >
       {/* left-contents */}
       <div className="left w-full mx-auto flex justify-center items-center ">
@@ -82,6 +89,16 @@ const Hero = () => {
             <div className="timer ToGo shadowText mt-2 text-[#9FFFF5] font-semibold text-2xl md:text-3xl text-center ">
               {timeRemaining.days}d {timeRemaining.hours}h {timeRemaining.minutes}m {timeRemaining.seconds}s <br /> to go
             </div>
+          </div>
+
+          <div
+            className="arrow-down absolute bottom-2 cursor-pointer mt-[20px]  animate-bounce"
+            onClick={handleScrollDown}
+          >
+            {/* You can replace the arrow icon below with your own image or use a library */}
+            <span role="img" aria-label="down-arrow" className="text-white text-5xl font-semibold">
+              ↓
+            </span>
           </div>
         </div>
       </div>

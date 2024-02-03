@@ -1,3 +1,4 @@
+import CoordinatorList from "../Components/Coordinator/CoordinatorList";
 import Navbar from "../Components/Navbar/Navbar";
 import React, { useEffect, useState } from "react";
 const Coordinators = () => {
@@ -8,6 +9,11 @@ const Coordinators = () => {
     window.scrollTo(0, 0);
     const handleScroll = () => {
       setShowBackToTop(window.scrollY > 700);
+    };
+
+    const handleIframeLoad = () => {
+      // Set loading to false when the iframe has finished loading
+      setLoading(false);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -38,11 +44,12 @@ const Coordinators = () => {
         </h1>
       </div>
       <div className="desc md:mx-11">
-        
         <p className="UpcommingEvents text-2xl md:text-4xl mt-[60px] text-center font-semibold text-white">
-        To be Announced...
+          To be Announced...
         </p>
       </div>
+      {/* <CoordinatorList/> */}
+
       <div className="ilustrator flex justify-center w-full items-center pt-[30px] ">
         <img
           src="https://i.postimg.cc/MHsz21sD/team.webp"
@@ -50,6 +57,7 @@ const Coordinators = () => {
           className="w-[95%] md:w-[550px]"
         />
       </div>
+      
       {showBackToTop && (
         <button
           className="fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded"
