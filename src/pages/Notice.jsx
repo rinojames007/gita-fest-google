@@ -4,24 +4,32 @@ import { Link } from "react-router-dom";
 
 const TrendingNotices = [
   {
+    title: "Faculty Coordinators (Akanksha)",
+    content: "Audition, Practice",
+    imageSrc:
+      "https://i.postimg.cc/15dPpmxX/Audition-Notice-Faculty-Coordinators.webp",
+    pdfLink:
+      "https://drive.google.com/file/d/15KtWu4RR4uOXSasd2TcBoQYfyWBHKrQZ/view?usp=sharing",
+  },
+  {
     title: "Registration Started",
     content: "Akanksha 2024 (Cultural Fest)",
     imageSrc: "https://i.postimg.cc/pTzBRcVY/Audition-Akanksha.png",
-    link:"/akanksha"
+    link: "/akanksha",
   },
   {
     title: "Audition for  Odissi and semi-classical",
     content: "Akanksha 2024 (Cultural Fest)",
     imageSrc: "https://i.postimg.cc/RhcjH0gy/odissi-Audition.jpg",
-    
   },
   {
     title: "Robotronics",
     content: "Registration open",
-    imageSrc: "https://i.postimg.cc/Gpy5S9xS/Whats-App-Image-2024-02-01-at-23-23-02-a9a4837c.jpg",
-    link:"/roboticsDetails"
+    imageSrc:
+      "https://i.postimg.cc/Gpy5S9xS/Whats-App-Image-2024-02-01-at-23-23-02-a9a4837c.jpg",
+    link: "/roboticsDetails",
   },
-  
+
   // Add more notice objects as needed
 ];
 
@@ -63,22 +71,20 @@ const Notice = () => {
               </h3>
               <p className="mb-2 text-center">{notice.content}</p>
               {notice.imageSrc && (
-                
-                  <Link to={notice.link}>
+                <Link to={notice.link}>
                   <img
                     src={notice.imageSrc}
                     alt={`Image for ${notice.title}`}
                     className=" rounded-lg  h-auto mb-2 shadow-md shadow-black"
                   />
-                  </Link>
-               
+                </Link>
               )}
               {notice.pdfLink && (
                 <a
                   href={notice.pdfLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-red-600 underline"
+                  className="text-blue-500 font-semibold hover:text-red-600 underline"
                 >
                   View PDF
                 </a>
@@ -102,11 +108,11 @@ const Notice = () => {
               <p className="mb-2 text-center">{notice.content}</p>
               {notice.imageSrc && (
                 <Link to={notice.link}>
-                <img
-                  src={notice.imageSrc}
-                  alt={`Image for ${notice.title}`}
-                  className=" rounded-lg  h-auto mb-2 shadow-md shadow-black"
-                />
+                  <img
+                    src={notice.imageSrc}
+                    alt={`Image for ${notice.title}`}
+                    className=" rounded-lg  h-auto mb-2 shadow-md shadow-black"
+                  />
                 </Link>
               )}
               {notice.pdfLink && (
@@ -114,7 +120,7 @@ const Notice = () => {
                   href={notice.pdfLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-red-600 underline"
+                  className="text-blue-500 font-semibold hover:text-red-600 underline"
                 >
                   View PDF
                 </a>

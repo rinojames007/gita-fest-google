@@ -52,13 +52,14 @@ export default function Help() {
       <div className=" flex py-[60px] justify-center w-full h-full">
         <div className="hero w-full h-full m-4 flex-col justify-center text-center item-center ">
           <p className="text-3xl font-bold text-white">Help and support</p>
+          <p className="text-xl font-semibold text-green-600 py-2 md:hidden">Whatsapp us: <span className="text-white text-lg"> +91 90405 67377</span></p>
           <button
             className="bg-green-500 hidden md:flex mx-auto hover:bg-green-600 text-white px-4 py-2 my-8 rounded"
             onClick={openWhatsAppChat}
           >
             Need Help? Chat on WhatsApp
           </button>
-          <div className="loader text-center hidden md:block mx-auto text-white font-semibold my-6 text-xl mt-6 ">
+          <div className="loader text-center mx-auto text-white font-semibold my-6 text-xl mt-6 ">
             Or
           </div>
           {loading && (
@@ -71,12 +72,19 @@ export default function Help() {
           )}
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSe4XxJr5TVxCg9OAi1Vbhx3WMq0veWmVrpENnkUbysTYKxouA/viewform?embedded=true"
-            className="mx-auto w-full md:w-2/3 lg:w-1/2"
+            className="mx-auto w-full md:w-2/3 lg:w-1/2 md:hidden"
             height="700"
             onLoad={handleIframeLoad}
           >
             Loading…
           </iframe>
+          <iframe
+            src="https://whatsform.com/KtHSid"
+            width="100%"
+            className="hidden md:block"
+            height="600"
+            onLoad={handleIframeLoad}
+          ></iframe>
         </div>
       </div>
       {showBackToTop && (
