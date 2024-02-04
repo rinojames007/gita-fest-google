@@ -92,7 +92,7 @@ const Hero = () => {
           </div>
 
           <div
-            className="arrow-down absolute bottom-2 cursor-pointer mt-[20px]  animate-bounce"
+            className="arrow-down absolute bottom-8 md:bottom-2 cursor-pointer mt-[20px]  animate-bounce"
             onClick={handleScrollDown}
           >
             {/* You can replace the arrow icon below with your own image or use a library */}
@@ -102,6 +102,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

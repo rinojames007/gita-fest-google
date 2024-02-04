@@ -4,18 +4,34 @@ import EventCard from "./EventCard";
 
 const Events = () => {
   return (
-    <div className="pt-[50px] flex flex-col justify-center items-center">
-      <div className="heading flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
+       <img
+        src="https://i.postimg.cc/8CG1275V/Annual-Function-2024-Banner-cropped.webp"
+        alt="Banner"
+        className="mx-auto md:hidden w-[100%] border-2 border-black shadow-lg shadow-black"
+      />
+      <div className="heading pt-[50px]  flex flex-col justify-center items-center">
         <h1 className="text-2xl md:text-4xl text-center font-bold text-white">
           Experience the Best of
         </h1>
         <h1 className="text-2xl md:text-4xl text-center font-bold text-white">
           College fest!
         </h1>
+        
         <p className="pt-5 text-lg text-center font-semibold text-slate-300">
           Explore various events, workshops, competitions and much more.
         </p>
       </div>
+      <img
+        src="https://i.postimg.cc/MGjdkGnq/Annual-Function-2024-Banner-final.webp"
+        alt="Banner"
+        className="mx-auto w-[100%] hidden md:block border-2 border-black shadow-lg mt-6 shadow-black"
+      />
+       {/* <img
+        src="https://i.postimg.cc/8CG1275V/Annual-Function-2024-Banner-cropped.webp"
+        alt="Banner"
+        className="mx-auto md:hidden w-[100%] border-2 border-black shadow-lg mt-6 shadow-black"
+      /> */}
       <div className="flex flex-col sm:flex-row justify-around items-center w-full py-[50px]">
         <Link
           to="/ahwan"
