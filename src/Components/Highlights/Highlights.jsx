@@ -77,9 +77,10 @@ const Highlights = () => {
         </div>
       </div> */}
       {/* <h1 className="text-white font-semibold text-center">Place To show Google AdSense</h1> */}
-           {/* <AddComponent dataAdSlot='7064697648' />  */}
+      {/* <AddComponent dataAdSlot='7064697648' />  */}
 
-      <div className="last-year-gallery flex justify-center items-center my-10">
+     
+      <div className="last-year-gallery flex justify-center items-center my-3 md:my-10">
         <Link to="/gallery" className=" w-[90%] sm:w-[70%] ">
           <EventCard
             name="Fest Gallery"
@@ -88,6 +89,7 @@ const Highlights = () => {
           />
         </Link>
       </div>
+     
     </div>
   );
 };
