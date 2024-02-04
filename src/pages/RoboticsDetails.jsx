@@ -68,7 +68,7 @@ const RoboticsDetails = () => {
         rel="noopener noreferrer"
         className="text-blue-500 text-center mx-auto text-xl md:text-3xl font-semibold py-3 w-fit hover:text-red-600 underline block mb-2"
       >
-        Visit the Site <FontAwesomeIcon icon={faLocationArrow} />
+        Visit the site for registration <FontAwesomeIcon icon={faLocationArrow} />
       </a>
 
       {/* Robotics Details */}
