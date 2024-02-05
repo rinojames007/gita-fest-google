@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-const CoordinatorList = () => {
-  const [loading, setLoading] = useState(true);
+const SheduleList = () => {
+    const [loading, setLoading] = useState(true);
 
   const handleIframeLoad = () => {
     // Set loading to false when the iframe has finished loading
@@ -9,18 +9,17 @@ const CoordinatorList = () => {
   };
 
   const list = [
-    {
-      title: "Student Coordinators ( Akanksha 2024 )",
-      sheet:
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vQrr2iazjRIigxZqKmE9H_TcW5MKW3qsMlJQVz47voTC-9oFCJfF1wOH0azdvbwWc1QUES4GP_e5BZN/pubhtml?widget=true&amp;headers=false",
-    },
-    {
-      title: "Faculty Coordinators (Akanksha 2024)",
-      sheet:
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vT7TIIaUjeAHJNkoEhiCbR8nd__y25IIyla_6oA9lJsFaZmulRZp3sYt3e1F64FNW74vPMSMbIZCYGP/pubhtml?widget=true&amp;headers=false",
-    },
+    // {
+    //   title: "Student Coordinators ( Akanksha 2024 )",
+    //   sheet:
+    //     "https://docs.google.com/spreadsheets/d/e/2PACX-1vQrr2iazjRIigxZqKmE9H_TcW5MKW3qsMlJQVz47voTC-9oFCJfF1wOH0azdvbwWc1QUES4GP_e5BZN/pubhtml?widget=true&amp;headers=false",
+    // },
+    // {
+    //   title: "Faculty Coordinators (Akanksha 2024)",
+    //   sheet:
+    //     "https://docs.google.com/spreadsheets/d/e/2PACX-1vT7TIIaUjeAHJNkoEhiCbR8nd__y25IIyla_6oA9lJsFaZmulRZp3sYt3e1F64FNW74vPMSMbIZCYGP/pubhtml?widget=true&amp;headers=false",
+    // },
   ];
-
   return (
     <div className="flec flex-col justify-center mx-auto items-center w-full h-full py-5 space-y-[40px]">
       {list.map((item, index) => (
@@ -44,7 +43,7 @@ const CoordinatorList = () => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default CoordinatorList;
+export default SheduleList

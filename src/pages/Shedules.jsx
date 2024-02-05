@@ -1,5 +1,6 @@
 import Navbar from "../Components/Navbar/Navbar";
 import React, { useEffect, useState } from "react";
+import SheduleList from "../Components/Shedules/SheduleList";
 const Shedules = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -37,8 +38,10 @@ const Shedules = () => {
       </h1>
 
       <p className="UpcommingEvents text-2xl md:text-4xl mt-[40px] font-semibold text-center text-white">
-        To be Announced...
+        To be Announced soon...
       </p>
+
+      {/* <SheduleList/> */}
       <div className="ilustrator flex justify-center w-full items-center pt-[30px] ">
         <img
           src="https://i.postimg.cc/fygQgDLq/shedule.webp"

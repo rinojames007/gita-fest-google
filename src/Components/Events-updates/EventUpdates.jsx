@@ -27,7 +27,7 @@ const EventUpdates = () => {
           
         </div>
         <div>
-          <div className="right w-full px-2 flex flex-col items-center space-y-5 py-3 md:py-0 mx-auto">
+          <div className="right justify-center w-full px-2 flex flex-col items-center space-y-5 py-3 md:py-0 mx-auto">
             <div className="Event-lists w-full flex flex-col md:flex-row justify-center flex-wrap">
               {/* {upcomingEvents.map((item) => (
               <EventList
