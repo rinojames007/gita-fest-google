@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const TrendingNotices = [
   {
     title: "Faculty Coordinators (Akanksha)",
-    content: "Audition, Practice",
+    content: "Audition, Practice, Notice for Audition", 
     imageSrc:
-      "https://i.postimg.cc/15dPpmxX/Audition-Notice-Faculty-Coordinators.webp",
+      "https://i.postimg.cc/d3LtjW9t/Audition-Final-Notice-05-02-2024-page-0001.webp",
     pdfLink:
-      "https://drive.google.com/file/d/15KtWu4RR4uOXSasd2TcBoQYfyWBHKrQZ/view?usp=sharing",
+      "https://drive.google.com/file/d/1cdlkaUv0_kV3-Cu5Tp1-0bJ7ygJK7eQ3/view?usp=sharing",
   },
   {
     title: "Registration Started",
