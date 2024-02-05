@@ -20,7 +20,10 @@ export default function Landing() {
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
 
     return () => {
-      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+      window.removeEventListener(
+        "beforeinstallprompt",
+        handleBeforeInstallPrompt
+      );
     };
   }, []);
 
@@ -70,18 +73,15 @@ export default function Landing() {
       clearInterval(interval);
     };
   }, []);
-  
 
   const messages = [
-    <Link to="/akanksha">Click here to register for the Auditions for the Akanksha 2024 (Cultural Fest).</Link>,
+    <a href="https://drive.google.com/file/d/1cdlkaUv0_kV3-Cu5Tp1-0bJ7ygJK7eQ3/view?usp=sharing" target="_blank">
+     Auditions for Akanksha 2024 will start on February 8, 2024. Click here for more details...
+    </a>,
   ];
 
   return (
-    <div
-      onLoad={handleIframeLoad}
-      className="min-h-screen h-full"
-    >
-      
+    <div onLoad={handleIframeLoad} className="min-h-screen h-full">
       <Navbar />
       {loading && (
         <div className="flex flex-col justify-center items-center h-[220px]">
@@ -93,54 +93,60 @@ export default function Landing() {
       )}
       <Hero />
       <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] h-full">
+        <marquee
+          className="marquee border-[#FFD700] border-y-2 hidden md:flex text-[#F5EFFF] bg-[#100d1e] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
+          behavior="alternate"
+          loop=""
+        >
+          {messages.map((message, index) => (
+            <p key={index}>{message}</p>
+          ))}
+        </marquee>
 
-     
-      <marquee
-        className="marquee border-[#FFD700] border-y-2 hidden md:flex text-[#F5EFFF] bg-[#100d1e] py-[8px] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
-        behavior="alternate"
-        loop=""
-      >
-        {messages.map((message, index) => (
-          
-          <p key={index}>{message}</p>
-          
-        ))}
-      </marquee>
-
-      <marquee
-        className="marquee md:hidden text-[#F5EFFF] border-[#FFD700] border-y-2 py-[8px] bg-[#100d1e] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
-        behavior="Scroll"
-        loop=""
-      >
-        {messages.map((message, index) => (
-          <p key={index}>{message}</p>
-        ))}
-      </marquee>
-      <Events />
-      <EventUpdates />
-      <Highlights />
-      <Footer />
+        <marquee
+          className="marquee md:hidden text-[#F5EFFF] border-[#FFD700] border-y-2 py-[8px] bg-[#100d1e] md:py-[15px] md:text-xl text-[1.2rem] font-semibold"
+          behavior="Scroll"
+          loop=""
+        >
+          {messages.map((message, index) => (
+            <p key={index}>{message}</p>
+          ))}
+        </marquee>
+        <Events />
+        <EventUpdates />
+        <Highlights />
+        <Footer />
       </div>
       {/* Install to Home Screen Button */}
       {deferredPrompt && (
-        <div className="install-button fixed top-0 left-0 right-0 bg-blue-500 text-white px-4 py-2 rounded shadow-md z-10 text-center"
-             onClick={handleInstallClick}>
+        <div
+          className="install-button fixed top-0 left-0 right-0 bg-blue-500 text-white px-4 py-2 rounded shadow-md z-10 text-center"
+          onClick={handleInstallClick}
+        >
           Add to Home Screen
         </div>
       )}
 
       {/* WhatsApp Button */}
-      <div className={showPopup ? "whatsapp-popup hidden bg-[#161b29] text-[#161b29] active md:text-sm md:font-bold md:fixed md:flex bottom-[47px] right-[54px] md:bg-[#9181ed] md:text-white md:py-[10px] md:px-[15px] md:rounded-md md:shadow-md" : "whatsapp-popup bg-[#161b29] text-[#161b29] hidden md:text-sm md:font-bold md:fixed md:flex md:bottom-[47px] md:right-[54px] md:bg-[#9181ed] md:text-white md:py-[10px] md:px-[15px] md:rounded-md md:shadow-md"}>
+      <div
+        className={
+          showPopup
+            ? "whatsapp-popup hidden bg-[#161b29] text-[#161b29] active md:text-sm md:font-bold md:fixed md:flex bottom-[47px] right-[54px] md:bg-[#9181ed] md:text-white md:py-[10px] md:px-[15px] md:rounded-md md:shadow-md"
+            : "whatsapp-popup bg-[#161b29] text-[#161b29] hidden md:text-sm md:font-bold md:fixed md:flex md:bottom-[47px] md:right-[54px] md:bg-[#9181ed] md:text-white md:py-[10px] md:px-[15px] md:rounded-md md:shadow-md"
+        }
+      >
         Join our WhatsApp Channel!
       </div>
       <div className="hidden md:fixed bottom-[16px] right-[16px] bg-[#25d366] text-white p-[8px] rounded-full md:flex md:justify-center md:items-center cursor-pointer shadow-md z-1000">
-        <a href="https://whatsapp.com/channel/0029VaJmZcQ6BIEezcBq8U23" target="_blank">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/598px-WhatsApp.svg.png"
-          alt="WhatsApp Icon"
-          width="30"
-          
-        />
+        <a
+          href="https://whatsapp.com/channel/0029VaJmZcQ6BIEezcBq8U23"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/598px-WhatsApp.svg.png"
+            alt="WhatsApp Icon"
+            width="30"
+          />
         </a>
       </div>
     </div>

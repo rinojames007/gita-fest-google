@@ -4,6 +4,14 @@ import { Link } from "react-router-dom";
 
 const TrendingNotices = [
   {
+    title: "Student Coordinators (Akanksha)",
+    content: "Any participants facing problems can connect with their respective volunteers as per their categories & be prepared for the audition.", 
+    imageSrc:
+      "https://i.postimg.cc/9Mnhmjbj/Student-Coordinators.webp",
+    pdfLink:
+      "https://drive.google.com/file/d/1FiMITmot4_rSWMpKqZ8nUV7775bs1TA4/view?usp=sharing",
+  },
+  {
     title: "Faculty Coordinators (Akanksha)",
     content: "Audition, Practice, Notice for Audition", 
     imageSrc:
@@ -11,17 +19,8 @@ const TrendingNotices = [
     pdfLink:
       "https://drive.google.com/file/d/1cdlkaUv0_kV3-Cu5Tp1-0bJ7ygJK7eQ3/view?usp=sharing",
   },
-  {
-    title: "Registration Started",
-    content: "Akanksha 2024 (Cultural Fest)",
-    imageSrc: "https://i.postimg.cc/pTzBRcVY/Audition-Akanksha.png",
-    link: "/akanksha",
-  },
-  {
-    title: "Audition for  Odissi and semi-classical",
-    content: "Akanksha 2024 (Cultural Fest)",
-    imageSrc: "https://i.postimg.cc/RhcjH0gy/odissi-Audition.jpg",
-  },
+  
+  
   {
     title: "Robotronics",
     content: "Registration open",
@@ -34,6 +33,17 @@ const TrendingNotices = [
 ];
 
 const notices = [
+  {
+    title: "Audition for  Odissi and semi-classical",
+    content: "Akanksha 2024 (Cultural Fest)",
+    imageSrc: "https://i.postimg.cc/RhcjH0gy/odissi-Audition.jpg",
+  },
+  {
+    title: "Registration Started",
+    content: "Akanksha 2024 (Cultural Fest)",
+    imageSrc: "https://i.postimg.cc/pTzBRcVY/Audition-Akanksha.png",
+    link: "/akanksha",
+  },
   {
     title: "Date Announced",
     content: "GITA Annual Fest date Announced",
