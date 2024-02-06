@@ -85,7 +85,7 @@ const Akanksha = () => {
           <p className="py-5 text-2xl text-center px-3 BlinkText text-slate-300 font-semibold">
             Audition Dates: <span className="font-normal">8th & 9th Feb</span>
           </p>
-          <p>Registration is now open!</p>
+          
           {loading && (
             <div className="flex flex-col justify-center items-center h-[220px]">
               <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>

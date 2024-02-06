@@ -38,9 +38,11 @@ const AhwanEventGirls = () => {
     "4 X 100 mts Relay Race",
   ];
 
-  const fieldEvent = ["Long Jump"];
+  const fieldEvent = ["Long Jump", "High Jump"];
 
   const throwEvent = ["Javelin Throw", "Shot put", "Discuss Throw"];
+
+  const Others = ["Skipping", "Music Chair"];
 
   return (
     <div className="h-full min-h-screen w-full bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29]">
@@ -120,7 +122,11 @@ const AhwanEventGirls = () => {
               Others
             </h2>
             <ul className="text-white">
-              <li className="text-lg font-semibold">Music Chair</li>
+              {Others.map((event, index) => (
+                <li key={index} className="text-lg font-semibold">
+                  {event}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
