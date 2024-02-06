@@ -81,7 +81,7 @@ export default function Landing() {
   ];
 
   return (
-    <div onLoad={handleIframeLoad} className="min-h-screen h-full">
+    <div onLoad={handleIframeLoad} className="min-h-screen h-full landing">
       <Navbar />
       {loading && (
         <div className="flex flex-col justify-center items-center h-[220px]">
