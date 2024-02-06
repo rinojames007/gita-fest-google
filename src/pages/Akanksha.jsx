@@ -7,12 +7,7 @@ import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 const Akanksha = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [countdown, setCountdown] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
+  
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -25,30 +20,6 @@ const Akanksha = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
-  useEffect(() => {
-    const targetDate = new Date("February 1, 2024 10:00:00").getTime();
-
-    const updateCountdown = () => {
-      const currentDate = new Date().getTime();
-      const timeDifference = targetDate - currentDate;
-
-      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor(
-        (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
-      );
-      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-      setCountdown({ days, hours, minutes, seconds });
-    };
-
-    const intervalId = setInterval(updateCountdown, 1000);
-
-    return () => clearInterval(intervalId);
   }, []);
 
   const scrollToTop = () => {
@@ -85,7 +56,7 @@ const Akanksha = () => {
           <p className="py-5 text-2xl text-center px-3 BlinkText text-slate-300 font-semibold">
             Audition Dates: <span className="font-normal">8th & 9th Feb</span>
           </p>
-          
+
           {loading && (
             <div className="flex flex-col justify-center items-center h-[220px]">
               <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
@@ -97,14 +68,20 @@ const Akanksha = () => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSc-CpCEfvdYwmUS6MDx3o9taM-HB9UpMA7NXvaNAdXkUtjjKQ/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
-            height="700"
+            height="300"
             onLoad={handleIframeLoad}
           >
             Loading…
           </iframe>
+
+          <img
+            src="https://i.postimg.cc/tTq4Yp2g/Audition-poster.webp"
+            alt="Poster-Audition"
+            className="md:h-[500px] h-[400px] rounded-lg"
+          />
         </div>
         <Link
-         to="/coordinators"
+          to="/coordinators"
           className="text-blue-500 text-center mx-auto text-xl md:text-3xl font-semibold py-3 w-fit hover:text-red-600 underline block mb-2"
         >
           Coordinators <FontAwesomeIcon icon={faLocationArrow} />

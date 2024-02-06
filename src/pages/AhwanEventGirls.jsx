@@ -5,6 +5,8 @@ import Navbar from "../Components/Navbar/Navbar";
 const AhwanEventGirls = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [timeToStart, setTimeToStart] = useState("");
+
   useEffect(() => {
     window.scrollTo(0, 0);
     // Add an event listener to check scroll position
@@ -20,6 +22,38 @@ const AhwanEventGirls = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    // Function to calculate and update the time remaining
+    const updateTimeRemaining = () => {
+      const registrationStartDate = new Date("2024-02-10T12:00:00"); // Example start date
+      const currentTime = new Date();
+      const timeDifference = registrationStartDate - currentTime;
+
+      if (timeDifference > 0) {
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        setTimeToStart(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+      } else {
+        // Registration has already started
+        setTimeToStart("Registration has started");
+      }
+
+      setLoading(false); // Set loading to false when the timer is calculated
+    };
+
+    updateTimeRemaining(); // Initial call to calculate time remaining
+
+    // Update the timer every second
+    const timer = setInterval(updateTimeRemaining, 1000);
+
+    // Clear the interval when the component unmounts
+    return () => clearInterval(timer);
+  }, []);
+
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -67,15 +101,21 @@ const AhwanEventGirls = () => {
         >
           Loading…
         </iframe> */}
-        <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
-          Registration process
+         <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
+        Registration process will start in:
         </p>
-        <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
-          To be announced soon...
-        </p>
+        
+        <div className="text-white text-center pt-[5px]">
+          {loading ? (
+            <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
+          ) : (
+            <p className="timer ToGo shadowText mt-2 text-[#9FFFF5] font-semibold text-2xl md:text-3xl text-center"> {timeToStart}</p>
+          )}
+        </div>
+
 
         {/* Add a separate section for Track Events */}
-        <div className="flex justify-around items-center flex-col md:flex-row mt-[50px]">
+        <div className="flex justify-around items-center flex-col md:flex-row mt-[30px]">
           <div className="mb-8 flex flex-col justify-center items-center w-[95%] md:w-[30%]">
             <h2 className="text-white text-center underline underline-offset-4 font-bold md:text-4xl text-2xl my-3">
               Track Events
