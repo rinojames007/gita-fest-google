@@ -3,6 +3,28 @@ import Navbar from "../Components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const TrendingNotices = [
+  // {
+  //   title: "Ahwaan 2024 (Sports)",
+  //   content: "Registration open",
+  //   imageSrc:
+  //     "https://i.postimg.cc/qqZ7Lb6S/Ahwaan-reg.webp",
+  //   link: "/ahwan",
+  // },
+  // {
+  //   title: "Anwesh 2024 (Tech Fest)",
+  //   content: "Registration open",
+  //   imageSrc:
+  //     "https://i.postimg.cc/Y2Nf3199/Anweh-reg.webp",
+  //   link: "/anwesh/techEvents",
+  // },
+  
+
+  {
+    title: "Audition (Akanksha 2024)",
+    content: "8th - 9th Feb 12:30 pm onward", 
+    imageSrc:
+      "https://i.postimg.cc/y8VxsK6s/venue.webp",
+  },
   {
     title: "Student Coordinators (Akanksha)",
     content: "Any participants facing problems can connect with their respective volunteers as per their categories & be prepared for the audition.", 
