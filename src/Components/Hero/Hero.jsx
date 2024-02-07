@@ -86,13 +86,13 @@ const Hero = () => {
               Discover, Learn, and Enjoy Unforgettable Moments Together!
             </p>
 
-            <div className="timer ToGo shadowText mt-2 text-[#9FFFF5] font-semibold text-2xl md:text-3xl text-center ">
+            <div className="timer ToGo shadowText mt-4 text-[#9FFFF5] font-semibold text-2xl md:text-3xl text-center ">
               {timeRemaining.days}d {timeRemaining.hours}h {timeRemaining.minutes}m {timeRemaining.seconds}s <br /> to go
             </div>
           </div>
 
           <div
-            className="arrow-down absolute bottom-8 md:bottom-2 cursor-pointer mt-[20px]  animate-bounce"
+            className="arrow-down absolute bottom-8 md:bottom-2 cursor-pointer mt-[10px]  animate-bounce"
             onClick={handleScrollDown}
           >
             {/* You can replace the arrow icon below with your own image or use a library */}

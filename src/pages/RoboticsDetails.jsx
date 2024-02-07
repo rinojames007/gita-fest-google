@@ -32,7 +32,7 @@ const RoboticsDetails = () => {
       content: "Line Following Robot",
       imageSrc: "https://i.postimg.cc/76rYp81q/robo-race.webp",
       pdfLink:
-        "https://drive.google.com/file/d/1XhnG0v6eJIp1xPzT6KiLh0ebmuxaU9mI/view?usp=sharing",
+        "https://drive.google.com/file/d/1xXDF4OMjrlHWwAypCC3wuWhthMhyCXmP/view?usp=sharing",
       formLink:
         "https://docs.google.com/forms/d/e/1FAIpQLSe-Da1lEB7nigiT4BNg62zwOoom1DWRY_u_WLRcJZ8wqDfOfA/viewform?usp=sf_link",
     },
@@ -41,7 +41,7 @@ const RoboticsDetails = () => {
       content: "Line Following Robot",
       imageSrc: "https://i.postimg.cc/636phsdq/Robo-Tracker.webp",
       pdfLink:
-        "https://drive.google.com/file/d/1h9Nd8ZLbvM8CE3RXyxe0tVxaR44SH1jY/view?usp=sharing",
+        "https://drive.google.com/file/d/1kjcwLjrzbwmziGKEehzvkuF5p1Q_sifT/view?usp=sharing",
       formLink:
         "https://docs.google.com/forms/d/e/1FAIpQLSd2Sylb-vsxYE48Xef1Bvvja9KjXpXw1D74xwiAdB6rM9ExVg/viewform?usp=sf_link",
     },
@@ -50,7 +50,7 @@ const RoboticsDetails = () => {
       content: "WORKING MODEL",
       imageSrc: "https://i.postimg.cc/ydGvTHwy/robotics.webp",
       pdfLink:
-        "https://drive.google.com/file/d/1XpzG0cQCtB5uNUtsjIg9jUfbY7x7XLLw/view?usp=sharing",
+        "https://drive.google.com/file/d/11aKsSoJitIVduASZaLOu-7TRHUHk0PNS/view?usp=sharing",
       formLink:
         "https://docs.google.com/forms/d/e/1FAIpQLSdIjdgQgYYGfJeUveSi2y7wxMEsONVxLu2BnkaDeqJLc1VqGg/viewform?usp=sf_link",
     },
