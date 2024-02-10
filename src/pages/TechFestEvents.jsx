@@ -73,16 +73,16 @@ const TechFestEvents = () => {
           unforgettable journey into technology's wonders.
         </p>
         <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
-          Registration process will start in:
+        Registration is open
         </p>
         
-        <div className="text-white text-center pt-[5px]">
+        {/* <div className="text-white text-center pt-[5px]">
           {loading ? (
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
           ) : (
             <p className="timer ToGo shadowText mt-2 text-[#9FFFF5] font-semibold text-2xl md:text-3xl text-center">{timeToStart}</p>
           )}
-        </div>
+        </div> */}
 
         <div className="Event-Container w-full flex justify-around flex-wrap">
           {EventDetails.map((item) => (

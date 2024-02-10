@@ -6,7 +6,7 @@ const Events = () => {
   return (
     <div className="flex flex-col justify-center items-center">
        <img
-        src="https://i.postimg.cc/8CG1275V/Annual-Function-2024-Banner-cropped.webp"
+        src="https://i.postimg.cc/wjswKkqS/Annual-Function-2024.webp"
         alt="Banner"
         className="mx-auto md:hidden w-[100%] border-2 border-black shadow-lg shadow-black"
       />
@@ -23,7 +23,7 @@ const Events = () => {
         </p>
       </div>
       <img
-        src="https://i.postimg.cc/MGjdkGnq/Annual-Function-2024-Banner-final.webp"
+        src="https://i.postimg.cc/wjswKkqS/Annual-Function-2024.webp"
         alt="Banner"
         className="mx-auto w-[100%] hidden md:block border-2 border-black shadow-lg mt-6 shadow-black"
       />

@@ -3,22 +3,33 @@ import Navbar from "../Components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const TrendingNotices = [
-  // {
-  //   title: "Ahwaan 2024 (Sports)",
-  //   content: "Registration open",
-  //   imageSrc:
-  //     "https://i.postimg.cc/qqZ7Lb6S/Ahwaan-reg.webp",
-  //   link: "/ahwan",
-  // },
-  // {
-  //   title: "Anwesh 2024 (Tech Fest)",
-  //   content: "Registration open",
-  //   imageSrc:
-  //     "https://i.postimg.cc/Y2Nf3199/Anweh-reg.webp",
-  //   link: "/anwesh/techEvents",
-  // },
+  {
+    title: "Ahwaan 2024 (Sports)",
+    content: "Registration open",
+    imageSrc:
+      "https://i.postimg.cc/qqZ7Lb6S/Ahwaan-reg.webp",
+    link: "/ahwan",
+  },
+  {
+    title: "Anwesh 2024 (Tech Fest)",
+    content: "Registration open",
+    imageSrc:
+      "https://i.postimg.cc/Y2Nf3199/Anweh-reg.webp",
+    link: "/anwesh/techEvents",
+  },
   
+  {
+    title: "Robotronics",
+    content: "Registration open",
+    imageSrc:
+      "https://i.postimg.cc/Gpy5S9xS/Whats-App-Image-2024-02-01-at-23-23-02-a9a4837c.jpg",
+    link: "/roboticsDetails",
+  },
 
+  // Add more notice objects as needed
+];
+
+const notices = [
   {
     title: "Audition (Akanksha 2024)",
     content: "8th - 9th Feb 12:30 pm onward", 
@@ -42,19 +53,6 @@ const TrendingNotices = [
       "https://drive.google.com/file/d/1cdlkaUv0_kV3-Cu5Tp1-0bJ7ygJK7eQ3/view?usp=sharing",
   },
   
-  
-  {
-    title: "Robotronics",
-    content: "Registration open",
-    imageSrc:
-      "https://i.postimg.cc/Gpy5S9xS/Whats-App-Image-2024-02-01-at-23-23-02-a9a4837c.jpg",
-    link: "/roboticsDetails",
-  },
-
-  // Add more notice objects as needed
-];
-
-const notices = [
   {
     title: "Audition for  Odissi and semi-classical",
     content: "Akanksha 2024 (Cultural Fest)",

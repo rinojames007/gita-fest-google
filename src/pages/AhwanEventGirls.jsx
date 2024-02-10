@@ -8,19 +8,7 @@ const AhwanEventGirls = () => {
   const [timeToStart, setTimeToStart] = useState("");
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-    // Add an event listener to check scroll position
-    const handleScroll = () => {
-      setShowBackToTop(window.scrollY > 700); // Change 200 to adjust when the button appears
-    };
-
-    // Attach the event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Detach the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    
   }, []);
 
   useEffect(() => {
@@ -44,7 +32,19 @@ const AhwanEventGirls = () => {
 
       setLoading(false); // Set loading to false when the timer is calculated
     };
+    window.scrollTo(0, 0);
+    // Add an event listener to check scroll position
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 700); // Change 200 to adjust when the button appears
+    };
 
+    // Attach the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Detach the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
     updateTimeRemaining(); // Initial call to calculate time remaining
 
     // Update the timer every second
@@ -85,7 +85,7 @@ const AhwanEventGirls = () => {
         <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">
           Ahwaan Girls Events
         </h1>
-        {/* {loading && (
+        {loading && (
           <div className="flex flex-col justify-center items-center h-[220px]">
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
             <div className="loader text-center text-white font-semibold text-xl mt-6 ">
@@ -93,6 +93,10 @@ const AhwanEventGirls = () => {
             </div>
           </div>
         )}
+        
+         <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
+         Registration is open:
+        </p>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSeCcGs3GKxDAm64VDbs6X-aldGip-_l8FaSYvnn4WDJSD973w/viewform?embedded=true"
           className="mx-auto w-full md:w-2/3 lg:w-1/2"
@@ -100,18 +104,15 @@ const AhwanEventGirls = () => {
           onLoad={handleIframeLoad}
         >
           Loading…
-        </iframe> */}
-         <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
-        Registration process will start in:
-        </p>
+        </iframe>
         
-        <div className="text-white text-center pt-[5px]">
+        {/* <div className="text-white text-center pt-[5px]">
           {loading ? (
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
           ) : (
             <p className="timer ToGo shadowText mt-2 text-[#9FFFF5] font-semibold text-2xl md:text-3xl text-center"> {timeToStart}</p>
           )}
-        </div>
+        </div> */}
 
 
         {/* Add a separate section for Track Events */}
