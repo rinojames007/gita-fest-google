@@ -53,9 +53,9 @@ const Akanksha = () => {
         </span>
 
         <div className="UpcomingEvents text-2xl md:text-3xl font-bold text-white text-center pt-[10px] flex flex-col justify-center items-center py-4 w-full">
-          <p className="py-5 text-2xl text-center px-3 BlinkText text-slate-300 font-semibold">
+          {/* <p className="py-5 text-2xl text-center px-3 BlinkText text-slate-300 font-semibold">
             Audition Dates: <span className="font-normal">8th & 9th Feb</span>
-          </p>
+          </p> */}
 
           {loading && (
             <div className="flex flex-col justify-center items-center h-[220px]">
@@ -74,11 +74,11 @@ const Akanksha = () => {
             Loading…
           </iframe>
 
-          <img
+          {/* <img
             src="https://i.postimg.cc/tTq4Yp2g/Audition-poster.webp"
             alt="Poster-Audition"
             className="md:h-[500px] h-[400px] rounded-lg"
-          />
+          /> */}
         </div>
         <Link
           to="/coordinators"

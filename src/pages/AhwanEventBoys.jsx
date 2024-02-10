@@ -7,7 +7,12 @@ const AhwanEventBoys = () => {
   const [timeToStart, setTimeToStart] = useState("");
 
 
+
   useEffect(() => {
+    // Calculate the time remaining until registration starts
+    const registrationStartDate = new Date("2024-02-10T12:00:00"); // Example start date
+    const currentTime = new Date();
+    const timeDifference = registrationStartDate - currentTime;
     window.scrollTo(0, 0);
     const handleScroll = () => {
       setShowBackToTop(window.scrollY > 700);
@@ -18,14 +23,6 @@ const AhwanEventBoys = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
-  useEffect(() => {
-    // Calculate the time remaining until registration starts
-    const registrationStartDate = new Date("2024-02-10T12:00:00"); // Example start date
-    const currentTime = new Date();
-    const timeDifference = registrationStartDate - currentTime;
-
     if (timeDifference > 0) {
       const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
       const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -73,7 +70,11 @@ const AhwanEventBoys = () => {
           Ahwaan Boys Events
         </h1>
 
-        {/* {loading && (
+        
+        <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
+        Registration is open
+        </p>
+        {loading && (
           <div className="flex flex-col justify-center items-center h-[220px]">
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
             <div className="loader text-center text-white font-semibold text-xl mt-6 ">Loading...</div>
@@ -86,18 +87,15 @@ const AhwanEventBoys = () => {
           onLoad={handleIframeLoad}
         >
           Loading...
-        </iframe> */}
-        <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
-        Registration process will start in:
-        </p>
+        </iframe>
         
-        <div className="text-white text-center pt-[5px]">
+        {/* <div className="text-white text-center pt-[5px]">
           {loading ? (
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
           ) : (
             <p className="timer ToGo shadowText mt-2 text-[#9FFFF5] font-semibold text-2xl md:text-3xl text-center"> {timeToStart}</p>
           )}
-        </div>
+        </div> */}
 
         {/* Add a separate section for Track Events */}
         <div className="flex justify-around items-center flex-col md:flex-row mt-[20px]">

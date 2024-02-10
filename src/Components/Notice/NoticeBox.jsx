@@ -6,7 +6,7 @@ const NoticeBox = () => {
   return (
     
     <div className=" flex flex-col justify-center items-center space-y-9">
-      {/* <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
+      <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
         <h2 className="text-2xl font-bold text-center w-full">
           Registration Started for Ahwaan (Sports)
         </h2>
@@ -36,8 +36,8 @@ const NoticeBox = () => {
           Register Now <FontAwesomeIcon icon={faLocationArrow} />
         </button>
         </Link>
-      </div> */}
-      <div className=" w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
+      </div>
+      {/* <div className=" w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
         <h2 className="text-2xl font-bold text-center w-full">
           Akanksha 2024 (Cultural Fest)
         </h2>
@@ -85,7 +85,7 @@ const NoticeBox = () => {
             More details <FontAwesomeIcon icon={faLocationArrow} />
           </button>
         </Link>
-      </div>
+      </div> */}
 
       
 

@@ -76,7 +76,7 @@ const Footer = () => {
           </a>
       </div>
       <img
-        src="https://i.postimg.cc/d0v1JPgT/Annual-Function-2024-Banner.webp"
+        src="https://i.postimg.cc/wjswKkqS/Annual-Function-2024.webp"
         alt="Banner"
         className="mx-auto w-[100%] md:hidden rounded-lg border-2 border-black shadow-lg mt-6 shadow-black"
       />

@@ -75,9 +75,9 @@ export default function Landing() {
   }, []);
 
   const messages = [
-    <a href="https://drive.google.com/file/d/1cdlkaUv0_kV3-Cu5Tp1-0bJ7ygJK7eQ3/view?usp=sharing" target="_blank">
-     Auditions for Akanksha 2024 will start on February 8, 2024. Click here for more details...
-    </a>,
+    
+    "Registration is now open for Anwesh and Ahwaan. Register below ↓"
+    
   ];
 
   return (

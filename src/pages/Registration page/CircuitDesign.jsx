@@ -37,7 +37,7 @@ const CircuitDesign = () => {
         <Navbar />
         <div className="py-20">
           <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">
-            Register For Circuit Design
+            Register For FUN WITH ELECTRONIC CIRCUITS
           </h1>
           {loading && (
             <div className="flex flex-col justify-center items-center h-[220px]">
