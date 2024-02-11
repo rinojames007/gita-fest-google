@@ -4,20 +4,24 @@ import { Link } from "react-router-dom";
 
 const TrendingNotices = [
   {
+    title: "Results of Audition",
+    content: "List of participants selected for various events in Akanksha 2024",
+    imageSrc: "https://i.postimg.cc/131xfDGw/Audition-res.webp",
+    pdfLink: "https://drive.google.com/file/d/1MdHoMj7i3sB8IkX-LGNCejsPh99C0giY/view?usp=sharing",
+  },
+  {
     title: "Ahwaan 2024 (Sports)",
     content: "Registration open",
-    imageSrc:
-      "https://i.postimg.cc/qqZ7Lb6S/Ahwaan-reg.webp",
+    imageSrc: "https://i.postimg.cc/qqZ7Lb6S/Ahwaan-reg.webp",
     link: "/ahwan",
   },
   {
     title: "Anwesh 2024 (Tech Fest)",
     content: "Registration open",
-    imageSrc:
-      "https://i.postimg.cc/Y2Nf3199/Anweh-reg.webp",
+    imageSrc: "https://i.postimg.cc/Y2Nf3199/Anweh-reg.webp",
     link: "/anwesh/techEvents",
   },
-  
+
   {
     title: "Robotronics",
     content: "Registration open",
@@ -32,27 +36,26 @@ const TrendingNotices = [
 const notices = [
   {
     title: "Audition (Akanksha 2024)",
-    content: "8th - 9th Feb 12:30 pm onward", 
-    imageSrc:
-      "https://i.postimg.cc/y8VxsK6s/venue.webp",
+    content: "8th - 9th Feb 12:30 pm onward",
+    imageSrc: "https://i.postimg.cc/y8VxsK6s/venue.webp",
   },
   {
     title: "Student Coordinators (Akanksha)",
-    content: "Any participants facing problems can connect with their respective volunteers as per their categories & be prepared for the audition.", 
-    imageSrc:
-      "https://i.postimg.cc/9Mnhmjbj/Student-Coordinators.webp",
+    content:
+      "Any participants facing problems can connect with their respective volunteers as per their categories & be prepared for the audition.",
+    imageSrc: "https://i.postimg.cc/9Mnhmjbj/Student-Coordinators.webp",
     pdfLink:
       "https://drive.google.com/file/d/1FiMITmot4_rSWMpKqZ8nUV7775bs1TA4/view?usp=sharing",
   },
   {
     title: "Faculty Coordinators (Akanksha)",
-    content: "Audition, Practice, Notice for Audition", 
+    content: "Audition, Practice, Notice for Audition",
     imageSrc:
       "https://i.postimg.cc/d3LtjW9t/Audition-Final-Notice-05-02-2024-page-0001.webp",
     pdfLink:
       "https://drive.google.com/file/d/1cdlkaUv0_kV3-Cu5Tp1-0bJ7ygJK7eQ3/view?usp=sharing",
   },
-  
+
   {
     title: "Audition for  Odissi and semi-classical",
     content: "Akanksha 2024 (Cultural Fest)",
