@@ -7,7 +7,6 @@ import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 const Akanksha = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [loading, setLoading] = useState(true);
-  
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -35,6 +34,35 @@ const Akanksha = () => {
   };
 
   const events = ["Song", "Dance", "Fashion Show", "Drama", "Anchoring"];
+  const list = [
+    {
+      title: "Song Participants ( Akanksha 2024 )",
+      sheet:
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vTu-PRnH9x-aW3f07tpgrfK1npOVPg_mJ_OeC_Gc-iMoqq3Fzhe26JoEe4TGsV76yoiV9FJAvoOY-P6/pubhtml?widget=true&amp;headers=false",
+    },
+    {
+      title: "Anchoring Participants (Akanksha 2024)",
+      sheet:
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vQVvdqzIhv-j6SbXqvcIXBgPVVKSvoW9t77qyQqOviGXfs0WzeuZ-cqcMTrhTty802UyaVTNgheWHdL/pubhtml?widget=true&amp;headers=false",
+    },
+    {
+      title: "Dance Participants (Akanksha 2024)",
+      sheet:
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vRyWejF3ub-7OtdFDTv4Ho9cdiobdbpiGgrnsApWh28sifjV8481elhHvkdqkcRsXBidSXBc78ADaLO/pubhtml?widget=true&amp;headers=false",
+    },
+    {
+      title: "Drama Participants (Akanksha 2024)",
+      sheet:
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vQKczBixg5miLpcZCV5PvJsGJUhcQy82FZSkFBKpTxWEdCzAKouL0aR_E7POYOsUWTmQU33ta_GHwOy/pubhtml?widget=true&amp;headers=false",
+    },
+    {
+      title: "Fashion Show Participants (Akanksha 2024)",
+      sheet:
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vT4qdRl81qUBu4m4CK5BuYqq7r0BY_eR8U53J72-8zGoCaxf_8SjJIhDfLPcjSezg0-VpclCptt1_Hk/pubhtml?widget=true&amp;headers=false",
+    },
+  ];
+
+  
 
   return (
     <div className="bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] h-full min-h-screen">
@@ -53,11 +81,7 @@ const Akanksha = () => {
         </span>
 
         <div className="UpcomingEvents text-2xl md:text-3xl font-bold text-white text-center pt-[10px] flex flex-col justify-center items-center py-4 w-full">
-          {/* <p className="py-5 text-2xl text-center px-3 BlinkText text-slate-300 font-semibold">
-            Audition Dates: <span className="font-normal">8th & 9th Feb</span>
-          </p> */}
-
-          {loading && (
+          {/* {loading && (
             <div className="flex flex-col justify-center items-center h-[220px]">
               <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
               <div className="loader text-center text-white font-semibold text-xl mt-6 ">
@@ -72,7 +96,29 @@ const Akanksha = () => {
             onLoad={handleIframeLoad}
           >
             Loading…
-          </iframe>
+          </iframe> */}
+          <div className="flec flex-col justify-center mx-auto items-center w-full h-full py-5 space-y-[40px]">
+            {list.map((item, index) => (
+              <div key={index}>
+                <p className="UpcomingEvents text-2xl py-7 md:text-4xl text-center font-semibold text-white">
+                  {item.title}
+                </p>
+                {loading && (
+                  <div className="flex flex-col justify-center items-center h-[220px]">
+                    <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
+                    <div className="loader text-center text-white font-semibold text-xl mt-6 ">
+                      Loading...
+                    </div>
+                  </div>
+                )}
+                <iframe
+                  src={item.sheet}
+                  className="md:w-[70%] 2xl:w-[50%] w-[95%] md:h-[300px] h-[500px] mx-auto md:rounded-xl rounded-md"
+                  onLoad={handleIframeLoad}
+                ></iframe>
+              </div>
+            ))}
+          </div>
 
           {/* <img
             src="https://i.postimg.cc/tTq4Yp2g/Audition-poster.webp"

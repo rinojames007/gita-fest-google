@@ -32,6 +32,7 @@ const Hero = () => {
   };
 
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -39,6 +40,14 @@ const Hero = () => {
     }, 1000);
 
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const image = new Image();
+    image.onload = () => {
+      setImageLoaded(true);
+    };
+    image.src = "https://i.postimg.cc/5ySGZRr3/cultural.webp";
   }, []);
 
   const handleScrollDown = () => {
@@ -49,60 +58,66 @@ const Hero = () => {
   };
 
   return (
-    <div
-      style={{
-        backgroundImage: `url(https://i.postimg.cc/ZKMKMRNm/cultural.webp)`,
-      }}
-      className="flex justify-center items-center bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] bg-no-repeat bg-cover bg-center h-screen w-full relative"
-    >
-      {/* left-contents */}
-      <div className="left w-full mx-auto flex justify-center items-center ">
-        <div className="flex flex-col items-center justify-center ">
-          <div className="header text-center font-alkatra ">
-            <img
-              src="Gita-logo.png"
-              alt=""
-              className="w-[120px] md:w-[160px] pb-[20px] pt-[40px] mx-auto"
-            />
-            <span
-              id="shadowText"
-              className="text-5xl sm:text-8xl font-bold text-white "
-            >
-              Utsãh
-            </span>
-          </div>
-
-          <div className="desc flex flex-col justify-center items-center">
-            <p
-              id="shadowText"
-              className="py-5 text-xl md:text-3xl px-2 text-white font-bold text-center "
-            >
-              ( GITA Annual Fest 2024 )
-            </p>
-            <p
-              id="shadowText"
-              className="py-5 font-semibold md:text-xl px-2 text-white  text-center "
-            >
-              Discover, Learn, and Enjoy Unforgettable Moments Together!
-            </p>
-
-            <div className="timer ToGo shadowText mt-4 text-[#9FFFF5] font-semibold text-2xl md:text-3xl text-center ">
-              {timeRemaining.days}d {timeRemaining.hours}h {timeRemaining.minutes}m {timeRemaining.seconds}s <br /> to go
+    <div className="relative">
+      {!imageLoaded && (
+        <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-75">
+          <div className="text-white text-lg font-semibold">Loading...</div>
+        </div>
+      )}
+      <div
+        style={{
+          backgroundImage: `url(https://i.postimg.cc/5ySGZRr3/cultural.webp)`,
+        }}
+        className={`flex justify-center items-center bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29] bg-no-repeat bg-cover bg-center h-screen w-full ${imageLoaded ? '' : 'hidden'}`}
+      >
+        {/* left-contents */}
+        <div className="left w-full mx-auto flex justify-center items-center ">
+          <div className="flex flex-col items-center justify-center ">
+            <div className="header text-center font-alkatra ">
+              <img
+                src="Gita-logo.png"
+                alt=""
+                className="w-[120px] md:w-[160px] pb-[20px] pt-[40px] mx-auto"
+              />
+              <span
+                id="shadowText"
+                className="text-5xl sm:text-8xl font-bold text-white "
+              >
+                Utsãh
+              </span>
             </div>
-          </div>
 
-          <div
-            className="arrow-down absolute bottom-8 md:bottom-2 cursor-pointer mt-[10px]  animate-bounce"
-            onClick={handleScrollDown}
-          >
-            {/* You can replace the arrow icon below with your own image or use a library */}
-            <span role="img" aria-label="down-arrow" className="text-white text-5xl font-semibold">
-              ↓
-            </span>
+            <div className="desc flex flex-col justify-center items-center">
+              <p
+                id="shadowText"
+                className="py-5 text-xl md:text-3xl px-2 text-white font-bold text-center "
+              >
+                ( GITA Annual Fest 2024 )
+              </p>
+              <p
+                id="shadowText"
+                className="py-5 font-semibold md:text-xl px-2 text-white  text-center "
+              >
+                Discover, Learn, and Enjoy Unforgettable Moments Together!
+              </p>
+
+              <div className="timer ToGo shadowText mt-4 text-[#9FFFF5] font-semibold text-2xl md:text-3xl text-center ">
+                {timeRemaining.days}d {timeRemaining.hours}h {timeRemaining.minutes}m {timeRemaining.seconds}s <br /> to go
+              </div>
+            </div>
+
+            <div
+              className="arrow-down absolute bottom-8 md:bottom-2 cursor-pointer mt-[10px]  animate-bounce"
+              onClick={handleScrollDown}
+            >
+              {/* You can replace the arrow icon below with your own image or use a library */}
+              <span role="img" aria-label="down-arrow" className="text-white text-5xl font-semibold">
+                ↓
+              </span>
+            </div>
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

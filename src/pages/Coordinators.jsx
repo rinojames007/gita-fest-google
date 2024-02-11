@@ -43,11 +43,7 @@ const Coordinators = () => {
           Coordinators
         </h1>
       </div>
-      {/* <div className="desc md:mx-11">
-        <p className="UpcommingEvents text-2xl md:text-4xl mt-[60px] text-center font-semibold text-white">
-          To be Announced...
-        </p>
-      </div> */}
+      
       <CoordinatorList/>
 
       <div className="ilustrator flex justify-center w-full items-center pt-[30px] ">
