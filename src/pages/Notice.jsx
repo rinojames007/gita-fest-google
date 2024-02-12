@@ -3,12 +3,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const TrendingNotices = [
-  {
-    title: "Results of Audition",
-    content: "List of participants selected for various events in Akanksha 2024",
-    imageSrc: "https://i.postimg.cc/131xfDGw/Audition-res.webp",
-    pdfLink: "https://drive.google.com/file/d/1MdHoMj7i3sB8IkX-LGNCejsPh99C0giY/view?usp=sharing",
-  },
+  
   {
     title: "Ahwaan 2024 (Sports)",
     content: "Registration open",
@@ -22,6 +17,11 @@ const TrendingNotices = [
     link: "/anwesh/techEvents",
   },
 
+  
+  // Add more notice objects as needed
+];
+
+const notices = [
   {
     title: "Robotronics",
     content: "Registration open",
@@ -30,10 +30,12 @@ const TrendingNotices = [
     link: "/roboticsDetails",
   },
 
-  // Add more notice objects as needed
-];
-
-const notices = [
+  {
+    title: "Results of Audition",
+    content: "List of participants selected for various events in Akanksha 2024",
+    imageSrc: "https://i.postimg.cc/131xfDGw/Audition-res.webp",
+    pdfLink: "https://drive.google.com/file/d/1MdHoMj7i3sB8IkX-LGNCejsPh99C0giY/view?usp=sharing",
+  },
   {
     title: "Audition (Akanksha 2024)",
     content: "8th - 9th Feb 12:30 pm onward",

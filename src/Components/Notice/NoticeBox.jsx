@@ -5,7 +5,7 @@ import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 const NoticeBox = () => {
   return (
     <div className=" flex flex-col justify-center items-center space-y-9">
-      <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
+      {/* <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
         <h2 className="text-2xl font-bold text-center w-full">
           AUDITION RESULTS
         </h2>
@@ -18,7 +18,7 @@ const NoticeBox = () => {
             View Result<FontAwesomeIcon icon={faLocationArrow} />
           </button>
         </a>
-      </div>
+      </div> */}
 
       <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
         <h2 className="text-2xl font-bold text-center w-full">
