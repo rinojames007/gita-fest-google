@@ -47,8 +47,9 @@ const OnlineGaming = () => {
               </div>
             </div>
           )}
+          
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdiGg6SPzPrgJVhauLHc9rTeKKTf4XmhvHnqhRy6O2vA53UYw/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScrjstpSJtxwy7mXWwsKlKjtFnIsu48LkyQEWkg2gsus_tNxA/viewform?embedded=true"
             className="mx-auto w-full md:w-2/3 lg:w-1/2"
             height="750"
             onLoad={handleIframeLoad}
