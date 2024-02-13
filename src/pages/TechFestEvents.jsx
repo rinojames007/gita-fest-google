@@ -104,9 +104,24 @@ const TechFestEvents = () => {
                 </h1>
 
                 <p className="mb-3 font-normal text-gray-400 text-center text-sm">
-                Bursting with laughter! Enjoy fun games and hilarious tasks, bringing joy to all participants. An unforgettable experience awaits!
+                  Bursting with laughter! Enjoy fun games and hilarious tasks,
+                  bringing joy to all participants. An unforgettable experience
+                  awaits!
                 </p>
-                
+                <div className="date-time text-sm flex justify-between items-center text-white">
+                  <p>
+                    Date:{" "}
+                    <span className="px-2 text-xs font-light text-slate-200">
+                      20/02/24 - 21/02/24
+                    </span>
+                  </p>
+                  <p>
+                    Time:{" "}
+                    <span className="px-2 text-xs font-light text-slate-200">
+                      9 AM ONWARDS
+                    </span>
+                  </p>
+                </div>
                 <div className="venuec text-sm mt-4 flex justify-center items-center text-white">
                   Venue:
                   <span className="px-2 text-xs font-light text-slate-200">
@@ -114,9 +129,7 @@ const TechFestEvents = () => {
                   </span>
                 </div>
                 <div className="flex justify-center mt-8 items-center">
-                  <div
-                    className="flex items-center justify-center px-9 w-[80%] py-3 text-sm font-medium text-center text-white bg-blue-300 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  >
+                  <div className="flex items-center justify-center px-9 w-[80%] py-3 text-sm font-medium text-center text-white bg-blue-300 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     On Spot Registration
                   </div>
                 </div>
