@@ -40,9 +40,7 @@ const Videos = () => {
         {
             url:"https://www.youtube.com/embed/M5H5q4tHPik?si=vaeY1Lx3fAX5nAfA"
         },
-        {
-            url:"https://www.youtube.com/embed/thMlZT-6qGU?si=DsIrZZf92Ss9lrhz"
-        },
+        
         {
             url:"https://www.youtube.com/embed/ZkluWYxc8Rs?si=pMjybMs34PmMq_xS"
         },
@@ -64,12 +62,7 @@ const Videos = () => {
         {
             url:"https://www.youtube.com/embed/uxhP-TXyyR4?si=P1-zreUKHSnkVf9u"
         },
-        {
-            url:"https://www.youtube.com/embed/A2XIJD6vd3g?si=ErnxfqJ_hPhmIsg7"
-        },
-        {
-            url:"https://www.youtube.com/embed/NoKr2nKlOw4?si=EP6WfN3jNfVpCIdJ"
-        },
+        
         {
             url:"https://www.youtube.com/embed/S8w5L8OGYHU?si=9uO7x4jn5o-0He94"
         },
