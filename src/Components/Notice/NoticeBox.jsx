@@ -19,6 +19,18 @@ const NoticeBox = () => {
           </button>
         </a>
       </div> */}
+      <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
+        <h2 className="text-2xl font-bold text-center w-full">
+          Anwesh (Tech Fest)
+        </h2>
+        <p className="text-lg font-semibold text-center mx-auto">
+          This is for the information that students interested to participate in
+          the event Tech Quiz and Math olympiad,<br /> They have to register
+          themselves through Online by 16/02/24 till 5pm . <br /> The preliminary round
+          for both events will conduct on 17/02/24. <br /> The time and venue will be
+          intimated on that day
+        </p>
+      </div>
 
       <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
         <h2 className="text-2xl font-bold text-center w-full">

@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 const TrendingNotices = [
   
   {
+    title: "Anwesh 2024 (Tech Fest)",
+    content: "updates",
+    imageSrc: "https://i.postimg.cc/qvML9JXg/Tech-notice.webp",
+    link: "/anwesh/techEvents",
+  },
+  {
     title: "Ahwaan 2024 (Sports)",
     content: "Registration open",
     imageSrc: "https://i.postimg.cc/qqZ7Lb6S/Ahwaan-reg.webp",
