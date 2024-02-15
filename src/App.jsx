@@ -39,6 +39,7 @@ import Robotics from "./pages/Registration page/Robotics";
 import Feedback from "./pages/Input/Feedback";
 import Notice from "./pages/Notice";
 import InstagramPage from "./pages/InstagramPage";
+import Bollywood from "./pages/Registration page/Bollywood";
 
 export default function App() {
   return (
@@ -94,6 +95,7 @@ export default function App() {
         <Route path="/anwesh/registration/Rangoli" element={<Rangoli/>}/>
         <Route path="/anwesh/registration/MathOlympiad" element={<MathOlympiad/>}/>
         <Route path="/anwesh/registration/Robotics" element={<Robotics/>}/>
+        <Route path="/anwesh/registration/Bollywood" element={<Bollywood/>}/>
         
       </Routes>
     </BrowserRouter>

@@ -15,6 +15,20 @@ const EventDetails = [
   // },
   
   {
+    key: 1,
+    url: "https://i.postimg.cc/vHcYhbs7/Bollywood.webp",
+    name: "Bollywood Theme",
+    venue: "INFRONT OF WEST BLOCK",
+    date: "21 / 02 / 24",
+    desc: "A fun event where all the participants need to dress up like their favorite character and many more",
+    EventIncharge: "Xyz",
+    EventCoordinators: ["ABC", "XYZ", "RST"],
+    volunteers: ["Rohan", "Mohan", "Simran"],
+    time: "9:30 AM on words",
+    prize: "₹ 2000",
+    redirect: "/anwesh/registration/Bollywood",
+  },
+  {
     key: 2,
     url: "https://i.postimg.cc/d1jbnj0j/Circuit-Design.webp",
     name: "FUN WITH ELECTRONIC CIRCUITS",
