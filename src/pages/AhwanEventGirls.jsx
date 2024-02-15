@@ -78,6 +78,16 @@ const AhwanEventGirls = () => {
 
   const Others = ["Skipping", "Music Chair"];
 
+  
+  const list = [
+    {
+      title: "Winners Ahwaan 2024 - (Girls)",
+      sheet:
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vSi7DQiZ7pR2tqlrDJQ0MnhfyirmPrTT8ouZZbsSkkZA2-3Mf5xFIdtaVTSKfz-VT-vVTQij-fmQ-2M/pubhtml?widget=true&amp;headers=false",
+    },
+    
+  ];
+
   return (
     <div className="h-full min-h-screen w-full bg-gradient-to-b from-[#161b29] via-purple-900 to-[#161b29]">
       <Navbar />
@@ -85,6 +95,29 @@ const AhwanEventGirls = () => {
         <h1 className="text-white text-center font-bold md:text-5xl text-2xl my-5">
           Ahwaan Girls Events
         </h1>
+
+        {/* <div className="flec flex-col justify-center mx-auto items-center w-full h-full py-5 space-y-[40px]">
+          {list.map((item, index) => (
+            <div key={index}>
+              <p className="UpcomingEvents text-2xl py-7 md:text-4xl text-center font-semibold text-white">
+                {item.title}
+              </p>
+              {loading && (
+                <div className="flex flex-col justify-center items-center h-[220px]">
+                  <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
+                  <div className="loader text-center text-white font-semibold text-xl mt-6 ">
+                    Loading...
+                  </div>
+                </div>
+              )}
+              <iframe
+                src={item.sheet}
+                className="md:w-[70%] 2xl:w-[50%] w-[95%] md:h-[300px] h-[500px] mx-auto md:rounded-xl rounded-md"
+                onLoad={handleIframeLoad}
+              ></iframe>
+            </div>
+          ))}
+        </div> */}
         {loading && (
           <div className="flex flex-col justify-center items-center h-[220px]">
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>

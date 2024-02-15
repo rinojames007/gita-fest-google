@@ -27,7 +27,7 @@ const NoticeBox = () => {
           This is for the information that students interested to participate in
           the event Tech Quiz and Math olympiad,<br /> They have to register
           themselves through Online by 16/02/24 till 5pm . <br /> The preliminary round
-          for both events will conduct on 17/02/24. <br /> The time and venue will be
+          for both events Will be conducted on 17.02.2024 <br /> The time and venue will be
           intimated on that day
         </p>
       </div>
