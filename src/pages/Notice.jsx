@@ -3,7 +3,12 @@ import Navbar from "../Components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const TrendingNotices = [
-  
+  {
+    title: "Ahwaan 2024 (Sports)",
+    content: "updates",
+    imageSrc: "https://i.postimg.cc/MKWgytqR/sports-notice.webp",
+    link: "/ahwan",
+  },
   {
     title: "Anwesh 2024 (Tech Fest)",
     content: "updates",
