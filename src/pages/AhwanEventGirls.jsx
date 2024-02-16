@@ -76,7 +76,7 @@ const AhwanEventGirls = () => {
 
   const throwEvent = ["Javelin Throw", "Shot put", "Discuss Throw"];
 
-  const Others = ["Skipping", "Music Chair"];
+  const Others = ["Skipping"];
 
   
   const list = [
