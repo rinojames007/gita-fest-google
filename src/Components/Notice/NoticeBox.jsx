@@ -19,22 +19,7 @@ const NoticeBox = () => {
           </button>
         </a>
       </div> */}
-      <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
-        <h2 className="text-2xl font-bold text-center w-full">
-          Ahwaan (Sports)
-        </h2>
-        <p className="text-lg font-semibold text-center mx-auto">
-          <strong className="font-bold text-2xl">The online registration process for the Ahwaan event <br /> will be closing
-          promptly on February 17th, 2024, at 12:30 PM.</strong> <br /> <br /> We urge all individuals
-          who have not yet completed their registration to do so immediately. <br />
-          Please note that on-spot registration will not be permitted <br /> under any
-          circumstances as per the directives of the organizing authority. <br />
-          Therefore, it is imperative to complete your registration before the
-          deadline. <br /> We kindly request you to inform your friends and colleagues <br />
-          about this deadline and encourage them <br /> to register at the earliest to
-          avoid any inconvenience.
-        </p>
-      </div>
+      
 
       {/* <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
         <h2 className="text-2xl font-bold text-center w-full">
@@ -49,7 +34,7 @@ const NoticeBox = () => {
           that day
         </p>
       </div> */}
-      <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
+      {/* <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
         <h2 className="text-2xl font-bold text-center w-full">
           Registration Started for Ahwaan (Sports)
         </h2>
@@ -63,9 +48,23 @@ const NoticeBox = () => {
             Register Now <FontAwesomeIcon icon={faLocationArrow} />
           </button>
         </Link>
+      </div> */}
+      <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
+        <h2 className="text-2xl font-bold text-center w-full">
+          Anwesh (Tech Fest)
+        </h2>
+        <p className="text-lg font-semibold">
+          RESULTS OF <b>TECH QUIZ</b> AND <b>MATH OLYMPIAD</b> PRELIMS DECLARED
+        </p>
+
+        <Link to="/notice">
+          <button className="bg-[#042136] text-white text-sm px-8 py-4 hover:scale-90 delay-100 rounded-md BlinkText">
+            MORE DETAILS <FontAwesomeIcon icon={faLocationArrow} />
+          </button>
+        </Link>
       </div>
 
-      <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
+      {/* <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
         <h2 className="text-2xl font-bold text-center w-full">
           Registration Started for Anwesh (Tech Fest)
         </h2>
@@ -79,7 +78,7 @@ const NoticeBox = () => {
             Register Now <FontAwesomeIcon icon={faLocationArrow} />
           </button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
