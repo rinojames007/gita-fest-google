@@ -3,20 +3,22 @@ import Navbar from "../Components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 const TrendingNotices = [
-  {
-    title: "Ahwaan 2024 (Sports)",
-    content: "updates",
-    imageSrc: "https://i.postimg.cc/MKWgytqR/sports-notice.webp",
-    link: "/ahwan",
-  },
   
- 
   {
     title: "Anwesh 2024 (Tech Fest)",
-    content: "Registration open",
-    imageSrc: "https://i.postimg.cc/Y2Nf3199/Anweh-reg.webp",
-    link: "/anwesh/techEvents",
+    content: "TECH QUIZ PRELIMS RESULT",
+    pdfLink:"https://drive.google.com/file/d/11I3kamkGKaiYX8zpPVxeeOiquTQIcY0K/view?usp=drive_link",
+    
   },
+  
+  {
+    title: "Anwesh 2024 (Tech Fest)",
+    content: "MATH OLYMPIAD PRELIMS RESULT",
+    pdfLink:"https://drive.google.com/file/d/1m8jJlqL_1MEfYuMRGsi4pp6QRiRHPmzh/view?usp=sharing",
+    
+  },
+  
+  
 
   
   // Add more notice objects as needed
@@ -29,6 +31,13 @@ const notices = [
     imageSrc:
       "https://i.postimg.cc/Gpy5S9xS/Whats-App-Image-2024-02-01-at-23-23-02-a9a4837c.jpg",
     link: "/roboticsDetails",
+  },
+
+  {
+    title: "Ahwaan 2024 (Sports)",
+    content: "updates",
+    imageSrc: "https://i.postimg.cc/MKWgytqR/sports-notice.webp",
+    link: "/ahwan",
   },
 
   {
