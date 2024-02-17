@@ -128,7 +128,7 @@ const AhwanEventGirls = () => {
         )}
         
          <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
-         Registration is open:
+         Registration is Closed
         </p>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSeCcGs3GKxDAm64VDbs6X-aldGip-_l8FaSYvnn4WDJSD973w/viewform?embedded=true"

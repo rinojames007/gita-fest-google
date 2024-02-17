@@ -89,7 +89,7 @@ const AhwanEventBoys = () => {
 
 
         <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
-          Registration is open
+          Registration Closed
         </p>
         {loading && (
           <div className="flex flex-col justify-center items-center h-[220px]">

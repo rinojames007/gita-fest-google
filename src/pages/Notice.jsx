@@ -9,18 +9,8 @@ const TrendingNotices = [
     imageSrc: "https://i.postimg.cc/MKWgytqR/sports-notice.webp",
     link: "/ahwan",
   },
-  {
-    title: "Anwesh 2024 (Tech Fest)",
-    content: "updates",
-    imageSrc: "https://i.postimg.cc/qvML9JXg/Tech-notice.webp",
-    link: "/anwesh/techEvents",
-  },
-  {
-    title: "Ahwaan 2024 (Sports)",
-    content: "Registration open",
-    imageSrc: "https://i.postimg.cc/qqZ7Lb6S/Ahwaan-reg.webp",
-    link: "/ahwan",
-  },
+  
+ 
   {
     title: "Anwesh 2024 (Tech Fest)",
     content: "Registration open",
@@ -68,7 +58,12 @@ const notices = [
     pdfLink:
       "https://drive.google.com/file/d/1cdlkaUv0_kV3-Cu5Tp1-0bJ7ygJK7eQ3/view?usp=sharing",
   },
-
+  {
+    title: "Ahwaan 2024 (Sports)",
+    content: "Registration Closed",
+    imageSrc: "https://i.postimg.cc/qqZ7Lb6S/Ahwaan-reg.webp",
+    link: "/ahwan",
+  },
   {
     title: "Audition for  Odissi and semi-classical",
     content: "Akanksha 2024 (Cultural Fest)",
@@ -86,6 +81,12 @@ const notices = [
     imageSrc: "https://i.postimg.cc/JznsPtVn/date-announced.jpg",
     pdfLink:
       "https://drive.google.com/file/d/1x0H59EF2JsIfd6JGz3ezM5oppucezlf8/view?usp=sharing",
+  },
+  {
+    title: "Anwesh 2024 (Tech Fest)",
+    content: "updates",
+    imageSrc: "https://i.postimg.cc/qvML9JXg/Tech-notice.webp",
+    link: "/anwesh/techEvents",
   },
   // Add more notice objects as needed
 ];
