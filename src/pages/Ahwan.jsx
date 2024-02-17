@@ -87,9 +87,9 @@ const Ahwan = () => {
           Fuel your college fest excitement! Join Aahwan sports for fun,
           teamwork, and a chance to win. Register now for the thrill!
         </p>
-        <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center py-[15px]">
+        {/* <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center py-[15px]">
         Registration is open
-        </p>
+        </p> */}
         
         {/* <div className="text-white text-center pt-[2px]">
           {loading ? (
