@@ -29,12 +29,31 @@ const Shedules = () => {
     // Set loading to false when the iframe has finished loading
     setLoading(false);
   };
+  
 
+  
   const list = [
     {
       title: "Shedules of Anwesh events",
       sheet:
       "https://docs.google.com/spreadsheets/d/e/2PACX-1vTeod_RNoBDwKYfnjekHcE24tVxR8G1Eis81dA6D4d29w5_8bjwlFj11hAlxRsiDSbb9UEwgrHjA4cF/pubhtml?widget=true&amp;headers=false",
+    },
+    {
+      title: "Shedules of Ahwaan events",
+      sheet:
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vQv6aL_RITKntduoJ4jPn3c1ZaymV6q-nNaKsg5eUGytKqD0MMTWt9Mw9CT0Peje1D6coNcoB00VNli/pubhtml?widget=true&amp;headers=false",
+    },
+
+    {
+      title: "Shedules of Akanksha Day-1 events",
+      sheet:
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vTa2ldC8nx-LboQbrsQ74SB1BMudnkdtmJ8960LBi_G7aI5DtOGtnNgeJsUWsEwE6FqjhRdzDGaMk43/pubhtml?widget=true&amp;headers=false",
+    },
+
+    {
+      title: "Shedules of Akanksha Day-2 events",
+      sheet:
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vSoaEjV50m_qsZyHRlXD6XrfRuyi-7tHX2sI4yPqi3cEQFk5A-HA5C8UJi3GEKcg-f9pRrYw8x4YEZ1/pubhtml?widget=true&amp;headers=false",
     },
     
   ];

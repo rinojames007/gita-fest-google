@@ -64,7 +64,7 @@ const AhwanEventBoys = () => {
           Ahwaan Boys Events
         </h1>
 
-        {/* <div className="flec flex-col justify-center mx-auto items-center w-full h-full py-5 space-y-[40px]">
+        <div className="flec flex-col justify-center mx-auto items-center w-full h-full py-5 space-y-[40px]">
           {list.map((item, index) => (
             <div key={index}>
               <p className="UpcomingEvents text-2xl py-7 md:text-4xl text-center font-semibold text-white">
@@ -85,10 +85,10 @@ const AhwanEventBoys = () => {
               ></iframe>
             </div>
           ))}
-        </div> */}
+        </div>
 
 
-        <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
+        {/* <p className="UpcommingEvents text-2xl md:text-4xl font-bold text-white text-center pt-[10px]">
           Registration Closed
         </p>
         {loading && (
@@ -108,7 +108,7 @@ const AhwanEventBoys = () => {
           onLoad={handleIframeLoad}
         >
           Loading...
-        </iframe>
+        </iframe> */}
 
         {/* Add a separate section for Track Events */}
         <div className="flex justify-around items-center flex-col md:flex-row mt-[20px]">

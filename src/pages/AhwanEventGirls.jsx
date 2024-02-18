@@ -96,7 +96,7 @@ const AhwanEventGirls = () => {
           Ahwaan Girls Events
         </h1>
 
-        {/* <div className="flec flex-col justify-center mx-auto items-center w-full h-full py-5 space-y-[40px]">
+        <div className="flec flex-col justify-center mx-auto items-center w-full h-full py-5 space-y-[40px]">
           {list.map((item, index) => (
             <div key={index}>
               <p className="UpcomingEvents text-2xl py-7 md:text-4xl text-center font-semibold text-white">
@@ -117,8 +117,8 @@ const AhwanEventGirls = () => {
               ></iframe>
             </div>
           ))}
-        </div> */}
-        {loading && (
+        </div>
+        {/* {loading && (
           <div className="flex flex-col justify-center items-center h-[220px]">
             <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-blue-500 text-white font-semibold text-lg  mt-[80px]"></div>
             <div className="loader text-center text-white font-semibold text-xl mt-6 ">
@@ -137,7 +137,7 @@ const AhwanEventGirls = () => {
           onLoad={handleIframeLoad}
         >
           Loading…
-        </iframe>
+        </iframe> */}
         
         {/* <div className="text-white text-center pt-[5px]">
           {loading ? (
