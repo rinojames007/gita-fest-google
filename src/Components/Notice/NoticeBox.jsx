@@ -54,6 +54,21 @@ const NoticeBox = () => {
           Anwesh (Tech Fest)
         </h2>
         <p className="text-lg font-semibold">
+          Enjoy all the Events of Anwesh and make memories together
+        </p>
+
+        <Link to="/schedules">
+          <button className="bg-[#042136] text-white text-sm px-8 py-4 hover:scale-90 delay-100 rounded-md BlinkText">
+            Schedule <FontAwesomeIcon icon={faLocationArrow} />
+          </button>
+        </Link>
+      </div>
+
+      <div className="md:w-full w-full flex flex-col items-center justify-center space-y-3 text-[#721c24] text-center bg-[#f8d7da] p-[15px] rounded-lg border-[2px] shadow-xl shadow-black border-[#f4a1aa]">
+        <h2 className="text-2xl font-bold text-center w-full">
+          Anwesh (Tech Fest)
+        </h2>
+        <p className="text-lg font-semibold">
           RESULTS OF <b>TECH QUIZ</b> AND <b>MATH OLYMPIAD</b> PRELIMS DECLARED
         </p>
 
