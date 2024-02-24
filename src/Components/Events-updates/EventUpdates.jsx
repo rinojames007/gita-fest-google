@@ -38,9 +38,9 @@ const EventUpdates = () => {
                 date={item.date}
               />
             ))} */}
-              {/* <p className="BlinkText text-xl md:text-4xl mb-[20px]  font-bold text-white text-center pt-[15px] md:pt-[20px] UpcommingEvents">
+              <p className="BlinkText flex justify-center items-center text-xl md:text-4xl mb-[20px] mx-auto  font-bold text-white text-center pt-[15px] md:pt-[20px] UpcommingEvents">
                 To be Announced...
-              </p> */}
+              </p>
             </div>
             <NoticeBox />
           </div>

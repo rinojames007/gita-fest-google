@@ -76,7 +76,7 @@ export default function Landing() {
 
   const messages = [
     
-    "Registration is now open for Anwesh and Ahwaan. Register below ↓"
+    "Thank you for making the GITA annual fest (UTSAAH 2024) a grand success"
     
   ];
 
