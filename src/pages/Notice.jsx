@@ -4,6 +4,14 @@ import { Link } from "react-router-dom";
 
 const TrendingNotices = [
   
+  
+  
+
+  
+  // Add more notice objects as needed
+];
+
+const notices = [
   {
     title: "Anwesh 2024 (Tech Fest)",
     content: "TECH QUIZ PRELIMS RESULT",
@@ -18,13 +26,6 @@ const TrendingNotices = [
     
   },
   
-  
-
-  
-  // Add more notice objects as needed
-];
-
-const notices = [
   {
     title: "Robotronics",
     content: "Registration open",

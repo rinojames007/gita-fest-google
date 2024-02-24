@@ -17,23 +17,23 @@ const Photoes = () => {
     },
   ];
   const ahwan = [
-    // {
-    //   name: "100 mts",
-    //   link: "https://drive.google.com/drive/folders/1Vxuo9wEf10BayA9eWi4HdgPy6hIMKPpM",
-    // },
+    {
+      name: "DAY-1",
+      link: "https://drive.google.com/drive/folders/1ztKkv4aHTPag6wTowog6K7i_Adw_s-94?usp=sharing",
+    },
   ];
   const anwesh = [
-    // {
-    //   name: "Link-1",
-    //   link: "https://drive.google.com/drive/folders/1Vxuo9wEf10BayA9eWi4HdgPy6hIMKPpM",
-    // },
+    {
+      name: "DAY-1 & DAY-2",
+      link: "https://drive.google.com/drive/folders/1XX5c7PHblNrWb6T3MzlPbWQRMxj1660M?usp=sharing",
+    },
   ];
 
-  const akanksha = [
-    // {
-    //   name: "Previous",
-    //   link: "https://drive.google.com/drive/folders/1Vxuo9wEf10BayA9eWi4HdgPy6hIMKPpM",
-    // },
+  const akanksha = [   
+    {
+      name: "DAY-2",
+      link: "https://drive.google.com/drive/folders/1sKRjat2z2DPCcPma7gJUzB_nDDo7t3bn?usp=sharing",
+    },
   ];
   return (
     <div className="bg-gradient-to-b from-[#161b29] via-purple-900 flex mx-auto flex-col to-[#161b29] min-h-screen h-full py-9">
@@ -67,7 +67,7 @@ const Photoes = () => {
       <div className="flex flex-col md:flex-row space-y-14 md:space-y-0 justify-center items-center md:justify-around">
         <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl border-[#FFD700] shadow-xl shadow-blue-500 h-full ">
           <h1 className="text-4xl font-bold text-white text-center shadowText">
-            Ahwaan
+            Ahwaan 2024
           </h1>
           <div className="flex pt-8 justify-around items-center my-8 flex-wrap ">
             {ahwan.map((item) => (
@@ -81,14 +81,12 @@ const Photoes = () => {
                 </a>
               </div>
             ))}
-            <p className="text-3xl text-slate-300 my-[100px] font-semibold">
-              Coming Soon
-            </p>
+            
           </div>
         </div>
         <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl  border-[#FFD700] shadow-xl shadow-blue-500  ">
           <h1 className="text-4xl font-bold text-white text-center shadowText">
-            Anwesh
+            Anwesh 2024
           </h1>
           <div className="flex pt-8 justify-around items-center my-8 flex-wrap ">
             {anwesh.map((item) => (
@@ -102,14 +100,12 @@ const Photoes = () => {
                 </a>
               </div>
             ))}
-            <p className="text-3xl text-slate-300 my-[100px] font-semibold">
-              Coming Soon
-            </p>
+            
           </div>
         </div>
         <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl  border-[#FFD700] shadow-xl shadow-blue-500  ">
           <h1 className="text-3xl font-bold text-white text-center shadowText">
-            Akanksha
+            Akanksha 2024
           </h1>
           <div className="flex pt-8 justify-around items-center my-8 flex-wrap ">
             {akanksha.map((item) => (
@@ -123,9 +119,7 @@ const Photoes = () => {
                 </a>
               </div>
             ))}
-            <p className="text-3xl text-slate-300 my-[100px] font-semibold">
-              Coming Soon
-            </p>
+            
           </div>
         </div>
       </div>
