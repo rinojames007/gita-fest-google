@@ -70,12 +70,12 @@ const Photoes = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row space-y-14 md:space-y-0 justify-center items-center md:justify-around">
-        <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl border-[#FFD700] shadow-xl shadow-blue-500 h-full ">
-          <h1 className="text-4xl font-bold text-white text-center shadowText">
-            Ahwaan 2024
+      <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl  border-[#FFD700] shadow-xl shadow-blue-500  ">
+          <h1 className="text-3xl font-bold text-white text-center shadowText">
+            Akanksha 2024
           </h1>
           <div className="flex pt-8 justify-around items-center my-8 flex-wrap ">
-            {ahwan.map((item) => (
+            {akanksha.map((item) => (
               <div className="Events" key={item.name}>
                 <a
                   href={item.link}
@@ -108,12 +108,13 @@ const Photoes = () => {
             
           </div>
         </div>
-        <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl  border-[#FFD700] shadow-xl shadow-blue-500  ">
-          <h1 className="text-3xl font-bold text-white text-center shadowText">
-            Akanksha 2024
+        
+        <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl border-[#FFD700] shadow-xl shadow-blue-500 h-full ">
+          <h1 className="text-4xl font-bold text-white text-center shadowText">
+            Ahwaan 2024
           </h1>
           <div className="flex pt-8 justify-around items-center my-8 flex-wrap ">
-            {akanksha.map((item) => (
+            {ahwan.map((item) => (
               <div className="Events" key={item.name}>
                 <a
                   href={item.link}
