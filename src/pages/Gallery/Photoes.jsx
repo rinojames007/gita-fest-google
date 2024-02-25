@@ -29,8 +29,7 @@ const Photoes = () => {
     },
   ];
 
-  const akanksha = [   
-    
+  const akanksha = [
     {
       name: "Practice Sessions",
       link: "https://drive.google.com/drive/folders/1U9C0jseJ0cElx6s1MXc5fISaO1nGSDKZ?usp=sharing",
@@ -49,28 +48,11 @@ const Photoes = () => {
           </button>
         </Link>
       </div>
-      <div className="mx-auto flex items-center justify-center w-full">
-        <div className="flex flex-col py-5 w-[90%] px-2 border-2 my-[60px] gradiantbg rounded-xl border-[#FFD700] shadow-xl shadow-blue-500">
-          <h1 className="text-4xl shadowText font-bold text-white text-center">
-            Utsãh 2023
-          </h1>
-          <div className="flex  justify-around my-[60px] flex-wrap ">
-            {prevYr.map((item) => (
-              <div className="Events" key={item.name}>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  className="text-white md:text-xl text-lg flex my-3 items-center justify-center bg-orange-500 border-2 shadow-md shadow-black border-black hover:bg-orange-600 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-2xl px-6 md:px-[50px] py-3 md:py-[20px] text-center "
-                >
-                  {item.name}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row space-y-14 md:space-y-0 justify-center items-center md:justify-around">
-      <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl  border-[#FFD700] shadow-xl shadow-blue-500  ">
+      <h1 className="md:text-5xl text-3xl py-5 font-bold text-white text-center">
+      Utsãh 2024
+      </h1>
+      <div className="flex py-9 flex-col md:flex-row space-y-14 md:space-y-0 justify-center items-center md:justify-around">
+        <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl  border-[#FFD700] shadow-xl shadow-blue-500  ">
           <h1 className="text-3xl font-bold text-white text-center shadowText">
             Akanksha 2024
           </h1>
@@ -86,7 +68,6 @@ const Photoes = () => {
                 </a>
               </div>
             ))}
-            
           </div>
         </div>
         <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl  border-[#FFD700] shadow-xl shadow-blue-500  ">
@@ -105,10 +86,9 @@ const Photoes = () => {
                 </a>
               </div>
             ))}
-            
           </div>
         </div>
-        
+
         <div className="flex flex-col py-5 w-[90%] md:w-[30%] px-2 border-2 gradiantbg rounded-xl border-[#FFD700] shadow-xl shadow-blue-500 h-full ">
           <h1 className="text-4xl font-bold text-white text-center shadowText">
             Ahwaan 2024
@@ -125,7 +105,26 @@ const Photoes = () => {
                 </a>
               </div>
             ))}
-            
+          </div>
+        </div>
+      </div>
+      <div className="mx-auto flex items-center justify-center w-full">
+        <div className="flex flex-col py-5 w-[90%] px-2 border-2 my-[60px] gradiantbg rounded-xl border-[#FFD700] shadow-xl shadow-blue-500">
+          <h1 className="text-4xl shadowText font-bold text-white text-center">
+            Utsãh 2023
+          </h1>
+          <div className="flex  justify-around my-[60px] flex-wrap ">
+            {prevYr.map((item) => (
+              <div className="Events" key={item.name}>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  className="text-white md:text-xl text-lg flex my-3 items-center justify-center bg-orange-500 border-2 shadow-md shadow-black border-black hover:bg-orange-600 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-2xl px-6 md:px-[50px] py-3 md:py-[20px] text-center "
+                >
+                  {item.name}
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>
