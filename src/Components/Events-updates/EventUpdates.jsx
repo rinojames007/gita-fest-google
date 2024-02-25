@@ -16,7 +16,7 @@ const EventUpdates = () => {
         </p>
       </div>
       <div className=" flex md:flex-row flex-col items-center justify-center md:justify-between py-7 px-3 md:py-[40px] md:px-[40px] md:space-x-6 mx-auto">
-        <div className="left hidden md:w-[40%] md:flex items-center justify-center">
+        <div className="left md:w-[40%] md:flex items-center justify-center">
           <div className="ilustrator flex justify-center w-full items-center py-[8px] ">
             <img
               src="https://i.postimg.cc/8c8sR322/coordinator.webp"
@@ -38,7 +38,7 @@ const EventUpdates = () => {
                 date={item.date}
               />
             ))} */}
-              <p className="BlinkText flex justify-center items-center text-xl md:text-4xl mb-[20px] mx-auto  font-bold text-white text-center pt-[15px] md:pt-[20px] UpcommingEvents">
+              <p className="BlinkText hidden md:flex justify-center items-center text-xl md:text-4xl mb-[20px] mx-auto  font-bold text-white text-center pt-[15px] md:pt-[20px] UpcommingEvents">
                 To be Announced...
               </p>
             </div>

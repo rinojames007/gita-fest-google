@@ -30,6 +30,11 @@ const Photoes = () => {
   ];
 
   const akanksha = [   
+    
+    {
+      name: "Practice Sessions",
+      link: "https://drive.google.com/drive/folders/1U9C0jseJ0cElx6s1MXc5fISaO1nGSDKZ?usp=sharing",
+    },
     {
       name: "DAY-2",
       link: "https://drive.google.com/drive/folders/1sKRjat2z2DPCcPma7gJUzB_nDDo7t3bn?usp=sharing",
