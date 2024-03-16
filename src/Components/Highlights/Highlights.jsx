@@ -7,9 +7,9 @@ import AddComponent from "../Adds/AddComponent";
 
 const Highlights = () => {
   const images = [
-    {
-      url: "https://i.postimg.cc/ht3j6Cqc/glimpse.webp",
-    },
+    // {
+    //   url: "https://i.postimg.cc/ht3j6Cqc/glimpse.webp",
+    // },
     {
       url: "https://i.postimg.cc/g0g1DSnw/Photo1.webp",
     },

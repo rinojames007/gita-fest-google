@@ -30,12 +30,21 @@ const Photoes = () => {
   ];
 
   const akanksha = [
+    
+    {
+      name: "DAY-1",
+      link: "https://drive.google.com/drive/folders/19fO4EfkUp9Q46VOgg85zrOTaLsrbggzs?usp=sharing",
+    },
+    {
+      name: "DAY-2",
+      link: "https://drive.google.com/drive/folders/1hHr4HZTAeZ43moFEnE-m37RjnOKJ0Dnz?usp=sharing",
+    },
     {
       name: "Practice Sessions",
       link: "https://drive.google.com/drive/folders/1U9C0jseJ0cElx6s1MXc5fISaO1nGSDKZ?usp=sharing",
     },
     {
-      name: "DAY-2",
+      name: "Others",
       link: "https://drive.google.com/drive/folders/1sKRjat2z2DPCcPma7gJUzB_nDDo7t3bn?usp=sharing",
     },
   ];
