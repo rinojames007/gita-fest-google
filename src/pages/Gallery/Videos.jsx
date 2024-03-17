@@ -52,6 +52,7 @@ const Videos = () => {
     "2024": [
       "https://www.youtube.com/embed/MrRyjHCYiPU?si=MCB3rKArru__eyvO",
       "https://www.youtube.com/embed/Cc5yV5I6fCw?si=2gmk0Ai-fp5F5Y2G",
+      "https://www.youtube.com/embed/IJmrxWxLfRA?si=9wcFFU0soDhTklcJ",
       "https://www.youtube.com/embed/vAnpWvha_wU?si=_vPR-TyUy8W83fqn",
       "https://www.youtube.com/embed/8uF3l0sjFqU?si=aGQYDbPOrsnpfEiL",
       "https://www.youtube.com/embed/O4TwllYuSWg?si=sVV8M9XfKrtA7hsz",
