@@ -32,7 +32,6 @@ const Videos = () => {
 
   const [loadingStates, setLoadingStates] = useState({});
   const [videos] = useState({
-    
     "2k23": [
       "https://www.youtube.com/embed/SECIxFV8L0Q?si=333hwu6lZTU8MyAf",
       "https://www.youtube.com/embed/7S6Min_Fxvs?si=nwGAhuqoUUyeDvq-",
@@ -49,10 +48,13 @@ const Videos = () => {
       "https://www.youtube.com/embed/Oh-7wOKgGHw?si=2OnhdJlS5H7J0xqn",
     ],
 
-    "2024": [
+    2024: [
       "https://www.youtube.com/embed/Ja5Sj42Ap_o?si=g_81PlVSfNlL1n4n",
       "https://www.youtube.com/embed/ucs11Frg2ss?si=uoUpI5I02-D5CZB8",
+      "https://www.youtube.com/embed/tmr9VGx6lVo?si=_sWDC0zTESsWjocH",
       "https://www.youtube.com/embed/IJmrxWxLfRA?si=ACu8Y5zoYS2Ahdjo",
+      "https://www.youtube.com/embed/F-eeaRNUcDc?si=vxjI9AjP1Ye0l32e",
+      
       "https://www.youtube.com/embed/vAnpWvha_wU?si=_vPR-TyUy8W83fqn",
       "https://www.youtube.com/embed/sZIz_LiE-RI?si=eOkN_HAFvJZvkPnc",
       "https://www.youtube.com/embed/2ifQkiAzFv8?si=Mx13bZIGrj1eMCLB",
@@ -66,6 +68,12 @@ const Videos = () => {
       "https://www.youtube.com/embed/slzL8QobodM?si=jnrz61N56C4y5VOy",
       "https://www.youtube.com/embed/8uF3l0sjFqU?si=aGQYDbPOrsnpfEiL",
       "https://www.youtube.com/embed/O4TwllYuSWg?si=sVV8M9XfKrtA7hsz",
+      "https://www.youtube.com/embed/lHlzkRFKneE?si=q37gzuK1YbRTzdHo",
+      "https://www.youtube.com/embed/MQfY_cn2cqI?si=36mpnwH6Rl-u9mpc",
+      "https://www.youtube.com/embed/dNCtdFJDieQ?si=1XPbMtzTthi3P0mb",
+      "https://www.youtube.com/embed/ABGEGrk0aMQ?si=DcSMDQXfB_WTrhRO",
+      "https://www.youtube.com/embed/VUsngh8tWA8?si=2_Iq9XG335RFcnEI",
+      "https://www.youtube.com/embed/PcXnaRh5z9A?si=exQyleKue9w71C1j",
       "https://www.youtube.com/embed/aWYWuve-mT4?si=RUH7dmAmxeTOs4Pa",
       "https://www.youtube.com/embed/uFJ2i6MkTA8?si=qpcN7z8zUrT8Yydl",
       "https://www.youtube.com/embed/KfgFBk2gkY4?si=WO1aFkNeu5vDGm71",
